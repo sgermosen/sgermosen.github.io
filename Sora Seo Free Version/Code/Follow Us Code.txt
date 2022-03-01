@@ -1,0 +1,51 @@
+<div class="kt-social-buttons-widget"><ul class="sidebar-social clearfix"><li><a href="#!" class="social-btn-twitter">Follow on Twitter <i class="fa fa-twitter"></i> </a></li><li><a href="#!" class="social-btn-facebook">Like on Facebook <i class="fa fa-facebook"></i> </a></li><li><a href="#!" class="social-btn-youtube">Subscribe on Youtube <i class="fa fa-youtube"></i> </a></li><li><a href="#!" class="social-btn-instagram">Follow on Instagram <i class="fa fa-instagram"></i> </a></li></ul></div>
+<style>
+.kt-social-buttons-widget ul {
+list-style: none;
+padding-left: 0;
+}
+.kt-social-buttons-widget li a {
+font-size: 10px;
+text-transform: uppercase;
+letter-spacing: 2px;
+text-decoration: none;
+display: block;
+color: #0a0a0a;
+padding: 10px 1px 10px 10px;
+background:#f8f8f8;
+}
+.kt-social-buttons-widget ul li {
+width: 100%;
+margin-bottom: 10px;
+}
+.kt-social-buttons-widget li:hover a.social-btn-twitter {
+background: #1da1f2;
+color:#fff;
+}
+.kt-social-buttons-widget li a i {
+float: right;
+width: 35px;
+height: 14px;
+line-height: 14px;
+text-align: ;
+margin: 0;
+padding: 0 0 0 10px;
+font-size: 14px;
+}
+.kt-social-buttons-widget li a i {
+border-left: 1px solid #666;
+line-height: 14px;
+}
+.kt-social-buttons-widget li:hover a.social-btn-facebook {
+background: #3b5998;
+color:#fff;
+}
+.kt-social-buttons-widget li:hover a.social-btn-youtube {
+background: #cd201f;
+color:#fff;
+}
+.kt-social-buttons-widget li:hover a.social-btn-instagram {
+background: #405de6;
+color:#fff;
+}
+</style>
