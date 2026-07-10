@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 320" width="1160" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B2C6F"/>
+      <stop offset="0.55" stop-color="#134FB8"/>
+      <stop offset="1" stop-color="#1D6FE0"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD54F"/>
+      <stop offset="1" stop-color="#FFB300"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Isotipo -->
+  <g transform="translate(24,24) scale(0.532)">
+    <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+    <path d="M0 0 H512 V190 Q256 260 0 190 Z" fill="#FFFFFF" opacity="0.05"/>
+    <rect x="96"  y="150" width="200" height="44" rx="22" fill="#FFFFFF" opacity="0.92"/>
+    <rect x="96"  y="234" width="264" height="44" rx="22" fill="#FFFFFF" opacity="0.55"/>
+    <rect x="96"  y="318" width="152" height="44" rx="22" fill="#FFFFFF" opacity="0.32"/>
+    <path d="M120 340 l14 15 26 -28" fill="none" stroke="#0B2C6F" stroke-width="13"
+          stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+    <path d="M382 96 L296 268 L352 268 L306 424 L430 232 L366 232 Z"
+          fill="url(#bolt)" stroke="#0B2C6F" stroke-width="14" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="340" y="196" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif"
+        font-size="150" font-weight="800" fill="#0B2C6F" letter-spacing="-3">Estimat<tspan fill="#FFB300"> Pro</tspan></text>
+  <text x="346" y="258" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif"
+        font-size="44" font-weight="500" fill="#4A5B7A" letter-spacing="2">COMPARA · AHORRA · COMPRA</text>
+</svg>

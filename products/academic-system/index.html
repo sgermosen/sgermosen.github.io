@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AcademicSystem — Sistema de gestión académica para escuelas y academias | Matrícula, notas y kardex</title>
+<meta name="description" content="AcademicSystem es la plataforma de gestión académica lista para tu institución: matrícula en línea con validación de prerrequisitos, calificaciones ponderadas, kardex automático con GPA, asistencia, certificados, reportes y app móvil. Multi-idioma (ES/EN/FR), white-label y en producción con instituciones reales.">
+<meta name="keywords" content="sistema de gestión académica, software para escuelas, sistema de matrícula en línea, kardex digital, software academias, sistema de notas escolar, plataforma educativa white label, gestión estudiantil, AcademicSystem, Gestudent">
+<meta name="author" content="Starling Germosen">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://sgermosen.com/products/academic-system/">
+<link rel="icon" type="image/svg+xml" href="/assets/img/academic-icon.svg">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sgermosen.com/products/academic-system/">
+<meta property="og:title" content="AcademicSystem — Gestión académica completa para tu institución">
+<meta property="og:description" content="Matrícula inteligente, notas ponderadas, kardex automático con GPA, asistencia, certificados y reportes — en 3 idiomas, con tu marca. En producción con instituciones reales.">
+<meta property="og:image" content="https://sgermosen.com/assets/img/starling-germosen.jpg">
+<meta property="og:locale" content="es_DO">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AcademicSystem — Gestión académica para escuelas y academias">
+<meta name="twitter:description" content="Matrícula, notas, kardex con GPA, asistencia, certificados y reportes. White-label, trilingüe, con app móvil.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "AcademicSystem",
+      "alternateName": "Gestudent",
+      "url": "https://sgermosen.com/products/academic-system/",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web, iOS, Android",
+      "description": "Plataforma de gestión académica para universidades, seminarios, academias y escuelas: matrícula en línea con validación de prerrequisitos, calificaciones ponderadas por componentes, kardex (historial académico) automático con GPA y estatus académico, asistencia, certificados con validación, reportes exportables, API REST y app móvil. Multi-tenant white-label y trilingüe (español, inglés, francés).",
+      "inLanguage": ["es", "en", "fr"],
+      "author": { "@type": "Person", "name": "Starling Germosen", "url": "https://sgermosen.com/" },
+      "offers": { "@type": "Offer", "description": "Licenciamiento white-label por institución. Solicitar demo.", "price": "0", "priceCurrency": "USD" },
+      "featureList": "Matrícula en línea con prerrequisitos y control de cupos, calificaciones ponderadas con nota literal automática, kardex con GPA por período y estatus académico, asistencia por sesión, certificados con sello digital y validación, detección de conflictos de horario, reportes con exportación CSV, 3 portales por rol (admin, docente, estudiante), multi-tenant white-label, 3 idiomas, API REST con JWT, app móvil .NET MAUI"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es AcademicSystem?",
+          "acceptedAnswer": { "@type": "Answer", "text": "AcademicSystem es una plataforma completa de gestión académica para instituciones educativas: administra estudiantes, docentes, materias, períodos, matrícula, calificaciones, asistencia, kardex, certificados y reportes, con portales dedicados para administradores, docentes y estudiantes." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo funciona la matrícula en línea?",
+          "acceptedAnswer": { "@type": "Answer", "text": "El estudiante se inscribe él mismo desde su portal: el sistema valida automáticamente prerrequisitos aprobados, cupos disponibles, fechas límite y conflictos de horario antes de confirmar la inscripción. Los administradores pueden autorizar excepciones." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué es el kardex automático?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Es el historial académico completo del estudiante generado automáticamente: notas por período, tendencia del GPA, créditos cursados y aprobados, y clasificación de estatus académico (Lista del Decano, Buen Estado, Advertencia, Probatoria)." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿AcademicSystem está en producción?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí, está desplegado y operando con una institución real, con estudiantes, docentes y administradores activos." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo tenerlo con la marca de mi institución?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí. La plataforma es multi-tenant white-label: cada institución tiene su logo, colores, dominio e idiomas. Contacta a sgermosen@outlook.com para una demo." }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Starling Germosen", "item": "https://sgermosen.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Productos", "item": "https://sgermosen.com/#products" },
+        { "@type": "ListItem", "position": 3, "name": "AcademicSystem", "item": "https://sgermosen.com/products/academic-system/" }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#0d1021; --bg2:#12162e; --card:#161b3a; --line:#262e5c;
+  --txt:#edeffa; --mut:#a6adda; --dim:#6e77ab;
+  --acc:#818cf8; --acc2:#38bdf8; --gold:#fbbf24; --grad:linear-gradient(100deg,#818cf8,#38bdf8);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:'Inter',system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+a{color:var(--acc2);text-decoration:none}
+img{max-width:100%}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:#0d1021cc;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1080px;margin:0 auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{font-weight:900;font-size:1.06rem;color:var(--txt);display:flex;align-items:center;gap:10px}
+.brand span{color:var(--acc)}
+.nav-r{display:flex;gap:18px;align-items:center}
+.nav-r a{color:var(--mut);font-size:.9rem;font-weight:600}
+.nav-cta{background:var(--grad);color:#0d1021!important;font-weight:800;padding:8px 18px;border-radius:99px}
+.hero{position:relative;padding:140px 0 80px;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-300px;left:50%;transform:translateX(-50%);width:900px;height:700px;border-radius:50%;background:radial-gradient(circle,#818cf824,transparent 65%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;text-align:center}
+.pill{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;border-radius:99px;padding:6px 14px;background:#818cf822;color:var(--acc);border:1px solid #818cf855;margin-bottom:20px}
+h1{font-size:clamp(2.1rem,5vw,3.4rem);font-weight:900;letter-spacing:-.03em;line-height:1.1;max-width:22ch;margin:0 auto 18px}
+h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{color:var(--mut);font-size:1.08rem;max-width:64ch;margin:0 auto 32px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 28px;border-radius:13px;font-weight:800;font-size:.98rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-p{background:var(--grad);color:#0d1021;box-shadow:0 10px 30px #818cf833}
+.btn-o{border:1px solid var(--line);color:var(--txt);background:var(--card)}
+.statband{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2);margin-top:64px}
+.stat-in{max-width:1080px;margin:0 auto;padding:30px 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
+@media(max-width:760px){.stat-in{grid-template-columns:repeat(2,1fr)}}
+.stat b{display:block;font-size:1.8rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{color:var(--mut);font-size:.84rem;font-weight:600}
+section{padding:80px 0}
+.tag{color:var(--gold);font-weight:800;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase}
+h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:900;letter-spacing:-.025em;margin:10px 0 14px}
+.sub2{color:var(--mut);max-width:66ch;margin-bottom:40px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:900px){.grid3{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.grid3{grid-template-columns:1fr}}
+.fcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
+.fcard .ic{font-size:1.7rem}
+.fcard h3{font-size:1.05rem;font-weight:800;margin:12px 0 6px}
+.fcard p{color:var(--mut);font-size:.9rem}
+.dark-band{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.roles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:860px){.roles{grid-template-columns:1fr}}
+.role{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+.role b{display:block;color:var(--acc);margin-bottom:8px;font-size:1.02rem}
+.role ul{list-style:none}
+.role li{color:var(--mut);font-size:.87rem;padding:3px 0 3px 20px;position:relative}
+.role li::before{content:"✓";position:absolute;left:0;color:var(--acc2);font-weight:800}
+.tech-flow{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.tech-flow span{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:8px 14px;font-size:.84rem;color:var(--mut);font-weight:600}
+.tech-flow span b{color:var(--txt)}
+.faq{max-width:800px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin-bottom:12px}
+.faq summary{font-weight:800;cursor:pointer;font-size:1rem}
+.faq p{color:var(--mut);margin-top:12px;font-size:.93rem}
+.cta-final{text-align:center;padding:90px 0}
+.cta-final p{color:var(--mut);margin-bottom:30px}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-size:.85rem}
+.foot-in{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.foot-in a{color:var(--mut)}
+.note{font-size:.8rem;color:var(--dim);margin-top:14px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="/products/academic-system/">🎓 Academic<span>System</span></a>
+    <div class="nav-r">
+      <a href="#funciones">Funciones</a>
+      <a href="#portales">Portales</a>
+      <a href="#faq">FAQ</a>
+      <a href="/">← Portafolio</a>
+      <a class="nav-cta" href="mailto:sgermosen@outlook.com?subject=AcademicSystem%20—%20solicitar%20demo">Solicitar demo</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="pill">● En producción con instituciones reales</span>
+    <h1>La gestión académica de tu institución, <span>resuelta.</span></h1>
+    <p class="sub">Matrícula en línea con validación inteligente, calificaciones ponderadas, kardex automático con GPA, asistencia, certificados y reportes — con <b style="color:var(--txt)">tu marca, tu dominio y tus colores</b>. Para universidades, seminarios, academias y escuelas.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-p" href="mailto:sgermosen@outlook.com?subject=AcademicSystem%20—%20solicitar%20demo">🎓 Solicitar demo</a>
+      <a class="btn btn-o" href="https://wa.me/18492077714?text=Hola%2C%20me%20interesa%20AcademicSystem" target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
+  </div>
+  <div class="statband">
+    <div class="stat-in">
+      <div class="stat"><b>3</b><span>portales: admin · docente · estudiante</span></div>
+      <div class="stat"><b>3</b><span>idiomas: ES · EN · FR</span></div>
+      <div class="stat"><b>26,500+</b><span>líneas de código .NET 8</span></div>
+      <div class="stat"><b>100%</b><span>white-label multi-institución</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="funciones">
+  <div class="wrap">
+    <span class="tag">Funciones clave</span>
+    <h2>Automatiza lo que hoy se hace en Excel y papel.</h2>
+    <div class="grid3">
+      <div class="fcard"><span class="ic">📝</span><h3>Matrícula inteligente</h3><p>El estudiante se inscribe solo: el sistema valida prerrequisitos aprobados, cupos, fechas límite y choques de horario antes de confirmar. Con excepciones autorizadas por admin.</p></div>
+      <div class="fcard"><span class="ic">🧮</span><h3>Notas ponderadas</h3><p>Asistencia, práctica, exámenes y proyecto con pesos configurables — total y calificación literal calculados automáticamente, con publicación controlada por el docente.</p></div>
+      <div class="fcard"><span class="ic">📜</span><h3>Kardex automático</h3><p>Historial académico completo con GPA por período, tendencia, créditos y estatus académico automático: Lista del Decano, Buen Estado, Advertencia o Probatoria.</p></div>
+      <div class="fcard"><span class="ic">🗓️</span><h3>Horarios sin conflictos</h3><p>Secciones, aulas y docentes con detección automática de choques de horario y flujo de aprobación para excepciones.</p></div>
+      <div class="fcard"><span class="ic">🏅</span><h3>Certificados verificables</h3><p>Emisión de certificados con sello y firma digital, descarga por el estudiante y validación de autenticidad.</p></div>
+      <div class="fcard"><span class="ic">📈</span><h3>Reportes al instante</h3><p>Matrícula, distribución de notas, rendimiento estudiantil y carga docente — exportables a CSV con un clic, más vistas listas para imprimir.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="portales" class="dark-band">
+  <div class="wrap">
+    <span class="tag">Un portal para cada rol</span>
+    <h2>Cada usuario entra a lo suyo. Nada más, nada menos.</h2>
+    <div class="roles">
+      <div class="role">
+        <b>🛠️ Administrador</b>
+        <ul>
+          <li>Dashboard con estadísticas del sistema</li>
+          <li>Estudiantes, docentes, materias, períodos</li>
+          <li>Oferta académica con importación entre períodos</li>
+          <li>Prerrequisitos, secciones, aulas y horarios</li>
+          <li>Cuentas, contraseñas y activación</li>
+        </ul>
+      </div>
+      <div class="role">
+        <b>👨‍🏫 Docente</b>
+        <ul>
+          <li>Cursos asignados y listas de inscritos</li>
+          <li>Captura de notas por componentes ponderados</li>
+          <li>Sesiones de clase y toma de asistencia</li>
+          <li>Reportes de rendimiento y exportación CSV</li>
+          <li>Override de prerrequisitos cuando aplica</li>
+        </ul>
+      </div>
+      <div class="role">
+        <b>🎒 Estudiante</b>
+        <ul>
+          <li>Dashboard con GPA y créditos al día</li>
+          <li>Auto-matrícula validada y retiro en fecha</li>
+          <li>Notas, historial y kardex completo</li>
+          <li>Certificados descargables y verificables</li>
+          <li>Horario imprimible y app móvil companion</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tech">
+  <div class="wrap">
+    <span class="tag">Tecnología</span>
+    <h2>Moderno por dentro, tuyo por fuera.</h2>
+    <p class="sub2">Producto de <a href="/">Starling Germosen</a>. Cada institución opera aislada en la misma plataforma, con su propia identidad visual — el modelo SaaS que permite empezar hoy sin comprar servidores.</p>
+    <div class="tech-flow">
+      <span><b>Backend:</b> .NET 8 · ASP.NET Core MVC · arquitectura por capas (Domain / Application / Infrastructure)</span>
+      <span><b>Datos:</b> EF Core 8 · SQL Server · 16 entidades · 22 servicios</span>
+      <span><b>Seguridad:</b> ASP.NET Identity + JWT para API/móvil · confirmación por email</span>
+      <span><b>Móvil:</b> app companion .NET MAUI (iOS · Android · Windows) + colección Postman</span>
+      <span><b>Extras:</b> login flexible (email, cédula, matrícula o código de empleado) · Cloudinary · IDs automáticos AAAA-0001</span>
+      <span><b>Idiomas:</b> español · inglés · francés (843+ cadenas por idioma)</span>
+    </div>
+    <p class="note">Módulo de pagos/facturación en hoja de ruta — la plataforma actual cubre el ciclo académico completo. La app móvil cubre el flujo del estudiante y sigue en expansión activa.</p>
+  </div>
+</section>
+
+<section id="faq" class="dark-band">
+  <div class="wrap">
+    <span class="tag">Preguntas frecuentes</span>
+    <h2>Lo que las instituciones preguntan.</h2>
+    <div class="faq">
+      <details>
+        <summary>¿Cuánto toma implementarlo en mi institución?</summary>
+        <p>Al ser multi-tenant, una institución nueva se configura con su logo, colores, materias, períodos y usuarios sin necesidad de un despliegue nuevo. La carga inicial de datos y capacitación se coordina en la implementación.</p>
+      </details>
+      <details>
+        <summary>¿Sirve para academias pequeñas o solo universidades?</summary>
+        <p>Ambas. El modelo de materias, períodos, secciones y prerrequisitos se adapta desde academias con pocos cursos hasta programas universitarios completos, y está probado en producción con un seminario real.</p>
+      </details>
+      <details>
+        <summary>¿Los estudiantes necesitan instalar algo?</summary>
+        <p>No. El portal web es responsive y funciona en cualquier navegador o teléfono. Adicionalmente existe una app móvil companion para consultar notas, matrícula y certificados.</p>
+      </details>
+      <details>
+        <summary>¿Puedo migrar mis datos actuales?</summary>
+        <p>Sí — estudiantes, docentes, materias e historiales pueden cargarse durante la implementación. Escríbeme a <a href="mailto:sgermosen@outlook.com">sgermosen@outlook.com</a> con el formato de tus datos actuales.</p>
+      </details>
+      <details>
+        <summary>¿En qué idiomas está disponible?</summary>
+        <p>Español, inglés y francés, con selección por usuario — listo para el Caribe, Estados Unidos y mercados francófonos.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="cta-final">
+  <div class="wrap">
+    <h2>Tu institución, digital <span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent">este mismo período.</span></h2>
+    <p>Demo en vivo con datos de ejemplo — ve el sistema funcionando antes de decidir.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-p" href="mailto:sgermosen@outlook.com?subject=AcademicSystem%20—%20solicitar%20demo">Solicitar demo</a>
+      <a class="btn btn-o" href="https://wa.me/18492077714?text=Hola%2C%20me%20interesa%20AcademicSystem" target="_blank" rel="noopener">💬 WhatsApp +1 849 207-7714</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-in">
+    <span>AcademicSystem © <span id="y"></span> · Producto de <a href="/">Starling Germosen</a></span>
+    <span><a href="/">Portafolio</a> · <a href="/products/resumibot/">ResumiBot</a> · <a href="/products/lottoking/">LottoKing</a> · <a href="/products/estimatpro/">Estimat Pro</a> · <a href="/products/torneo-predicciones/">Torneo Predicciones</a></span>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
