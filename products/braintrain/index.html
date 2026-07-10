@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrainTrain — App de juegos mentales y trivia | Plataforma de trivia white-label lista para lanzar</title>
+<meta name="description" content="BrainTrain es una app completa de juegos mentales y preguntas capciosas: retos diarios, rachas, vidas, logros, liga semanal, tienda con compras in-app y servidor anti-trampas. Backend .NET + app móvil MAUI con 57 pruebas. Lista para lanzar con tu marca o tu contenido.">
+<meta name="keywords" content="app de trivia, juegos mentales app, preguntas capciosas, app tipo Preguntados, trivia white label, app de retos diarios, gamificación para marcas, quiz app español, BrainTrain">
+<meta name="author" content="Starling Germosen">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://sgermosen.com/products/braintrain/">
+<link rel="icon" type="image/png" href="/assets/img/braintrain-icon.png">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sgermosen.com/products/braintrain/">
+<meta property="og:title" content="BrainTrain — Juegos mentales y preguntas capciosas">
+<meta property="og:description" content="Trivia con retos diarios, rachas, logros, liga semanal y anti-trampas en el servidor. Lista para lanzar con tu marca.">
+<meta property="og:image" content="https://sgermosen.com/assets/img/braintrain-feature.png">
+<meta property="og:locale" content="es_ES">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BrainTrain — App de juegos mentales y trivia">
+<meta name="twitter:description" content="Retos diarios, rachas, logros, liga semanal y anti-trampas. Lista para lanzar con tu marca.">
+<meta name="twitter:image" content="https://sgermosen.com/assets/img/braintrain-feature.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "BrainTrain",
+      "url": "https://sgermosen.com/products/braintrain/",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Android, iOS",
+      "description": "App de juegos mentales y trivia en español: partidas rápidas, reto diario que protege la racha, sistema de vidas con regeneración, monedas y tienda con compras in-app, 26 logros, liga semanal, niveles de experiencia y 6 categorías de preguntas. Backend autoritativo anti-trampas en .NET con JWT y refresh tokens. Licenciable white-label para marcas, medios y educación.",
+      "inLanguage": "es",
+      "author": { "@type": "Person", "name": "Starling Germosen", "url": "https://sgermosen.com/" },
+      "offers": { "@type": "Offer", "description": "Licenciamiento white-label con tu marca y tu banco de preguntas. Solicitar demo.", "price": "0", "priceCurrency": "USD" },
+      "featureList": "Partida rápida y por categoría, reto diario con protección de racha, vidas con regeneración temporal, monedas y tienda in-app, 26 logros, liga semanal, niveles XP, 6 categorías, anti-trampas en servidor, cuentas de invitado convertibles"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es BrainTrain?",
+          "acceptedAnswer": { "@type": "Answer", "text": "BrainTrain es una app móvil de juegos mentales y trivia en español: lógica, cálculo mental, preguntas capciosas, curiosidades, percepción/memoria y palabras, con retos diarios, rachas, vidas, logros y liga semanal." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Se puede lanzar BrainTrain con mi marca o mi contenido?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí. La plataforma completa (backend .NET + app .NET MAUI) es licenciable white-label: tu marca, tus categorías y tu banco de preguntas — ideal para medios, marcas que buscan engagement o productos educativos. Contacta a sgermosen@outlook.com." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo evita las trampas?",
+          "acceptedAnswer": { "@type": "Answer", "text": "El servidor es autoritativo: valida las respuestas, tiempos y recompensas en el backend — el cliente nunca decide los puntos. La autenticación usa JWT con refresh tokens rotados y las cuentas de invitado pueden convertirse en cuentas completas sin perder progreso." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo monetiza BrainTrain?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Con un sistema de vidas estilo free-to-play (se regeneran con el tiempo), monedas y una tienda con compras in-app. El kit de publicación para Play Store y App Store está incluido." }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Starling Germosen", "item": "https://sgermosen.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Productos", "item": "https://sgermosen.com/#products" },
+        { "@type": "ListItem", "position": 3, "name": "BrainTrain", "item": "https://sgermosen.com/products/braintrain/" }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#14102b; --bg2:#191436; --card:#1f1943; --line:#332a66;
+  --txt:#efedfb; --mut:#b3abde; --dim:#7a70b0;
+  --acc:#8b7cf6; --gold:#fbbf24; --grad:linear-gradient(100deg,#8b7cf6,#c084fc);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:'Inter',system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+a{color:var(--acc);text-decoration:none}
+img{max-width:100%}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:#14102bcc;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1080px;margin:0 auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.06rem;color:var(--txt)}
+.brand img{width:30px;height:30px;border-radius:8px}
+.brand span{color:#c084fc}
+.nav-r{display:flex;gap:18px;align-items:center}
+.nav-r a{color:var(--mut);font-size:.9rem;font-weight:600}
+.nav-cta{background:var(--grad);color:#14102b!important;font-weight:800;padding:8px 18px;border-radius:99px}
+.hero{position:relative;padding:140px 0 80px;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-300px;left:50%;transform:translateX(-50%);width:900px;height:700px;border-radius:50%;background:radial-gradient(circle,#8b7cf62b,transparent 65%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:50px;align-items:center;position:relative;z-index:1}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr}}
+.pill{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;border-radius:99px;padding:6px 14px;background:#8b7cf622;color:var(--acc);border:1px solid #8b7cf655;margin-bottom:20px}
+h1{font-size:clamp(2.1rem,5vw,3.3rem);font-weight:900;letter-spacing:-.03em;line-height:1.1;margin-bottom:18px}
+h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{color:var(--mut);font-size:1.06rem;max-width:56ch;margin-bottom:30px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 28px;border-radius:13px;font-weight:800;font-size:.98rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-p{background:var(--grad);color:#14102b;box-shadow:0 10px 30px #8b7cf633}
+.btn-o{border:1px solid var(--line);color:var(--txt);background:var(--card)}
+.hero-img img{border-radius:22px;border:1px solid var(--line);box-shadow:0 30px 70px #000a}
+.statband{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2)}
+.stat-in{max-width:1080px;margin:0 auto;padding:30px 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
+@media(max-width:760px){.stat-in{grid-template-columns:repeat(2,1fr)}}
+.stat b{display:block;font-size:1.8rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{color:var(--mut);font-size:.84rem;font-weight:600}
+section{padding:80px 0}
+.tag{color:var(--gold);font-weight:800;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase}
+h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:900;letter-spacing:-.025em;margin:10px 0 14px}
+.sub2{color:var(--mut);max-width:66ch;margin-bottom:40px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:900px){.grid3{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.grid3{grid-template-columns:1fr}}
+.fcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
+.fcard .ic{font-size:1.7rem}
+.fcard h3{font-size:1.05rem;font-weight:800;margin:12px 0 6px}
+.fcard p{color:var(--mut);font-size:.9rem}
+.dark-band{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:860px;margin:0 auto}
+@media(max-width:640px){.shots{grid-template-columns:1fr}}
+.shots img{border-radius:18px;border:1px solid var(--line);box-shadow:0 16px 40px #00000055}
+.tech-flow{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.tech-flow span{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:8px 14px;font-size:.84rem;color:var(--mut);font-weight:600}
+.tech-flow span b{color:var(--txt)}
+.faq{max-width:800px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin-bottom:12px}
+.faq summary{font-weight:800;cursor:pointer;font-size:1rem}
+.faq p{color:var(--mut);margin-top:12px;font-size:.93rem}
+.cta-final{text-align:center;padding:90px 0}
+.cta-final p{color:var(--mut);margin-bottom:30px}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-size:.85rem}
+.foot-in{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.foot-in a{color:var(--mut)}
+.note{font-size:.8rem;color:var(--dim);margin-top:14px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="/products/braintrain/"><img src="/assets/img/braintrain-icon.png" alt="">Brain<span>Train</span></a>
+    <div class="nav-r">
+      <a href="#funciones">Funciones</a>
+      <a href="#marcas">Para marcas</a>
+      <a href="#faq">FAQ</a>
+      <a href="/">← Portafolio</a>
+      <a class="nav-cta" href="mailto:sgermosen@outlook.com?subject=BrainTrain%20—%20demo">Solicitar demo</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill">🧠 Android · iOS · Español</span>
+      <h1>Juegos mentales que <span>enganchan cada día.</span></h1>
+      <p class="sub">BrainTrain es una app completa de trivia y preguntas capciosas: <b style="color:var(--txt)">reto diario que protege tu racha</b>, partidas rápidas, 6 categorías, logros, liga semanal y una economía de vidas y monedas lista para monetizar. Todo validado en el servidor — sin trampas posibles.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <a class="btn btn-p" href="mailto:sgermosen@outlook.com?subject=BrainTrain%20—%20demo">🧠 Solicitar demo</a>
+        <a class="btn btn-o" href="https://wa.me/18492077714?text=Hola%2C%20me%20interesa%20BrainTrain" target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-img"><img src="/assets/img/braintrain-feature.png" alt="BrainTrain — juegos mentales y preguntas capciosas" width="1024" height="500"></div>
+  </div>
+</header>
+
+<div class="statband">
+  <div class="stat-in">
+    <div class="stat"><b>6</b><span>categorías de juego</span></div>
+    <div class="stat"><b>26</b><span>logros desbloqueables</span></div>
+    <div class="stat"><b>57</b><span>pruebas automatizadas</span></div>
+    <div class="stat"><b>100%</b><span>anti-trampas en servidor</span></div>
+  </div>
+</div>
+
+<section id="funciones">
+  <div class="wrap">
+    <span class="tag">El juego</span>
+    <h2>Mecánicas de retención probadas, listas de fábrica.</h2>
+    <div class="grid3">
+      <div class="fcard"><span class="ic">🔥</span><h3>Reto diario y rachas</h3><p>Un desafío gratis al día que protege la racha del jugador — la mecánica que hace volver a la gente todos los días.</p></div>
+      <div class="fcard"><span class="ic">⚡</span><h3>Partida rápida y por categoría</h3><p>Lógica, cálculo mental, capciosas, curiosidades, percepción/memoria y palabras. Contenido en español, ampliable.</p></div>
+      <div class="fcard"><span class="ic">❤️</span><h3>Vidas y economía F2P</h3><p>Vidas que se regeneran con el tiempo, monedas, tienda y compras in-app — el modelo de monetización estándar de los juegos casuales.</p></div>
+      <div class="fcard"><span class="ic">🏅</span><h3>Logros y niveles</h3><p>26 logros, experiencia y niveles que premian la constancia y la precisión.</p></div>
+      <div class="fcard"><span class="ic">🏆</span><h3>Liga semanal</h3><p>Competencia renovada cada semana para mantener viva la rivalidad entre jugadores.</p></div>
+      <div class="fcard"><span class="ic">🛡️</span><h3>Servidor autoritativo</h3><p>Respuestas, tiempos y recompensas se validan en el backend. JWT con refresh tokens rotados; cuentas de invitado convertibles sin perder progreso.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark-band">
+  <div class="wrap">
+    <span class="tag">La app real</span>
+    <h2 style="text-align:center">Así se ve BrainTrain.</h2>
+    <div class="shots" style="margin-top:36px">
+      <img src="/assets/img/braintrain/02-home.png" alt="Pantalla principal de BrainTrain con reto diario y racha" loading="lazy">
+      <img src="/assets/img/braintrain/03-quiz.png" alt="Partida de trivia en BrainTrain" loading="lazy">
+      <img src="/assets/img/braintrain/05-logros.png" alt="Logros de BrainTrain" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="marcas">
+  <div class="wrap">
+    <span class="tag">White-label</span>
+    <h2>Tu marca. Tu contenido. Tu audiencia jugando.</h2>
+    <p class="sub2">BrainTrain se licencia como plataforma completa: cambia el branding, carga tu banco de preguntas y lanza tu propia app de trivia — para medios, marcas que buscan engagement diario, o productos educativos con contenido curricular.</p>
+    <div class="grid3">
+      <div class="fcard"><span class="ic">📺</span><h3>Medios y radio/TV</h3><p>Trivia de tu programa con liga semanal entre tu audiencia y premios patrocinados.</p></div>
+      <div class="fcard"><span class="ic">🎓</span><h3>Educación</h3><p>Reemplaza las categorías por asignaturas y usa las mecánicas de racha y logros para estudiar todos los días.</p></div>
+      <div class="fcard"><span class="ic">🛍️</span><h3>Marcas</h3><p>Preguntas sobre tus productos, recompensas canjeables y un canal de engagement diario que no depende de redes sociales.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="tech" class="dark-band">
+  <div class="wrap">
+    <span class="tag">Tecnología</span>
+    <h2>Arquitectura de producto, no de prototipo.</h2>
+    <p class="sub2">Producto de <a href="/">Starling Germosen</a>, con kit de publicación para Play Store y App Store incluido.</p>
+    <div class="tech-flow">
+      <span><b>Backend:</b> .NET 10 Minimal APIs · EF Core · JWT + refresh tokens rotados · 43 pruebas</span>
+      <span><b>App:</b> .NET MAUI (Android listo, iOS compilable) · MVVM · 14 pruebas</span>
+      <span><b>Contenido:</b> 164 preguntas seed · 26 logros · 6 categorías · ampliable por panel</span>
+      <span><b>Monetización:</b> vidas + monedas + compras in-app · guía de publicación incluida</span>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <span class="tag">Preguntas frecuentes</span>
+    <h2>Directo al grano.</h2>
+    <div class="faq">
+      <details>
+        <summary>¿Puedo cargar mis propias preguntas?</summary>
+        <p>Sí. El banco de preguntas es datos, no código: categorías, preguntas, dificultad y explicaciones se cargan en la base de datos y pueden ampliarse continuamente.</p>
+      </details>
+      <details>
+        <summary>¿Qué tan lista está para publicarse?</summary>
+        <p>El backend y la app Android compilan y pasan 57 pruebas automatizadas, y el kit de publicación (íconos, capturas, gráfica de tienda, guía de despliegue en VPS y tiendas) está completo. El lanzamiento con tu marca es cuestión de configuración, no de desarrollo desde cero.</p>
+      </details>
+      <details>
+        <summary>¿Cómo se licencia?</summary>
+        <p>Implementación white-label con soporte directo del autor: branding, contenido inicial, despliegue del backend y publicación en tiendas. Escríbeme a <a href="mailto:sgermosen@outlook.com">sgermosen@outlook.com</a>.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="cta-final">
+  <div class="wrap">
+    <h2>Tu audiencia quiere jugar. <span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent">Dale el juego.</span></h2>
+    <p>Demo funcional disponible.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-p" href="mailto:sgermosen@outlook.com?subject=BrainTrain%20—%20demo">Solicitar demo</a>
+      <a class="btn btn-o" href="https://wa.me/18492077714?text=Hola%2C%20me%20interesa%20BrainTrain" target="_blank" rel="noopener">💬 WhatsApp +1 849 207-7714</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-in">
+    <span>BrainTrain © <span id="y"></span> · Producto de <a href="/">Starling Germosen</a></span>
+    <span><a href="/">Portafolio</a> · <a href="/products/resumibot/">ResumiBot</a> · <a href="/products/lottoking/">LottoKing</a> · <a href="/products/estimatpro/">Estimat Pro</a> · <a href="/products/academic-system/">AcademicSystem</a> · <a href="/products/torneo-predicciones/">Torneo Predicciones</a></span>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
