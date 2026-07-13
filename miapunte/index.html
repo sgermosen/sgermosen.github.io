@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Apunte — App de notas y gastos que funciona sin internet | Gratis, sin cuenta, sin anuncios</title>
+<meta name="description" content="Mi Apunte junta tus notas, tus gastos y tus recordatorios en una sola app. Escanea recibos con la cámara y llena el gasto solo, convierte notas en imágenes para compartir, exporta a PDF. 100% offline: tus datos nunca salen de tu teléfono. Gratis, sin cuenta y sin anuncios.">
+<meta name="keywords" content="app de notas offline, app de gastos sin internet, escanear recibos app, control de gastos personal, app de notas privada, notas a imagen, presupuesto personal app, app sin anuncios, notas y finanzas, Mi Apunte">
+<meta name="author" content="Starling Germosen">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://sgermosen.com/miapunte/">
+<link rel="alternate" hreflang="es" href="https://sgermosen.com/miapunte/">
+<link rel="alternate" hreflang="en" href="https://sgermosen.com/miapunte/en/">
+<link rel="alternate" hreflang="x-default" href="https://sgermosen.com/miapunte/">
+<link rel="icon" type="image/png" href="/assets/img/miapunte-icon.png">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sgermosen.com/miapunte/">
+<meta property="og:title" content="Mi Apunte — Notas, gastos y recordatorios sin internet">
+<meta property="og:description" content="Escanea un recibo y el gasto se llena solo. Convierte notas en imágenes. 100% offline, sin cuenta, sin anuncios.">
+<meta property="og:image" content="https://sgermosen.com/assets/img/miapunte-feature.png">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mi Apunte — Notas, gastos y recordatorios sin internet">
+<meta name="twitter:description" content="Escanea un recibo y el gasto se llena solo. 100% offline, sin cuenta, sin anuncios.">
+<meta name="twitter:image" content="https://sgermosen.com/assets/img/miapunte-feature.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "name": "Mi Apunte",
+      "url": "https://sgermosen.com/miapunte/",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "Android 8.0+",
+      "description": "App de productividad personal que junta notas, finanzas y recordatorios. Ocho tipos de apunte (simple, rápido, lista, estructurado, diario, reunión, idea, receta), organización por carpetas y temas, protección con contraseña por nota, conversión de notas a imágenes, exportación a PDF, registro de ingresos y gastos, presupuestos, facturas, escaneo de recibos con reconocimiento de texto en el dispositivo, y recordatorios con calendario. Funciona 100% sin internet y no recopila datos.",
+      "inLanguage": ["es", "en", "fr"],
+      "author": { "@type": "Person", "name": "Starling Germosen", "url": "https://sgermosen.com/" },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "featureList": "Ocho tipos de apunte con formulario propio, carpetas y temas, protección con contraseña por nota, notas a imagen para compartir, exportación a PDF, plantillas, ingresos y gastos, presupuestos por categoría, facturas, escaneo de recibos con OCR en el dispositivo, recordatorios y calendario, reportes, respaldo exportable, 3 idiomas, modo claro y oscuro, 100% offline",
+      "privacyPolicy": "https://sgermosen.com/miapunte/privacidad/",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Mi Apunte necesita internet?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. La app funciona 100% sin conexión. Todo se guarda en una base de datos local en tu teléfono. No hay servidores, no hay cuenta que crear y no hay nada que sincronizar." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Mis notas y mis gastos se suben a algún lado?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Mi Apunte no recopila, almacena ni comparte ningún dato personal. Ni siquiera la foto del recibo: el reconocimiento de texto ocurre dentro del teléfono y la imagen nunca se envía a ningún servidor." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo funciona el escaneo de recibos?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Le tomas una foto al recibo y la app lee el nombre del comercio, el monto total y la fecha, y llena el gasto por ti. Usa reconocimiento de texto en el dispositivo (Google ML Kit), así que funciona sin internet y la foto no sale de tu teléfono." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Tiene anuncios o suscripción?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No tiene ninguno de los dos. Mi Apunte es gratis, no incluye anuncios, no tiene compras dentro de la app y no requiere suscripción." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo proteger una nota con contraseña?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí. Cada apunte puede protegerse individualmente con contraseña. Los apuntes protegidos no muestran su contenido en las listas ni en la pantalla de inicio, y piden la contraseña para abrirse." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Pierdo mis datos si actualizo la app?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Al actualizar se conserva toda tu información. Además, en Ajustes puedes exportar un respaldo completo de tu base de datos cuando quieras." }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Starling Germosen", "item": "https://sgermosen.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Mi Apunte", "item": "https://sgermosen.com/miapunte/" }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#0b1523; --bg2:#0f1d30; --card:#152840; --line:#22405f;
+  --txt:#e9f2fa; --mut:#a3bacf; --dim:#6d8aa5;
+  --acc:#4FC3F7; --gold:#FF8F00; --green:#00C853; --red:#FF5252;
+  --grad:linear-gradient(100deg,#4FC3F7,#00C853);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:'Inter',system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+a{color:var(--acc);text-decoration:none}
+img{max-width:100%;height:auto}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:#0b1523cc;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1080px;margin:0 auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.06rem;color:var(--txt)}
+.brand img{width:30px;height:30px;border-radius:8px}
+.brand span{color:var(--acc)}
+.nav-r{display:flex;gap:18px;align-items:center}
+.nav-r a{color:var(--mut);font-size:.9rem;font-weight:600}
+.nav-r a:hover{color:var(--txt)}
+.lang{border:1px solid var(--line);border-radius:99px;padding:5px 13px;font-size:.8rem!important;font-weight:800!important;color:var(--txt)!important}
+.nav-cta{background:var(--grad);color:#0b1523!important;font-weight:800;padding:8px 18px;border-radius:99px}
+@media(max-width:820px){.nav-r a:not(.lang):not(.nav-cta){display:none}}
+.hero{position:relative;padding:140px 0 70px;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-320px;left:50%;transform:translateX(-50%);width:960px;height:720px;border-radius:50%;background:radial-gradient(circle,#4FC3F726,transparent 65%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:50px;align-items:center;position:relative;z-index:1}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
+.pill{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;border-radius:99px;padding:6px 14px;background:#4FC3F722;color:var(--acc);border:1px solid #4FC3F755;margin-bottom:20px}
+h1{font-size:clamp(2.1rem,5vw,3.35rem);font-weight:900;letter-spacing:-.03em;line-height:1.1;margin-bottom:18px}
+h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{color:var(--mut);font-size:1.07rem;max-width:56ch;margin-bottom:28px}
+.hero-shot{display:flex;justify-content:center}
+.hero-shot img{max-width:300px;filter:drop-shadow(0 30px 60px #000c)}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:13px;font-weight:800;font-size:.97rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-p{background:var(--grad);color:#0b1523;box-shadow:0 10px 30px #4FC3F733}
+.btn-o{border:1px solid var(--line);color:var(--txt);background:var(--card)}
+.btns{display:flex;gap:13px;flex-wrap:wrap}
+.trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:24px;font-size:.85rem;color:var(--dim);font-weight:600}
+.trust b{color:var(--green)}
+.statband{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2)}
+.stat-in{max-width:1080px;margin:0 auto;padding:30px 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
+@media(max-width:760px){.stat-in{grid-template-columns:repeat(2,1fr)}}
+.stat b{display:block;font-size:1.75rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{color:var(--mut);font-size:.84rem;font-weight:600}
+section{padding:80px 0}
+.tag{color:var(--gold);font-weight:800;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase}
+h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:900;letter-spacing:-.025em;margin:10px 0 14px}
+.sub2{color:var(--mut);max-width:66ch;margin-bottom:40px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:900px){.grid3{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.grid3{grid-template-columns:1fr}}
+.fcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
+.fcard .ic{font-size:1.7rem}
+.fcard h3{font-size:1.05rem;font-weight:800;margin:12px 0 6px}
+.fcard p{color:var(--mut);font-size:.9rem}
+.dark-band{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.hero-feat{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+@media(max-width:860px){.hero-feat{grid-template-columns:1fr}}
+.hero-feat img{max-width:300px;margin:0 auto;display:block;filter:drop-shadow(0 22px 48px #000a)}
+.chk{list-style:none;margin-top:20px}
+.chk li{color:var(--mut);font-size:.94rem;padding:7px 0 7px 30px;position:relative}
+.chk li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:900}
+.chk li b{color:var(--txt)}
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:900px){.shots{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.shots{grid-template-columns:1fr}}
+.shots figure{margin:0}
+.shots img{filter:drop-shadow(0 16px 34px #00000077);transition:transform .2s}
+.shots figure:hover img{transform:translateY(-6px)}
+.shots figcaption{color:var(--dim);font-size:.8rem;font-weight:600;text-align:center;margin-top:10px}
+.privacy-box{background:linear-gradient(160deg,#152840,#0f1d30);border:1px solid var(--line);border-radius:22px;padding:44px;text-align:center;max-width:820px;margin:0 auto}
+.privacy-box .lock{font-size:2.6rem}
+.privacy-box h2{margin-top:8px}
+.privacy-box p{color:var(--mut);max-width:60ch;margin:0 auto 22px}
+.dl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:900px;margin:0 auto}
+@media(max-width:800px){.dl-grid{grid-template-columns:1fr}}
+.dl{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 24px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px}
+.dl.live{border-color:#00C85366;box-shadow:0 0 0 1px #00C85322,0 14px 40px #00c85315}
+.dl .ic{font-size:2.1rem}
+.dl h3{font-size:1.05rem;font-weight:800;margin-top:6px}
+.dl p{color:var(--mut);font-size:.85rem;margin-bottom:14px}
+.dl .btn{width:100%;justify-content:center;padding:12px 18px;font-size:.9rem}
+.soon{background:#ffffff0a;border:1px dashed var(--line);color:var(--dim)!important;cursor:default}
+.soon:hover{transform:none}
+.badge-soon{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);background:#FF8F0018;border:1px solid #FF8F0044;border-radius:99px;padding:3px 10px}
+.badge-live{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--green);background:#00C85318;border:1px solid #00C85344;border-radius:99px;padding:3px 10px}
+.apk-note{max-width:900px;margin:26px auto 0;background:#FF8F000d;border:1px solid #FF8F0033;border-radius:14px;padding:16px 20px;color:var(--mut);font-size:.86rem}
+.apk-note b{color:var(--txt)}
+.faq{max-width:820px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin-bottom:12px}
+.faq summary{font-weight:800;cursor:pointer;font-size:1rem}
+.faq p{color:var(--mut);margin-top:12px;font-size:.93rem}
+.cta-final{text-align:center;padding:90px 0}
+.cta-final p{color:var(--mut);margin-bottom:30px}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-size:.85rem}
+.foot-in{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.foot-in a{color:var(--mut)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="/miapunte/"><img src="/assets/img/miapunte-icon.png" alt="">Mi <span>Apunte</span></a>
+    <div class="nav-r">
+      <a href="#funciones">Funciones</a>
+      <a href="#privacidad">Privacidad</a>
+      <a href="#faq">FAQ</a>
+      <a href="/miapunte/soporte/">Soporte</a>
+      <a class="lang" href="/miapunte/en/">EN</a>
+      <a class="nav-cta" href="#descargar">Descargar</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill">📓 Android · Gratis · Sin internet</span>
+      <h1>Tus notas y tus gastos, <span>en un solo lugar.</span></h1>
+      <p class="sub">Mi Apunte junta lo que hoy tienes regado en cinco apps: apuntes, control de gastos y recordatorios. <b style="color:var(--txt)">Le tomas una foto a un recibo y el gasto se llena solo.</b> Todo funciona sin conexión, y nada de lo que escribes sale de tu teléfono.</p>
+      <div class="btns">
+        <a class="btn btn-p" href="#descargar">⬇ Descargar APK</a>
+        <a class="btn btn-o" href="#funciones">Ver qué hace</a>
+      </div>
+      <div class="trust">
+        <span><b>✓</b> Sin cuenta</span>
+        <span><b>✓</b> Sin anuncios</span>
+        <span><b>✓</b> Sin suscripción</span>
+        <span><b>✓</b> Sin recopilar datos</span>
+      </div>
+    </div>
+    <div class="hero-shot"><img src="/assets/img/miapunte/01-dashboard.png" alt="Pantalla de inicio de Mi Apunte con contadores de carpetas, apuntes y resumen de finanzas" width="800" height="1560"></div>
+  </div>
+</header>
+
+<div class="statband">
+  <div class="stat-in">
+    <div class="stat"><b>8</b><span>tipos de apunte</span></div>
+    <div class="stat"><b>100%</b><span>sin conexión</span></div>
+    <div class="stat"><b>0</b><span>anuncios y rastreadores</span></div>
+    <div class="stat"><b>3</b><span>idiomas</span></div>
+  </div>
+</div>
+
+<section id="funciones">
+  <div class="wrap">
+    <span class="tag">Qué hace</span>
+    <h2>Una app en vez de cinco.</h2>
+    <p class="sub2">Cada función existe porque hacía falta de verdad — no para llenar una lista.</p>
+    <div class="grid3">
+      <div class="fcard"><span class="ic">📸</span><h3>Escanea el recibo</h3><p>Foto al recibo y la app saca el comercio, el monto y la fecha, y llena el gasto por ti. Lee el texto <b style="color:var(--txt)">dentro del teléfono</b>: sin internet, y la foto no se va a ningún servidor.</p></div>
+      <div class="fcard"><span class="ic">📝</span><h3>El apunte toma la forma que necesitas</h3><p>Ocho tipos, y cada uno cambia el formulario: lista de tareas, receta con ingredientes y pasos, minuta con asistentes, diario con ánimo, documento por secciones, o simplemente texto libre.</p></div>
+      <div class="fcard"><span class="ic">🖼️</span><h3>Convierte notas en imágenes</h3><p>Una nota larga se parte en varias imágenes listas para publicar en historias o mandar por WhatsApp. Eliges colores, tipografía y formato.</p></div>
+      <div class="fcard"><span class="ic">💵</span><h3>Ingresos, gastos y presupuestos</h3><p>Registra lo que entra y lo que sale, ponle un presupuesto mensual a cada categoría y mira en qué se te está yendo el dinero.</p></div>
+      <div class="fcard"><span class="ic">🔒</span><h3>Notas con candado</h3><p>Protege un apunte con contraseña. Los protegidos no enseñan su contenido ni en las listas ni en la pantalla de inicio — piden la clave para abrirse.</p></div>
+      <div class="fcard"><span class="ic">🔔</span><h3>Recordatorios y calendario</h3><p>Programa un recordatorio y suena a la hora exacta, aunque reinicies el teléfono. Con vista de calendario para ver el mes completo.</p></div>
+      <div class="fcard"><span class="ic">📂</span><h3>Carpetas, temas y sub-temas</h3><p>Tres niveles de organización para que a los seis meses todavía encuentres esa nota. Con búsqueda, favoritos y fijados.</p></div>
+      <div class="fcard"><span class="ic">📄</span><h3>PDF y facturas</h3><p>Exporta cualquier apunte a PDF con un toque. Y si facturas, arma facturas y cotizaciones con sus renglones y su numeración.</p></div>
+      <div class="fcard"><span class="ic">💾</span><h3>Tu respaldo es tuyo</h3><p>Exporta la base de datos completa cuando quieras y guárdala donde tú decidas. Sin nube de por medio, sin depender de nadie.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark-band">
+  <div class="wrap hero-feat">
+    <div>
+      <span class="tag">La función estrella</span>
+      <h2>El recibo se anota solo.</h2>
+      <p class="sub2" style="margin-bottom:0">Anotar gastos a mano es justo lo que hace que la gente abandone las apps de finanzas a la segunda semana. Así que Mi Apunte lo hace por ti: le tomas una foto al recibo y listo.</p>
+      <ul class="chk">
+        <li>Reconoce el <b>nombre del comercio</b> y lo pone en la descripción</li>
+        <li>Encuentra el <b>total real</b> — ignora el subtotal, el ITBIS y la propina</li>
+        <li>Saca la <b>fecha</b> del recibo, no la de hoy</li>
+        <li>Funciona <b>sin internet</b>, con reconocimiento de texto en el dispositivo</li>
+        <li>La foto <b>nunca sale de tu teléfono</b></li>
+      </ul>
+    </div>
+    <div><img src="/assets/img/miapunte/09-recibos.png" alt="Mi Apunte escaneando un recibo y llenando la descripción, el monto y la fecha automáticamente" loading="lazy" width="800" height="1560"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="tag">La app real</span>
+    <h2 style="text-align:center">Así se ve Mi Apunte.</h2>
+    <div class="shots" style="margin-top:40px">
+      <figure><img src="/assets/img/miapunte/02-apuntes.png" alt="Lista de apuntes en Mi Apunte" loading="lazy"><figcaption>Tus apuntes</figcaption></figure>
+      <figure><img src="/assets/img/miapunte/07-finanzas.png" alt="Pantalla de finanzas de Mi Apunte con ingresos y gastos diferenciados" loading="lazy"><figcaption>Finanzas</figcaption></figure>
+      <figure><img src="/assets/img/miapunte/04-imagen.png" alt="Conversión de una nota a imagen en Mi Apunte" loading="lazy"><figcaption>Nota a imagen</figcaption></figure>
+      <figure><img src="/assets/img/miapunte/05-recordatorios.png" alt="Recordatorios en Mi Apunte" loading="lazy"><figcaption>Recordatorios</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="privacidad" class="dark-band">
+  <div class="wrap">
+    <div class="privacy-box">
+      <div class="lock">🔐</div>
+      <h2>Tus datos no son el producto.</h2>
+      <p>Mi Apunte <b style="color:var(--txt)">no recopila, no almacena y no comparte</b> ningún dato personal. No hay cuenta que crear, no hay servidores, no hay analítica y no hay rastreadores. Todo lo que escribes vive en una base de datos local dentro de tu teléfono — y si desinstalas la app, se va contigo.</p>
+      <p style="font-size:.9rem">Ni siquiera la foto del recibo: el texto se reconoce dentro del dispositivo y la imagen nunca se envía a ningún lado.</p>
+      <a class="btn btn-o" href="/miapunte/privacidad/">Leer la política de privacidad</a>
+    </div>
+  </div>
+</section>
+
+<section id="descargar">
+  <div class="wrap">
+    <span class="tag">Descargar</span>
+    <h2 style="text-align:center;margin-bottom:8px">Consíguela.</h2>
+    <p class="sub2" style="text-align:center;margin:0 auto 40px">Gratis, para siempre. Android 8.0 o superior.</p>
+    <div class="dl-grid">
+      <div class="dl live">
+        <span class="badge-live">● Disponible ya</span>
+        <span class="ic">🤖</span>
+        <h3>APK directo</h3>
+        <p>Instálala hoy mismo, sin esperar a las tiendas.</p>
+        <a class="btn btn-p" href="/miapunte/download/MiApunte-1.0.0.apk" download>⬇ Descargar APK</a>
+      </div>
+      <div class="dl">
+        <span class="badge-soon">Próximamente</span>
+        <span class="ic">▶️</span>
+        <h3>Google Play</h3>
+        <p>En proceso de publicación en la Play Store.</p>
+        <span class="btn soon">Próximamente</span>
+      </div>
+      <div class="dl">
+        <span class="badge-soon">Próximamente</span>
+        <span class="ic">🍎</span>
+        <h3>App Store</h3>
+        <p>La versión para iPhone y iPad está en camino.</p>
+        <span class="btn soon">Próximamente</span>
+      </div>
+    </div>
+    <div class="apk-note">
+      <b>¿Cómo instalo un APK?</b> Descarga el archivo, ábrelo y Android te va a pedir permiso para
+      "instalar apps desconocidas" — se lo das a tu navegador o gestor de archivos, y ya. Es normal:
+      es el mismo mecanismo que usan las apps que aún no están en la tienda.
+      <b>Tus datos no se pierden al actualizar:</b> instala la versión nueva encima de la vieja y todo sigue ahí.
+      Aun así, en Ajustes → Exportar respaldo puedes guardarte una copia antes de cada actualización.
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="dark-band">
+  <div class="wrap">
+    <span class="tag">Preguntas frecuentes</span>
+    <h2>Lo que todo el mundo pregunta.</h2>
+    <div class="faq">
+      <details open>
+        <summary>¿Necesita internet?</summary>
+        <p>No. Mi Apunte funciona 100% sin conexión. No hay cuenta que crear, no hay nada que sincronizar y no hay servidores de por medio. Puedes usarla en un avión o en el campo sin señal y funciona igual.</p>
+      </details>
+      <details>
+        <summary>¿Mis notas y mis gastos se suben a algún lado?</summary>
+        <p>No. La app no recopila, no almacena y no comparte ningún dato personal. Ni siquiera la foto del recibo: el reconocimiento de texto ocurre dentro del teléfono y la imagen nunca se envía a ningún servidor. Está todo detallado en la <a href="/miapunte/privacidad/">política de privacidad</a>.</p>
+      </details>
+      <details>
+        <summary>¿Tiene anuncios, compras o suscripción?</summary>
+        <p>Ninguna de las tres. Mi Apunte es gratis, no tiene anuncios, no tiene compras dentro de la app y no hay suscripción. Tampoco incluye SDKs de publicidad ni de analítica.</p>
+      </details>
+      <details>
+        <summary>¿Cómo funciona el escaneo de recibos?</summary>
+        <p>Le tomas una foto al recibo (o eliges una de la galería) y la app lee el nombre del comercio, el monto total y la fecha, y llena el gasto por ti. Usa reconocimiento de texto en el dispositivo, así que funciona sin internet. Siempre puedes corregir cualquier campo antes de guardar. Esta función es por ahora solo para Android.</p>
+      </details>
+      <details>
+        <summary>¿Puedo proteger una nota con contraseña?</summary>
+        <p>Sí, cada apunte por separado. Un apunte protegido no muestra su contenido en las listas ni en la pantalla de inicio, y pide la contraseña para abrirse. Es opcional: solo lo usas en las notas que de verdad lo necesiten.</p>
+      </details>
+      <details>
+        <summary>¿Pierdo mis datos si actualizo?</summary>
+        <p>No. Al instalar una versión nueva encima de la anterior se conserva todo: apuntes, finanzas, recordatorios y ajustes. Lo que sí borra tus datos es <b>desinstalar</b> la app. Por eso en Ajustes tienes "Exportar respaldo", que te guarda una copia completa de la base de datos donde tú quieras.</p>
+      </details>
+      <details>
+        <summary>¿Y la versión para iPhone?</summary>
+        <p>Está en camino. La app está construida con .NET MAUI, que compila para iOS, así que es cuestión de tiempo y de publicación — no de reescribirla.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="cta-final">
+  <div class="wrap">
+    <h2>Deja de anotar en el chat contigo mismo. <span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent">Apúntalo bien.</span></h2>
+    <p>Gratis, sin cuenta, sin anuncios. Android 8.0 o superior.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-p" href="#descargar">⬇ Descargar Mi Apunte</a>
+      <a class="btn btn-o" href="/miapunte/soporte/">¿Necesitas ayuda?</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-in">
+    <span>Mi Apunte © <span id="y"></span> · Una app de <a href="/">Starling Germosen</a></span>
+    <span>
+      <a href="/miapunte/privacidad/">Privacidad</a> ·
+      <a href="/miapunte/soporte/">Soporte</a> ·
+      <a href="/miapunte/en/">English</a> ·
+      <a href="/">Portafolio</a>
+    </span>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

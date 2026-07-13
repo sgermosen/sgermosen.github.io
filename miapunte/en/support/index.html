@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support &amp; help — Mi Apunte</title>
+<meta name="description" content="Mi Apunte help: how to install the APK, how to back up and restore your data, what to do if a reminder doesn't fire or receipt scanning misreads. Direct contact with the developer.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://sgermosen.com/miapunte/en/support/">
+<link rel="alternate" hreflang="es" href="https://sgermosen.com/miapunte/soporte/">
+<link rel="alternate" hreflang="en" href="https://sgermosen.com/miapunte/en/support/">
+<link rel="alternate" hreflang="x-default" href="https://sgermosen.com/miapunte/soporte/">
+<link rel="icon" type="image/png" href="/assets/img/miapunte-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sgermosen.com/miapunte/en/support/">
+<meta property="og:title" content="Support & help — Mi Apunte">
+<meta property="og:description" content="Quick guides and direct contact with the developer of Mi Apunte.">
+<meta property="og:image" content="https://sgermosen.com/assets/img/miapunte-feature.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I install the Mi Apunte APK?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Download the APK file, open it from your downloads, and Android will ask for permission to install apps from unknown sources: grant it to your browser or file manager and continue. It is the same mechanism used by any app that is not on the store yet." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I back up my data in Mi Apunte?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Go to Settings and tap Export Backup. The app produces a complete copy of your database and lets you save or share it wherever you like. Do it before every update." }
+    },
+    {
+      "@type": "Question",
+      "name": "My reminder did not fire, what should I do?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It is almost always Android battery optimisation suspending the app. Go to Android Settings, find Mi Apunte, open Battery and choose Unrestricted. Also check that the notifications permission is granted." }
+    },
+    {
+      "@type": "Question",
+      "name": "Receipt scanning misread the data",
+      "acceptedAnswer": { "@type": "Answer", "text": "Take the photo in good light, with the receipt flat and fully in frame. If it still misreads, you can correct any field by hand before saving: scanning only pre-fills, it never decides for you." }
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#0b1523; --bg2:#0f1d30; --card:#152840; --line:#22405f;
+  --txt:#e9f2fa; --mut:#a3bacf; --dim:#6d8aa5;
+  --acc:#4FC3F7; --gold:#FF8F00; --green:#00C853;
+  --grad:linear-gradient(100deg,#4FC3F7,#00C853);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--txt);font-family:'Inter',system-ui,sans-serif;line-height:1.7}
+a{color:var(--acc);text-decoration:none}
+nav{position:sticky;top:0;z-index:50;background:#0b1523cc;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:880px;margin:0 auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.06rem;color:var(--txt)}
+.brand img{width:30px;height:30px;border-radius:8px}
+.brand span{color:var(--acc)}
+.nav-r{display:flex;gap:16px;align-items:center}
+.nav-r a{color:var(--mut);font-size:.9rem;font-weight:600}
+.lang{border:1px solid var(--line);border-radius:99px;padding:5px 13px;font-size:.8rem!important;font-weight:800!important;color:var(--txt)!important}
+.wrap{max-width:880px;margin:0 auto;padding:56px 24px 70px}
+h1{font-size:clamp(1.9rem,4.5vw,2.6rem);font-weight:900;letter-spacing:-.03em;line-height:1.15;margin-bottom:12px}
+h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--mut);max-width:60ch;margin-bottom:40px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:56px}
+@media(max-width:680px){.contact{grid-template-columns:1fr}}
+.cbox{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 26px}
+.cbox .ic{font-size:1.6rem}
+.cbox h3{font-size:1rem;font-weight:800;margin:10px 0 4px}
+.cbox p{color:var(--mut);font-size:.88rem;margin-bottom:10px}
+.cbox a{font-weight:700;font-size:.93rem}
+h2{font-size:1.35rem;font-weight:900;letter-spacing:-.02em;margin:0 0 18px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin-bottom:12px}
+.faq summary{font-weight:800;cursor:pointer;font-size:1rem}
+.faq p{color:var(--mut);margin-top:12px;font-size:.93rem}
+.faq p b{color:var(--txt)}
+.faq ol{margin:12px 0 0 20px;color:var(--mut);font-size:.93rem}
+.faq ol li{padding:4px 0}
+.faq ol li b{color:var(--txt)}
+.warn{background:#FF8F000d;border:1px solid #FF8F0033;border-radius:14px;padding:18px 22px;color:var(--mut);font-size:.9rem;margin:34px 0}
+.warn b{color:var(--txt)}
+.back{display:inline-flex;align-items:center;gap:8px;margin-top:40px;padding:12px 22px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--txt);font-weight:700;font-size:.92rem}
+.back:hover{border-color:var(--acc)}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--dim);font-size:.85rem}
+.foot-in{max-width:880px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.foot-in a{color:var(--mut)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="/miapunte/en/"><img src="/assets/img/miapunte-icon.png" alt="">Mi <span>Apunte</span></a>
+    <div class="nav-r">
+      <a href="/miapunte/en/privacy/">Privacy</a>
+      <a class="lang" href="/miapunte/soporte/">ES</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <h1>Support &amp; <span>help</span></h1>
+  <p class="lead">Mi Apunte is maintained by one person, so the inbox is read by a human — not a ticket queue. Write to me and you'll get an answer.</p>
+
+  <div class="contact">
+    <div class="cbox">
+      <span class="ic">✉️</span>
+      <h3>Get in touch</h3>
+      <p>Questions, bugs, suggestions, or a feature you wish existed.</p>
+      <a href="mailto:sgrysoft@gmail.com?subject=Mi%20Apunte%20—%20Support">sgrysoft@gmail.com</a>
+    </div>
+    <div class="cbox">
+      <span class="ic">🐞</span>
+      <h3>Found a bug?</h3>
+      <p>Tell me what you were doing, what you expected, and what actually happened. A screenshot and your phone model help a lot.</p>
+      <a href="mailto:sgrysoft@gmail.com?subject=Mi%20Apunte%20—%20Bug%20report">Report a bug</a>
+    </div>
+  </div>
+
+  <h2>Common questions</h2>
+  <div class="faq">
+    <details open>
+      <summary>How do I install the APK?</summary>
+      <ol>
+        <li>Download the file from the <a href="/miapunte/en/#download">download section</a>.</li>
+        <li>Open it from your downloads. Android will say it can't install apps from unknown sources.</li>
+        <li>Tap <b>Settings</b> on that prompt and enable the permission <b>for your browser or file manager</b>.</li>
+        <li>Go back and install. Done.</li>
+      </ol>
+      <p>This is completely normal: it's the same mechanism used by every app that isn't published on the store yet.</p>
+    </details>
+
+    <details>
+      <summary>How do I back up my data? (please do)</summary>
+      <p>Go to <b>Settings → Export Backup</b>. The app produces a complete copy of your database and lets you save or share it wherever you like: Drive, WhatsApp, email, a USB stick.</p>
+      <p><b>Do it before every update.</b> Updating doesn't erase anything, but a backup costs you ten seconds and covers you against any accident.</p>
+    </details>
+
+    <details>
+      <summary>Will I lose my data when the app updates?</summary>
+      <p>No. Installing a new version over the previous one keeps everything: notes, finances, reminders and settings.</p>
+      <p>What <b>does</b> wipe your data is <b>uninstalling</b> the app. If you ever need to uninstall, export a backup first.</p>
+    </details>
+
+    <details>
+      <summary>A reminder didn't fire</summary>
+      <p>It's almost always Android's <b>battery optimisation</b>, which suspends the app and stops it from waking up. The fix:</p>
+      <ol>
+        <li>Android Settings → Apps → <b>Mi Apunte</b>.</li>
+        <li>Open <b>Battery</b> and choose <b>Unrestricted</b>.</li>
+        <li>Check under <b>Notifications</b> that the permission is granted.</li>
+      </ol>
+      <p>On Xiaomi, Huawei and Samsung this setting tends to be more hidden and more aggressive — look for "autostart" or "protected apps".</p>
+    </details>
+
+    <details>
+      <summary>Receipt scanning misread the data</summary>
+      <p>It helps a lot to take the photo <b>in good light</b>, with the receipt <b>flat</b> (no creases or folds) and <b>fully in frame</b>, without cropping the total.</p>
+      <p>If it still misreads, <b>just correct the field by hand before saving</b>. Scanning only pre-fills for you — it never decides. Very blurry receipts, faded thermal paper or unusual typefaces can trip it up.</p>
+      <p>This feature is currently <b>Android-only</b>.</p>
+    </details>
+
+    <details>
+      <summary>How do I change the language?</summary>
+      <p>Under <b>Settings → Language</b>. Spanish, English and French are available, and the switch is immediate.</p>
+    </details>
+
+    <details>
+      <summary>I forgot the password to a protected note</summary>
+      <p>There's no way to recover it. The password is stored as a hash — not even I can read it, which is exactly what makes it safe.</p>
+      <p>If you lose a note's password, its content becomes inaccessible. That's why it's worth using protection only on the notes that genuinely need it.</p>
+    </details>
+
+    <details>
+      <summary>How do I delete all my data?</summary>
+      <p>Since Mi Apunte stores nothing on any server, there's nothing to request and nobody to request it from: you delete the data yourself and it's gone immediately and completely.</p>
+      <p>Android Settings → Apps → Mi Apunte → <b>Storage → Clear data</b>. Or simply uninstall the app.</p>
+    </details>
+  </div>
+
+  <div class="warn">
+    <b>About your privacy:</b> Mi Apunte collects none of your data, which means that when you email me
+    I <b>have no way to see your notes or your finances</b>. If you're reporting a bug, walk me through the
+    steps to reproduce it — and please don't send me your backup file unless I explicitly ask for it.
+    Details in the <a href="/miapunte/en/privacy/">privacy policy</a>.
+  </div>
+
+  <a class="back" href="/miapunte/en/">← Back to Mi Apunte</a>
+</div>
+
+<footer>
+  <div class="foot-in">
+    <span>Mi Apunte © <span id="y"></span> · An app by <a href="/">Starling Germosen</a></span>
+    <span><a href="/miapunte/en/">Home</a> · <a href="/miapunte/en/privacy/">Privacy</a> · <a href="/miapunte/soporte/">Español</a></span>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

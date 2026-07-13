@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soporte y ayuda — Mi Apunte</title>
+<meta name="description" content="Ayuda de Mi Apunte: cómo instalar el APK, cómo respaldar y restaurar tus datos, qué hacer si un recordatorio no suena o si el escaneo de recibos falla. Contacto directo con el desarrollador.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://sgermosen.com/miapunte/soporte/">
+<link rel="alternate" hreflang="es" href="https://sgermosen.com/miapunte/soporte/">
+<link rel="alternate" hreflang="en" href="https://sgermosen.com/miapunte/en/support/">
+<link rel="alternate" hreflang="x-default" href="https://sgermosen.com/miapunte/soporte/">
+<link rel="icon" type="image/png" href="/assets/img/miapunte-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sgermosen.com/miapunte/soporte/">
+<meta property="og:title" content="Soporte y ayuda — Mi Apunte">
+<meta property="og:description" content="Guías rápidas y contacto directo con el desarrollador de Mi Apunte.">
+<meta property="og:image" content="https://sgermosen.com/assets/img/miapunte-feature.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cómo instalo el APK de Mi Apunte?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Descarga el archivo APK, ábrelo desde tus descargas y Android te pedirá permiso para instalar apps de origen desconocido: concédeselo al navegador o al gestor de archivos y continúa. Es el mismo mecanismo que usa cualquier app que todavía no está en la tienda." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo respaldo mis datos en Mi Apunte?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ve a Ajustes y toca Exportar respaldo. La app genera una copia completa de tu base de datos y te deja guardarla o compartirla donde quieras. Hazlo antes de cada actualización." }
+    },
+    {
+      "@type": "Question",
+      "name": "Mi recordatorio no sonó, ¿qué hago?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Casi siempre es el ahorro de batería de Android, que suspende la app. Ve a Ajustes de Android, busca Mi Apunte, entra en Batería y elige Sin restricciones. Verifica también que el permiso de notificaciones esté concedido." }
+    },
+    {
+      "@type": "Question",
+      "name": "El escaneo del recibo no leyó bien los datos",
+      "acceptedAnswer": { "@type": "Answer", "text": "Toma la foto con buena luz, con el recibo plano y encuadrado completo. Si aun así falla, puedes corregir cualquier campo a mano antes de guardar: el escaneo solo rellena, nunca decide por ti." }
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#0b1523; --bg2:#0f1d30; --card:#152840; --line:#22405f;
+  --txt:#e9f2fa; --mut:#a3bacf; --dim:#6d8aa5;
+  --acc:#4FC3F7; --gold:#FF8F00; --green:#00C853;
+  --grad:linear-gradient(100deg,#4FC3F7,#00C853);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--txt);font-family:'Inter',system-ui,sans-serif;line-height:1.7}
+a{color:var(--acc);text-decoration:none}
+nav{position:sticky;top:0;z-index:50;background:#0b1523cc;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:880px;margin:0 auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.06rem;color:var(--txt)}
+.brand img{width:30px;height:30px;border-radius:8px}
+.brand span{color:var(--acc)}
+.nav-r{display:flex;gap:16px;align-items:center}
+.nav-r a{color:var(--mut);font-size:.9rem;font-weight:600}
+.lang{border:1px solid var(--line);border-radius:99px;padding:5px 13px;font-size:.8rem!important;font-weight:800!important;color:var(--txt)!important}
+.wrap{max-width:880px;margin:0 auto;padding:56px 24px 70px}
+h1{font-size:clamp(1.9rem,4.5vw,2.6rem);font-weight:900;letter-spacing:-.03em;line-height:1.15;margin-bottom:12px}
+h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--mut);max-width:60ch;margin-bottom:40px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:56px}
+@media(max-width:680px){.contact{grid-template-columns:1fr}}
+.cbox{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 26px}
+.cbox .ic{font-size:1.6rem}
+.cbox h3{font-size:1rem;font-weight:800;margin:10px 0 4px}
+.cbox p{color:var(--mut);font-size:.88rem;margin-bottom:10px}
+.cbox a{font-weight:700;font-size:.93rem}
+h2{font-size:1.35rem;font-weight:900;letter-spacing:-.02em;margin:0 0 18px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin-bottom:12px}
+.faq summary{font-weight:800;cursor:pointer;font-size:1rem}
+.faq p{color:var(--mut);margin-top:12px;font-size:.93rem}
+.faq p b{color:var(--txt)}
+.faq ol{margin:12px 0 0 20px;color:var(--mut);font-size:.93rem}
+.faq ol li{padding:4px 0}
+.faq ol li b{color:var(--txt)}
+.warn{background:#FF8F000d;border:1px solid #FF8F0033;border-radius:14px;padding:18px 22px;color:var(--mut);font-size:.9rem;margin:34px 0}
+.warn b{color:var(--txt)}
+.back{display:inline-flex;align-items:center;gap:8px;margin-top:40px;padding:12px 22px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--txt);font-weight:700;font-size:.92rem}
+.back:hover{border-color:var(--acc)}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--dim);font-size:.85rem}
+.foot-in{max-width:880px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.foot-in a{color:var(--mut)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="/miapunte/"><img src="/assets/img/miapunte-icon.png" alt="">Mi <span>Apunte</span></a>
+    <div class="nav-r">
+      <a href="/miapunte/privacidad/">Privacidad</a>
+      <a class="lang" href="/miapunte/en/support/">EN</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <h1>Soporte y <span>ayuda</span></h1>
+  <p class="lead">Mi Apunte la mantiene una sola persona, así que el correo lo lee un humano — no un ticket. Escríbeme y te respondo.</p>
+
+  <div class="contact">
+    <div class="cbox">
+      <span class="ic">✉️</span>
+      <h3>Escríbeme</h3>
+      <p>Dudas, fallos, sugerencias o una función que te haría falta.</p>
+      <a href="mailto:sgrysoft@gmail.com?subject=Mi%20Apunte%20—%20Soporte">sgrysoft@gmail.com</a>
+    </div>
+    <div class="cbox">
+      <span class="ic">🐞</span>
+      <h3>¿Encontraste un fallo?</h3>
+      <p>Cuéntame qué hacías, qué esperabas que pasara y qué pasó. Si puedes, adjunta una captura y dime tu modelo de teléfono.</p>
+      <a href="mailto:sgrysoft@gmail.com?subject=Mi%20Apunte%20—%20Reporte%20de%20fallo">Reportar un fallo</a>
+    </div>
+  </div>
+
+  <h2>Preguntas comunes</h2>
+  <div class="faq">
+    <details open>
+      <summary>¿Cómo instalo el APK?</summary>
+      <ol>
+        <li>Descarga el archivo desde la <a href="/miapunte/#descargar">página de descarga</a>.</li>
+        <li>Ábrelo desde tus descargas. Android te dirá que no puede instalar apps de origen desconocido.</li>
+        <li>Toca <b>Ajustes</b> en ese aviso y activa el permiso <b>para tu navegador o gestor de archivos</b>.</li>
+        <li>Vuelve atrás e instala. Listo.</li>
+      </ol>
+      <p>Es completamente normal: es el mismo mecanismo que usa cualquier app que todavía no está publicada en la tienda.</p>
+    </details>
+
+    <details>
+      <summary>¿Cómo respaldo mis datos? (hazlo)</summary>
+      <p>Ve a <b>Ajustes → Exportar respaldo</b>. La app genera una copia completa de tu base de datos y te deja guardarla o compartirla donde quieras: Drive, WhatsApp, tu correo, una memoria.</p>
+      <p><b>Hazlo antes de cada actualización.</b> Actualizar no borra nada, pero un respaldo cuesta diez segundos y te cubre de cualquier accidente.</p>
+    </details>
+
+    <details>
+      <summary>¿Pierdo mis datos al actualizar la app?</summary>
+      <p>No. Al instalar una versión nueva encima de la anterior se conserva todo: apuntes, finanzas, recordatorios y ajustes.</p>
+      <p>Lo que <b>sí</b> borra tus datos es <b>desinstalar</b> la app. Si necesitas desinstalarla por alguna razón, exporta primero un respaldo.</p>
+    </details>
+
+    <details>
+      <summary>Un recordatorio no sonó</summary>
+      <p>Casi siempre es el <b>ahorro de batería</b> de Android, que suspende la app y le impide despertar. La solución:</p>
+      <ol>
+        <li>Ajustes de Android → Aplicaciones → <b>Mi Apunte</b>.</li>
+        <li>Entra en <b>Batería</b> y elige <b>Sin restricciones</b>.</li>
+        <li>Verifica en <b>Notificaciones</b> que el permiso esté concedido.</li>
+      </ol>
+      <p>En Xiaomi, Huawei y Samsung esta configuración suele estar más escondida y ser más agresiva — busca "inicio automático" o "apps protegidas".</p>
+    </details>
+
+    <details>
+      <summary>El escaneo del recibo no leyó bien los datos</summary>
+      <p>Ayuda mucho tomar la foto <b>con buena luz</b>, con el recibo <b>plano</b> (sin arrugas ni dobleces) y <b>encuadrado completo</b>, sin cortar el total.</p>
+      <p>Si aun así falla, <b>corrige el campo a mano antes de guardar</b>. El escaneo solo rellena por ti — nunca decide. Recibos muy borrosos, térmicos ya desvanecidos o con tipografías raras pueden costarle.</p>
+      <p>Esta función es por ahora <b>solo para Android</b>.</p>
+    </details>
+
+    <details>
+      <summary>¿Cómo cambio el idioma?</summary>
+      <p>En <b>Ajustes → Idioma</b>. Están disponibles español, inglés y francés, y el cambio es inmediato.</p>
+    </details>
+
+    <details>
+      <summary>Olvidé la contraseña de un apunte protegido</summary>
+      <p>No hay forma de recuperarla. La contraseña se guarda como un hash — ni siquiera yo puedo leerla, que es justo lo que la hace segura.</p>
+      <p>Si perdiste la contraseña de una nota, su contenido queda inaccesible. Por eso conviene usar la protección solo en las notas que de verdad lo necesiten.</p>
+    </details>
+
+    <details>
+      <summary>¿Cómo borro todos mis datos?</summary>
+      <p>Como Mi Apunte no guarda nada en ningún servidor, no hay nada que solicitar ni a quién pedírselo: borras los datos tú mismo y desaparecen de inmediato y por completo.</p>
+      <p>Ajustes de Android → Aplicaciones → Mi Apunte → <b>Almacenamiento → Borrar datos</b>. O simplemente desinstala la app.</p>
+    </details>
+  </div>
+
+  <div class="warn">
+    <b>Sobre tu privacidad:</b> Mi Apunte no recolecta ningún dato tuyo, así que cuando me escribas
+    yo <b>no tengo forma de ver tus notas ni tus finanzas</b>. Si me reportas un fallo, cuéntame los pasos
+    para reproducirlo — y por favor no me mandes tu respaldo salvo que yo te lo pida expresamente.
+    Detalles en la <a href="/miapunte/privacidad/">política de privacidad</a>.
+  </div>
+
+  <a class="back" href="/miapunte/">← Volver a Mi Apunte</a>
+</div>
+
+<footer>
+  <div class="foot-in">
+    <span>Mi Apunte © <span id="y"></span> · Una app de <a href="/">Starling Germosen</a></span>
+    <span><a href="/miapunte/">Inicio</a> · <a href="/miapunte/privacidad/">Privacidad</a> · <a href="/miapunte/en/support/">English</a></span>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
