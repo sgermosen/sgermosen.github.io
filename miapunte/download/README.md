@@ -1,40 +1,40 @@
-# Aquí va el APK de Mi Apunte
+# El APK de Mi Apunte ahora se publica por GitHub Releases
 
-Los botones "Descargar APK" de `/miapunte/` y `/miapunte/en/` apuntan a:
+Los botones "Descargar APK" de `/miapunte/` y `/miapunte/en/` apuntan a la URL estable:
 
 ```
-/miapunte/download/MiApunte-1.0.0.apk
+https://github.com/sgermosen/sgermosen.github.io/releases/latest/download/MiApunte.apk
 ```
 
-**Hasta que subas el archivo con ese nombre exacto, ese botón da 404.**
+**Ya no se sube ningún APK a esta carpeta.** Cada release nuevo actualiza la descarga sin
+tocar el HTML.
 
-## Cómo publicar una versión
+## Cómo publicar una versión (automático)
 
-1. Compila el release firmado:
-   ```powershell
-   $env:MIAPUNTE_KEYSTORE_PASS = "tu-password"
-   .\build-release.ps1
-   ```
-2. Copia `com.miapunte.app-Signed.apk` a esta carpeta y renómbralo a `MiApunte-1.0.0.apk`.
-3. Commit y push. GitHub Pages lo sirve directo — no hace falta nada más.
+El pipeline vive en el repo privado `sgermosen/TextToImage`
+(`.github/workflows/release-apk.yml`):
 
-## Al sacar una versión nueva
+1. En `MiApunte.csproj`, sube `<ApplicationVersion>` (versionCode) y
+   `<ApplicationDisplayVersion>`. **Si no subes el versionCode, Android rechaza la
+   actualización.**
+2. Commit + push.
+3. Taggea: `git tag v1.0.1 && git push origin v1.0.1`
 
-Sube el `versionCode` (`<ApplicationVersion>` en `MiApunte.csproj`) **y firma con el mismo
-keystore de siempre**. Si la firma cambia, Android rechaza la instalación y tu usuaria
-tendría que desinstalar — lo que le borraría todos sus datos.
+El workflow compila el APK firmado y crea el release `miapunte-v1.0.1` **en este repo** con
+el asset `MiApunte.apk`. El `.aab` (para Play Console) queda como artifact privado del run.
 
-Luego, o bien:
+## Reglas que no cambian
 
-- **Reemplazas el archivo** manteniendo el nombre `MiApunte-1.0.0.apk` (los links siguen
-  funcionando solos, pero el nombre queda mintiendo), **o**
-- **Subes `MiApunte-1.1.0.apk`** y actualizas el `href` en los dos `index.html`
-  (`/miapunte/index.html` y `/miapunte/en/index.html`) — es una línea en cada uno.
+- **Firma siempre con el mismo keystore** (`C:\dev\keys\miapunte.keystore`, respaldado en 2+
+  lugares). Si la firma cambia, Android rechaza la instalación y desinstalar borra los datos.
+- Los releases de este repo son **solo de Mi Apunte**: la URL `releases/latest` es del repo
+  entero, y un release de otro producto rompería el botón de descarga.
 
-La segunda opción es la buena: deja el historial de versiones disponible y el nombre no miente.
+## Publicación manual (fallback sin pipeline)
 
-## Límites
-
-GitHub tiene un tope de **100 MB por archivo**. El APK ronda los 43 MB, así que entra sin
-problema. El `.aab` (para Play Store) **no** va aquí: ese se sube a Play Console y no sirve
-para instalación directa.
+```powershell
+$env:MIAPUNTE_KEYSTORE_PASS = "tu-password"
+.\build-release.ps1   # en C:\dev\TextToImage
+Copy-Item src\MiApunte\bin\Release\net10.0-android\publish\com.miapunte.app-Signed.apk MiApunte.apk
+gh release create miapunte-v1.0.1 MiApunte.apk --repo sgermosen/sgermosen.github.io --title "Mi Apunte 1.0.1" --latest
+```

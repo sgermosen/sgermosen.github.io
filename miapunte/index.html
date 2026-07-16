@@ -39,6 +39,7 @@
       "url": "https://sgermosen.com/miapunte/",
       "applicationCategory": "ProductivityApplication",
       "operatingSystem": "Android 8.0+",
+      "downloadUrl": "https://github.com/sgermosen/sgermosen.github.io/releases/latest/download/MiApunte.apk",
       "description": "App de productividad personal que junta notas, finanzas y recordatorios. Ocho tipos de apunte (simple, rápido, lista, estructurado, diario, reunión, idea, receta), organización por carpetas y temas, protección con contraseña por nota, conversión de notas a imágenes, exportación a PDF, registro de ingresos y gastos, presupuestos, facturas, escaneo de recibos con reconocimiento de texto en el dispositivo, y recordatorios con calendario. Funciona 100% sin internet y no recopila datos.",
       "inLanguage": ["es", "en", "fr"],
       "author": { "@type": "Person", "name": "Starling Germosen", "url": "https://sgermosen.com/" },
@@ -95,14 +96,17 @@
 <style>
 :root{
   --bg:#0b1523; --bg2:#0f1d30; --card:#152840; --line:#22405f;
-  --txt:#e9f2fa; --mut:#a3bacf; --dim:#6d8aa5;
+  --txt:#e9f2fa; --mut:#a3bacf; --dim:#7c99b6;
   --acc:#4FC3F7; --gold:#FF8F00; --green:#00C853; --red:#FF5252;
   --grad:linear-gradient(100deg,#4FC3F7,#00C853);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--txt);font-family:'Inter',system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+::selection{background:#4FC3F744}
 a{color:var(--acc);text-decoration:none}
+:where(a,button,summary):focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:6px}
+[id]{scroll-margin-top:84px}
 img{max-width:100%;height:auto}
 .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
 nav{position:fixed;top:0;left:0;right:0;z-index:50;background:#0b1523cc;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
@@ -111,27 +115,37 @@ nav{position:fixed;top:0;left:0;right:0;z-index:50;background:#0b1523cc;backdrop
 .brand img{width:30px;height:30px;border-radius:8px}
 .brand span{color:var(--acc)}
 .nav-r{display:flex;gap:18px;align-items:center}
-.nav-r a{color:var(--mut);font-size:.9rem;font-weight:600}
+.nav-r a{color:var(--mut);font-size:.9rem;font-weight:600;transition:color .2s}
 .nav-r a:hover{color:var(--txt)}
-.lang{border:1px solid var(--line);border-radius:99px;padding:5px 13px;font-size:.8rem!important;font-weight:800!important;color:var(--txt)!important}
-.nav-cta{background:var(--grad);color:#0b1523!important;font-weight:800;padding:8px 18px;border-radius:99px}
+.lang{border:1px solid var(--line);border-radius:99px;padding:5px 13px;font-size:.8rem!important;font-weight:800!important;color:var(--txt)!important;transition:border-color .2s}
+.lang:hover{border-color:var(--acc)}
+.nav-cta{background:var(--grad);color:#0b1523!important;font-weight:800;padding:8px 18px;border-radius:99px;transition:filter .2s}
+.nav-cta:hover{filter:brightness(1.12)}
 @media(max-width:820px){.nav-r a:not(.lang):not(.nav-cta){display:none}}
 .hero{position:relative;padding:140px 0 70px;overflow:hidden}
 .hero::before{content:"";position:absolute;top:-320px;left:50%;transform:translateX(-50%);width:960px;height:720px;border-radius:50%;background:radial-gradient(circle,#4FC3F726,transparent 65%);pointer-events:none}
+.hero::after{content:"";position:absolute;bottom:-340px;left:-280px;width:720px;height:720px;border-radius:50%;background:radial-gradient(circle,#00C8531d,transparent 65%);pointer-events:none}
 .hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:50px;align-items:center;position:relative;z-index:1}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
 .pill{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;border-radius:99px;padding:6px 14px;background:#4FC3F722;color:var(--acc);border:1px solid #4FC3F755;margin-bottom:20px}
 h1{font-size:clamp(2.1rem,5vw,3.35rem);font-weight:900;letter-spacing:-.03em;line-height:1.1;margin-bottom:18px}
 h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero .sub{color:var(--mut);font-size:1.07rem;max-width:56ch;margin-bottom:28px}
-.hero-shot{display:flex;justify-content:center}
-.hero-shot img{max-width:300px;filter:drop-shadow(0 30px 60px #000c)}
-.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:13px;font-weight:800;font-size:.97rem;transition:transform .15s}
+.hero-shot{position:relative;display:flex;justify-content:center}
+.hero-shot::before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:330px;height:330px;border-radius:50%;background:var(--grad);opacity:.2;filter:blur(70px);pointer-events:none}
+.hero-shot img{position:relative;z-index:1;max-width:min(300px,72vw);filter:drop-shadow(0 30px 60px #000c)}
+.badge-float{position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);z-index:2;background:#0f1d30f2;border:1px solid var(--line);border-radius:12px;padding:8px 16px;font-size:.78rem;font-weight:700;white-space:nowrap;backdrop-filter:blur(8px)}
+.badge-float b{color:var(--green)}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:13px;font-weight:800;font-size:.97rem;transition:transform .15s,box-shadow .2s,border-color .2s}
 .btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
 .btn-p{background:var(--grad);color:#0b1523;box-shadow:0 10px 30px #4FC3F733}
+.btn-p:hover{box-shadow:0 14px 36px #4FC3F74d}
 .btn-o{border:1px solid var(--line);color:var(--txt);background:var(--card)}
+.btn-o:hover{border-color:#4FC3F766}
 .btns{display:flex;gap:13px;flex-wrap:wrap}
-.trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:24px;font-size:.85rem;color:var(--dim);font-weight:600}
+.trust{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;font-size:.84rem;color:var(--mut);font-weight:600}
+.trust span{display:inline-flex;align-items:center;gap:7px;background:#00C8530f;border:1px solid #00C85329;border-radius:99px;padding:5px 13px}
 .trust b{color:var(--green)}
 .statband{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2)}
 .stat-in{max-width:1080px;margin:0 auto;padding:30px 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
@@ -145,32 +159,35 @@ h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:900;letter-spacing:-.025em;m
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 @media(max-width:900px){.grid3{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.grid3{grid-template-columns:1fr}}
-.fcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
-.fcard .ic{font-size:1.7rem}
-.fcard h3{font-size:1.05rem;font-weight:800;margin:12px 0 6px}
+.fcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;transition:transform .2s,border-color .2s,box-shadow .2s}
+.fcard:hover{transform:translateY(-4px);border-color:#4FC3F755;box-shadow:0 16px 36px #00000055}
+.fcard .ic{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:13px;background:linear-gradient(135deg,#4FC3F71f,#00C85314);border:1px solid #4FC3F72e;font-size:1.4rem}
+.fcard h3{font-size:1.05rem;font-weight:800;margin:14px 0 6px}
 .fcard p{color:var(--mut);font-size:.9rem}
 .dark-band{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .hero-feat{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
 @media(max-width:860px){.hero-feat{grid-template-columns:1fr}}
-.hero-feat img{max-width:300px;margin:0 auto;display:block;filter:drop-shadow(0 22px 48px #000a)}
+.hero-feat img{max-width:min(300px,72vw);margin:0 auto;display:block;filter:drop-shadow(0 22px 48px #000a)}
 .chk{list-style:none;margin-top:20px}
 .chk li{color:var(--mut);font-size:.94rem;padding:7px 0 7px 30px;position:relative}
 .chk li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:900}
 .chk li b{color:var(--txt)}
 .shots{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 @media(max-width:900px){.shots{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:520px){.shots{grid-template-columns:1fr}}
+@media(max-width:520px){.shots{gap:12px}}
 .shots figure{margin:0}
 .shots img{filter:drop-shadow(0 16px 34px #00000077);transition:transform .2s}
 .shots figure:hover img{transform:translateY(-6px)}
 .shots figcaption{color:var(--dim);font-size:.8rem;font-weight:600;text-align:center;margin-top:10px}
-.privacy-box{background:linear-gradient(160deg,#152840,#0f1d30);border:1px solid var(--line);border-radius:22px;padding:44px;text-align:center;max-width:820px;margin:0 auto}
-.privacy-box .lock{font-size:2.6rem}
-.privacy-box h2{margin-top:8px}
+.privacy-box{background:linear-gradient(160deg,#152840,#0f1d30);border:1px solid var(--line);border-radius:22px;padding:44px;text-align:center;max-width:820px;margin:0 auto;box-shadow:0 24px 60px #00000040}
+.privacy-box .lock{display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;border-radius:50%;background:#4FC3F717;border:1px solid #4FC3F733;font-size:2rem}
+.privacy-box h2{margin-top:14px}
 .privacy-box p{color:var(--mut);max-width:60ch;margin:0 auto 22px}
 .dl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:900px;margin:0 auto}
 @media(max-width:800px){.dl-grid{grid-template-columns:1fr}}
-.dl{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 24px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px}
+.dl{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 24px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px;transition:transform .2s,border-color .2s}
+.dl:hover{transform:translateY(-4px)}
+.dl:not(.live):hover{border-color:#4FC3F744}
 .dl.live{border-color:#00C85366;box-shadow:0 0 0 1px #00C85322,0 14px 40px #00c85315}
 .dl .ic{font-size:2.1rem}
 .dl h3{font-size:1.05rem;font-weight:800;margin-top:6px}
@@ -183,27 +200,50 @@ h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:900;letter-spacing:-.025em;m
 .apk-note{max-width:900px;margin:26px auto 0;background:#FF8F000d;border:1px solid #FF8F0033;border-radius:14px;padding:16px 20px;color:var(--mut);font-size:.86rem}
 .apk-note b{color:var(--txt)}
 .faq{max-width:820px}
-.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin-bottom:12px}
-.faq summary{font-weight:800;cursor:pointer;font-size:1rem}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin-bottom:12px;transition:border-color .2s}
+.faq details:hover{border-color:#4FC3F744}
+.faq details[open]{border-color:#4FC3F755}
+.faq summary{font-weight:800;cursor:pointer;font-size:1rem;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--acc);font-weight:900;font-size:1.25rem;line-height:1;flex-shrink:0;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
 .faq p{color:var(--mut);margin-top:12px;font-size:.93rem}
-.cta-final{text-align:center;padding:90px 0}
+.cta-final{position:relative;text-align:center;padding:90px 0;overflow:hidden}
+.cta-final::before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:780px;height:440px;border-radius:50%;background:radial-gradient(circle,#4FC3F71a,transparent 65%);pointer-events:none}
+.cta-final .wrap{position:relative;z-index:1}
 .cta-final p{color:var(--mut);margin-bottom:30px}
 footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-size:.85rem}
 .foot-in{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.foot-in a{color:var(--mut)}
+.foot-in a{color:var(--mut);transition:color .2s}
+.foot-in a:hover{color:var(--txt)}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}}
+@keyframes float{50%{transform:translateY(-10px)}}
+@media (prefers-reduced-motion:no-preference){
+  .anim .rv:not(.on){opacity:0}
+  .anim .rv.on{animation:rise .55s cubic-bezier(.2,.7,.3,1) backwards}
+  .anim .grid3 .rv.on:nth-child(3n+2){animation-delay:.08s}
+  .anim .grid3 .rv.on:nth-child(3n){animation-delay:.16s}
+  .anim .shots .rv.on:nth-child(2){animation-delay:.08s}
+  .anim .shots .rv.on:nth-child(3){animation-delay:.16s}
+  .anim .shots .rv.on:nth-child(4){animation-delay:.24s}
+  .anim .dl-grid .rv.on:nth-child(2){animation-delay:.08s}
+  .anim .dl-grid .rv.on:nth-child(3){animation-delay:.16s}
+  .hero-shot img{animation:float 7s ease-in-out 2s infinite}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 
-<nav>
+<nav aria-label="Principal">
   <div class="nav-in">
-    <a class="brand" href="/miapunte/"><img src="/assets/img/miapunte-icon.png" alt="">Mi <span>Apunte</span></a>
+    <a class="brand" href="/miapunte/"><img src="/assets/img/miapunte-icon.png" alt="" width="30" height="30">Mi <span>Apunte</span></a>
     <div class="nav-r">
       <a href="#funciones">Funciones</a>
       <a href="#privacidad">Privacidad</a>
       <a href="#faq">FAQ</a>
       <a href="/miapunte/soporte/">Soporte</a>
-      <a class="lang" href="/miapunte/en/">EN</a>
+      <a class="lang" href="/miapunte/en/" lang="en" hreflang="en" aria-label="Read this page in English">EN</a>
       <a class="nav-cta" href="#descargar">Descargar</a>
     </div>
   </div>
@@ -226,7 +266,10 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
         <span><b>✓</b> Sin recopilar datos</span>
       </div>
     </div>
-    <div class="hero-shot"><img src="/assets/img/miapunte/01-dashboard.png" alt="Pantalla de inicio de Mi Apunte con contadores de carpetas, apuntes y resumen de finanzas" width="800" height="1560"></div>
+    <div class="hero-shot">
+      <img src="/assets/img/miapunte/01-dashboard.png" alt="Pantalla de inicio de Mi Apunte con contadores de carpetas, apuntes y resumen de finanzas" width="800" height="1560" fetchpriority="high" decoding="async">
+      <div class="badge-float">🔒 <b>100% offline</b> · Tus datos se quedan en tu teléfono</div>
+    </div>
   </div>
 </header>
 
@@ -245,15 +288,15 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
     <h2>Una app en vez de cinco.</h2>
     <p class="sub2">Cada función existe porque hacía falta de verdad — no para llenar una lista.</p>
     <div class="grid3">
-      <div class="fcard"><span class="ic">📸</span><h3>Escanea el recibo</h3><p>Foto al recibo y la app saca el comercio, el monto y la fecha, y llena el gasto por ti. Lee el texto <b style="color:var(--txt)">dentro del teléfono</b>: sin internet, y la foto no se va a ningún servidor.</p></div>
-      <div class="fcard"><span class="ic">📝</span><h3>El apunte toma la forma que necesitas</h3><p>Ocho tipos, y cada uno cambia el formulario: lista de tareas, receta con ingredientes y pasos, minuta con asistentes, diario con ánimo, documento por secciones, o simplemente texto libre.</p></div>
-      <div class="fcard"><span class="ic">🖼️</span><h3>Convierte notas en imágenes</h3><p>Una nota larga se parte en varias imágenes listas para publicar en historias o mandar por WhatsApp. Eliges colores, tipografía y formato.</p></div>
-      <div class="fcard"><span class="ic">💵</span><h3>Ingresos, gastos y presupuestos</h3><p>Registra lo que entra y lo que sale, ponle un presupuesto mensual a cada categoría y mira en qué se te está yendo el dinero.</p></div>
-      <div class="fcard"><span class="ic">🔒</span><h3>Notas con candado</h3><p>Protege un apunte con contraseña. Los protegidos no enseñan su contenido ni en las listas ni en la pantalla de inicio — piden la clave para abrirse.</p></div>
-      <div class="fcard"><span class="ic">🔔</span><h3>Recordatorios y calendario</h3><p>Programa un recordatorio y suena a la hora exacta, aunque reinicies el teléfono. Con vista de calendario para ver el mes completo.</p></div>
-      <div class="fcard"><span class="ic">📂</span><h3>Carpetas, temas y sub-temas</h3><p>Tres niveles de organización para que a los seis meses todavía encuentres esa nota. Con búsqueda, favoritos y fijados.</p></div>
-      <div class="fcard"><span class="ic">📄</span><h3>PDF y facturas</h3><p>Exporta cualquier apunte a PDF con un toque. Y si facturas, arma facturas y cotizaciones con sus renglones y su numeración.</p></div>
-      <div class="fcard"><span class="ic">💾</span><h3>Tu respaldo es tuyo</h3><p>Exporta la base de datos completa cuando quieras y guárdala donde tú decidas. Sin nube de por medio, sin depender de nadie.</p></div>
+      <div class="fcard rv"><span class="ic" aria-hidden="true">📸</span><h3>Escanea el recibo</h3><p>Foto al recibo y la app saca el comercio, el monto y la fecha, y llena el gasto por ti. Lee el texto <b style="color:var(--txt)">dentro del teléfono</b>: sin internet, y la foto no se va a ningún servidor.</p></div>
+      <div class="fcard rv"><span class="ic" aria-hidden="true">📝</span><h3>El apunte toma la forma que necesitas</h3><p>Ocho tipos, y cada uno cambia el formulario: lista de tareas, receta con ingredientes y pasos, minuta con asistentes, diario con ánimo, documento por secciones, o simplemente texto libre.</p></div>
+      <div class="fcard rv"><span class="ic" aria-hidden="true">🖼️</span><h3>Convierte notas en imágenes</h3><p>Una nota larga se parte en varias imágenes listas para publicar en historias o mandar por WhatsApp. Eliges colores, tipografía y formato.</p></div>
+      <div class="fcard rv"><span class="ic" aria-hidden="true">💵</span><h3>Ingresos, gastos y presupuestos</h3><p>Registra lo que entra y lo que sale, ponle un presupuesto mensual a cada categoría y mira en qué se te está yendo el dinero.</p></div>
+      <div class="fcard rv"><span class="ic" aria-hidden="true">🔒</span><h3>Notas con candado</h3><p>Protege un apunte con contraseña. Los protegidos no enseñan su contenido ni en las listas ni en la pantalla de inicio — piden la clave para abrirse.</p></div>
+      <div class="fcard rv"><span class="ic" aria-hidden="true">🔔</span><h3>Recordatorios y calendario</h3><p>Programa un recordatorio y suena a la hora exacta, aunque reinicies el teléfono. Con vista de calendario para ver el mes completo.</p></div>
+      <div class="fcard rv"><span class="ic" aria-hidden="true">📂</span><h3>Carpetas, temas y sub-temas</h3><p>Tres niveles de organización para que a los seis meses todavía encuentres esa nota. Con búsqueda, favoritos y fijados.</p></div>
+      <div class="fcard rv"><span class="ic" aria-hidden="true">📄</span><h3>PDF y facturas</h3><p>Exporta cualquier apunte a PDF con un toque. Y si facturas, arma facturas y cotizaciones con sus renglones y su numeración.</p></div>
+      <div class="fcard rv"><span class="ic" aria-hidden="true">💾</span><h3>Tu respaldo es tuyo</h3><p>Exporta la base de datos completa cuando quieras y guárdala donde tú decidas. Sin nube de por medio, sin depender de nadie.</p></div>
     </div>
   </div>
 </section>
@@ -272,7 +315,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
         <li>La foto <b>nunca sale de tu teléfono</b></li>
       </ul>
     </div>
-    <div><img src="/assets/img/miapunte/09-recibos.png" alt="Mi Apunte escaneando un recibo y llenando la descripción, el monto y la fecha automáticamente" loading="lazy" width="800" height="1560"></div>
+    <div><img src="/assets/img/miapunte/09-recibos.png" alt="Mi Apunte escaneando un recibo y llenando la descripción, el monto y la fecha automáticamente" loading="lazy" decoding="async" width="800" height="1560"></div>
   </div>
 </section>
 
@@ -281,18 +324,18 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
     <span class="tag">La app real</span>
     <h2 style="text-align:center">Así se ve Mi Apunte.</h2>
     <div class="shots" style="margin-top:40px">
-      <figure><img src="/assets/img/miapunte/02-apuntes.png" alt="Lista de apuntes en Mi Apunte" loading="lazy"><figcaption>Tus apuntes</figcaption></figure>
-      <figure><img src="/assets/img/miapunte/07-finanzas.png" alt="Pantalla de finanzas de Mi Apunte con ingresos y gastos diferenciados" loading="lazy"><figcaption>Finanzas</figcaption></figure>
-      <figure><img src="/assets/img/miapunte/04-imagen.png" alt="Conversión de una nota a imagen en Mi Apunte" loading="lazy"><figcaption>Nota a imagen</figcaption></figure>
-      <figure><img src="/assets/img/miapunte/05-recordatorios.png" alt="Recordatorios en Mi Apunte" loading="lazy"><figcaption>Recordatorios</figcaption></figure>
+      <figure class="rv"><img src="/assets/img/miapunte/02-apuntes.png" alt="Lista de apuntes en Mi Apunte" loading="lazy" decoding="async" width="800" height="1560"><figcaption>Tus apuntes</figcaption></figure>
+      <figure class="rv"><img src="/assets/img/miapunte/07-finanzas.png" alt="Pantalla de finanzas de Mi Apunte con ingresos y gastos diferenciados" loading="lazy" decoding="async" width="800" height="1560"><figcaption>Finanzas</figcaption></figure>
+      <figure class="rv"><img src="/assets/img/miapunte/04-imagen.png" alt="Conversión de una nota a imagen en Mi Apunte" loading="lazy" decoding="async" width="800" height="1560"><figcaption>Nota a imagen</figcaption></figure>
+      <figure class="rv"><img src="/assets/img/miapunte/05-recordatorios.png" alt="Recordatorios en Mi Apunte" loading="lazy" decoding="async" width="800" height="1560"><figcaption>Recordatorios</figcaption></figure>
     </div>
   </div>
 </section>
 
 <section id="privacidad" class="dark-band">
   <div class="wrap">
-    <div class="privacy-box">
-      <div class="lock">🔐</div>
+    <div class="privacy-box rv">
+      <div class="lock" aria-hidden="true">🔐</div>
       <h2>Tus datos no son el producto.</h2>
       <p>Mi Apunte <b style="color:var(--txt)">no recopila, no almacena y no comparte</b> ningún dato personal. No hay cuenta que crear, no hay servidores, no hay analítica y no hay rastreadores. Todo lo que escribes vive en una base de datos local dentro de tu teléfono — y si desinstalas la app, se va contigo.</p>
       <p style="font-size:.9rem">Ni siquiera la foto del recibo: el texto se reconoce dentro del dispositivo y la imagen nunca se envía a ningún lado.</p>
@@ -307,23 +350,23 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
     <h2 style="text-align:center;margin-bottom:8px">Consíguela.</h2>
     <p class="sub2" style="text-align:center;margin:0 auto 40px">Gratis, para siempre. Android 8.0 o superior.</p>
     <div class="dl-grid">
-      <div class="dl live">
+      <div class="dl live rv">
         <span class="badge-live">● Disponible ya</span>
-        <span class="ic">🤖</span>
+        <span class="ic" aria-hidden="true">🤖</span>
         <h3>APK directo</h3>
         <p>Instálala hoy mismo, sin esperar a las tiendas.</p>
-        <a class="btn btn-p" href="/miapunte/download/MiApunte-1.0.0.apk" download>⬇ Descargar APK</a>
+        <a class="btn btn-p" href="https://github.com/sgermosen/sgermosen.github.io/releases/latest/download/MiApunte.apk">⬇ Descargar APK</a>
       </div>
-      <div class="dl">
+      <div class="dl rv">
         <span class="badge-soon">Próximamente</span>
-        <span class="ic">▶️</span>
+        <span class="ic" aria-hidden="true">▶️</span>
         <h3>Google Play</h3>
         <p>En proceso de publicación en la Play Store.</p>
         <span class="btn soon">Próximamente</span>
       </div>
-      <div class="dl">
+      <div class="dl rv">
         <span class="badge-soon">Próximamente</span>
-        <span class="ic">🍎</span>
+        <span class="ic" aria-hidden="true">🍎</span>
         <h3>App Store</h3>
         <p>La versión para iPhone y iPad está en camino.</p>
         <span class="btn soon">Próximamente</span>
@@ -398,6 +441,13 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
     </span>
   </div>
 </footer>
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.documentElement.classList.add('anim');
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } }), { threshold: .12 });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+}
+</script>
 </body>
 </html>
