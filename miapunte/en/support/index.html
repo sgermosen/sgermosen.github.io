@@ -26,8 +26,8 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How do I install the Mi Apunte APK?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Download the APK file, open it from your downloads, and Android will ask for permission to install apps from unknown sources: grant it to your browser or file manager and continue. It is the same mechanism used by any app that is not on the store yet." }
+      "name": "How do I install Mi Apunte?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The easiest route is installing it from Google Play at https://play.google.com/store/apps/details?id=com.miapunte.app, where updates arrive automatically. If you prefer the direct APK: download the file, open it from your downloads, and Android will ask for permission to install apps from unknown sources; grant it to your browser or file manager and continue." }
     },
     {
       "@type": "Question",
@@ -127,14 +127,22 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--dim);font-siz
   <h2>Common questions</h2>
   <div class="faq">
     <details open>
-      <summary>How do I install the APK?</summary>
+      <summary>How do I install it?</summary>
+      <p>The easiest route is <a href="https://play.google.com/store/apps/details?id=com.miapunte.app" target="_blank" rel="noopener">installing it from Google Play</a>: one tap, and updates reach you automatically.</p>
+      <p>If you'd rather use the direct APK:</p>
       <ol>
         <li>Download the file from the <a href="/miapunte/en/#download">download section</a>.</li>
         <li>Open it from your downloads. Android will say it can't install apps from unknown sources.</li>
         <li>Tap <b>Settings</b> on that prompt and enable the permission <b>for your browser or file manager</b>.</li>
         <li>Go back and install. Done.</li>
       </ol>
-      <p>This is completely normal: it's the same mechanism used by every app that isn't published on the store yet.</p>
+      <p>This is completely normal: it's the same mechanism used by every app installed outside the store.</p>
+    </details>
+
+    <details>
+      <summary>I have the APK installed — should I switch to the Google Play version?</summary>
+      <p>You can, and you lose nothing. Both builds are signed with the same key, so Google Play installs over the one you already have and keeps your notes, expenses and reminders. No need to uninstall.</p>
+      <p>The upside of switching: updates arrive automatically instead of you having to download the APK again. If you want to play it safe, export a backup first.</p>
     </details>
 
     <details>

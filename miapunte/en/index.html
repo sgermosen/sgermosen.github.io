@@ -39,7 +39,9 @@
       "url": "https://sgermosen.com/miapunte/en/",
       "applicationCategory": "ProductivityApplication",
       "operatingSystem": "Android 8.0+",
-      "downloadUrl": "https://github.com/sgermosen/sgermosen.github.io/releases/latest/download/MiApunte.apk",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.miapunte.app",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.miapunte.app",
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.miapunte.app"],
       "description": "Personal productivity app that brings notes, finances and reminders together. Eight note types (simple, quick, checklist, structured, diary, meeting, idea, recipe), folder and topic organisation, per-note password protection, notes rendered as shareable images, PDF export, income and expense tracking, budgets, invoices, receipt scanning with on-device text recognition, and reminders with a calendar view. Works 100% offline and collects no data.",
       "inLanguage": ["es", "en", "fr"],
       "author": { "@type": "Person", "name": "Starling Germosen", "url": "https://sgermosen.com/" },
@@ -80,6 +82,16 @@
           "@type": "Question",
           "name": "Will I lose my data when the app updates?",
           "acceptedAnswer": { "@type": "Answer", "text": "No. Updating keeps all of your information. On top of that, Settings has an Export Backup option that saves a full copy of your database whenever you want." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Mi Apunte on the Google Play Store?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Mi Apunte is published on Google Play and can be installed from https://play.google.com/store/apps/details?id=com.miapunte.app. The direct APK, signed with the same key, is still available for anyone who prefers to install it manually." }
+        },
+        {
+          "@type": "Question",
+          "name": "I installed the APK, can I switch to the Google Play version?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, and you lose nothing. Both builds are signed with the same key, so Google Play installs over the one you already have and keeps your notes, expenses and reminders. There is no need to uninstall first." }
         }
       ]
     },
@@ -252,11 +264,11 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
 <header class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="pill">📓 Android · Free · Works offline</span>
+      <span class="pill">📓 Now on Google Play · Free · Works offline</span>
       <h1>Your notes and your money, <span>in one place.</span></h1>
       <p class="sub">Mi Apunte pulls together what's currently scattered across five apps: notes, expense tracking and reminders. <b style="color:var(--txt)">Snap a photo of a receipt and the expense fills itself in.</b> Everything works offline, and nothing you write ever leaves your phone.</p>
       <div class="btns">
-        <a class="btn btn-p" href="#download">⬇ Download APK</a>
+        <a class="btn btn-p" href="https://play.google.com/store/apps/details?id=com.miapunte.app" target="_blank" rel="noopener">▶ Get it on Google Play</a>
         <a class="btn btn-o" href="#features">See what it does</a>
       </div>
       <div class="trust">
@@ -352,17 +364,17 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
     <div class="dl-grid">
       <div class="dl live rv">
         <span class="badge-live">● Available now</span>
-        <span class="ic" aria-hidden="true">🤖</span>
-        <h3>Direct APK</h3>
-        <p>Install it today, no need to wait for the stores.</p>
-        <a class="btn btn-p" href="https://github.com/sgermosen/sgermosen.github.io/releases/latest/download/MiApunte.apk">⬇ Download APK</a>
-      </div>
-      <div class="dl rv">
-        <span class="badge-soon">Coming soon</span>
         <span class="ic" aria-hidden="true">▶️</span>
         <h3>Google Play</h3>
-        <p>Currently going through Play Store review.</p>
-        <span class="btn soon">Coming soon</span>
+        <p>The recommended route: it installs and updates itself.</p>
+        <a class="btn btn-p" href="https://play.google.com/store/apps/details?id=com.miapunte.app" target="_blank" rel="noopener">▶ Get it on Google Play</a>
+      </div>
+      <div class="dl rv">
+        <span class="badge-live">● Available now</span>
+        <span class="ic" aria-hidden="true">🤖</span>
+        <h3>Direct APK</h3>
+        <p>If you'd rather install it without going through the store.</p>
+        <a class="btn btn-o" href="https://github.com/sgermosen/sgermosen.github.io/releases/latest/download/MiApunte.apk">⬇ Download APK</a>
       </div>
       <div class="dl rv">
         <span class="badge-soon">Coming soon</span>
@@ -373,9 +385,10 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
       </div>
     </div>
     <div class="apk-note">
-      <b>How do I install an APK?</b> Download the file, open it, and Android will ask for permission to
-      "install unknown apps" — grant it to your browser or file manager and you're done. This is normal:
-      it's the same mechanism used by every app that isn't on the store yet.
+      <b>Play or APK?</b> Installing from Google Play means updates reach you automatically — that's the
+      easy route. The APK is the very same app signed with the very same key, for anyone who prefers to
+      install it by hand: open it and Android will ask for permission to "install unknown apps", grant it
+      to your browser or file manager and you're done.
       <b>Your data survives updates:</b> install the new version over the old one and everything stays put.
       Even so, Settings → Export Backup lets you keep a copy before each update.
     </div>
@@ -412,6 +425,14 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
         <p>No. Installing a new version over the previous one keeps everything: notes, finances, reminders and settings. What <b>does</b> wipe your data is <b>uninstalling</b> the app. That's why Settings has "Export Backup", which saves a complete copy of the database wherever you want it.</p>
       </details>
       <details>
+        <summary>Is it on the Google Play Store?</summary>
+        <p>Yes, it's published: <a href="https://play.google.com/store/apps/details?id=com.miapunte.app" target="_blank" rel="noopener">find it on Google Play</a>. That's the recommended way to install it, because updates reach you automatically. The direct APK is still there for anyone who prefers to install it by hand.</p>
+      </details>
+      <details>
+        <summary>I installed the APK — can I switch to the Play version?</summary>
+        <p>Yes, and you lose nothing. Both builds are signed with the same key, so Google Play installs over the one you already have and keeps your notes, expenses and reminders. No need to uninstall. If you'd still rather play it safe, export a backup from Settings first.</p>
+      </details>
+      <details>
         <summary>What about the iPhone version?</summary>
         <p>It's on the way. The app is built with .NET MAUI, which compiles for iOS, so it's a matter of time and store review — not of rewriting it.</p>
       </details>
@@ -424,8 +445,8 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
     <h2>Stop taking notes in a chat with yourself. <span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent">Write it down properly.</span></h2>
     <p>Free, no account, no ads. Android 8.0 or newer.</p>
     <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-      <a class="btn btn-p" href="#download">⬇ Download Mi Apunte</a>
-      <a class="btn btn-o" href="/miapunte/en/support/">Need help?</a>
+      <a class="btn btn-p" href="https://play.google.com/store/apps/details?id=com.miapunte.app" target="_blank" rel="noopener">▶ Get it on Google Play</a>
+      <a class="btn btn-o" href="#download">Other ways to install</a>
     </div>
   </div>
 </div>

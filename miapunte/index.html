@@ -39,7 +39,9 @@
       "url": "https://sgermosen.com/miapunte/",
       "applicationCategory": "ProductivityApplication",
       "operatingSystem": "Android 8.0+",
-      "downloadUrl": "https://github.com/sgermosen/sgermosen.github.io/releases/latest/download/MiApunte.apk",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.miapunte.app",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.miapunte.app",
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.miapunte.app"],
       "description": "App de productividad personal que junta notas, finanzas y recordatorios. Ocho tipos de apunte (simple, rápido, lista, estructurado, diario, reunión, idea, receta), organización por carpetas y temas, protección con contraseña por nota, conversión de notas a imágenes, exportación a PDF, registro de ingresos y gastos, presupuestos, facturas, escaneo de recibos con reconocimiento de texto en el dispositivo, y recordatorios con calendario. Funciona 100% sin internet y no recopila datos.",
       "inLanguage": ["es", "en", "fr"],
       "author": { "@type": "Person", "name": "Starling Germosen", "url": "https://sgermosen.com/" },
@@ -80,6 +82,16 @@
           "@type": "Question",
           "name": "¿Pierdo mis datos si actualizo la app?",
           "acceptedAnswer": { "@type": "Answer", "text": "No. Al actualizar se conserva toda tu información. Además, en Ajustes puedes exportar un respaldo completo de tu base de datos cuando quieras." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Mi Apunte está en la Google Play Store?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí. Mi Apunte ya está publicada en Google Play y se puede instalar desde https://play.google.com/store/apps/details?id=com.miapunte.app. También sigue disponible el APK directo, firmado con la misma clave, para quien prefiera instalarla a mano." }
+        },
+        {
+          "@type": "Question",
+          "name": "Instalé el APK, ¿puedo pasarme a la versión de Google Play?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí, y sin perder nada. Ambas versiones están firmadas con la misma clave, así que Google Play instala encima de la que ya tienes y conserva tus apuntes, gastos y recordatorios. No hace falta desinstalar." }
         }
       ]
     },
@@ -252,11 +264,11 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
 <header class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="pill">📓 Android · Gratis · Sin internet</span>
+      <span class="pill">📓 Ya en Google Play · Gratis · Sin internet</span>
       <h1>Tus notas y tus gastos, <span>en un solo lugar.</span></h1>
       <p class="sub">Mi Apunte junta lo que hoy tienes regado en cinco apps: apuntes, control de gastos y recordatorios. <b style="color:var(--txt)">Le tomas una foto a un recibo y el gasto se llena solo.</b> Todo funciona sin conexión, y nada de lo que escribes sale de tu teléfono.</p>
       <div class="btns">
-        <a class="btn btn-p" href="#descargar">⬇ Descargar APK</a>
+        <a class="btn btn-p" href="https://play.google.com/store/apps/details?id=com.miapunte.app" target="_blank" rel="noopener">▶ Descargar en Google Play</a>
         <a class="btn btn-o" href="#funciones">Ver qué hace</a>
       </div>
       <div class="trust">
@@ -352,17 +364,17 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
     <div class="dl-grid">
       <div class="dl live rv">
         <span class="badge-live">● Disponible ya</span>
-        <span class="ic" aria-hidden="true">🤖</span>
-        <h3>APK directo</h3>
-        <p>Instálala hoy mismo, sin esperar a las tiendas.</p>
-        <a class="btn btn-p" href="https://github.com/sgermosen/sgermosen.github.io/releases/latest/download/MiApunte.apk">⬇ Descargar APK</a>
-      </div>
-      <div class="dl rv">
-        <span class="badge-soon">Próximamente</span>
         <span class="ic" aria-hidden="true">▶️</span>
         <h3>Google Play</h3>
-        <p>En proceso de publicación en la Play Store.</p>
-        <span class="btn soon">Próximamente</span>
+        <p>La forma recomendada: se instala y se actualiza sola.</p>
+        <a class="btn btn-p" href="https://play.google.com/store/apps/details?id=com.miapunte.app" target="_blank" rel="noopener">▶ Ver en Google Play</a>
+      </div>
+      <div class="dl rv">
+        <span class="badge-live">● Disponible ya</span>
+        <span class="ic" aria-hidden="true">🤖</span>
+        <h3>APK directo</h3>
+        <p>Si prefieres instalarla sin pasar por la tienda.</p>
+        <a class="btn btn-o" href="https://github.com/sgermosen/sgermosen.github.io/releases/latest/download/MiApunte.apk">⬇ Descargar APK</a>
       </div>
       <div class="dl rv">
         <span class="badge-soon">Próximamente</span>
@@ -373,9 +385,10 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
       </div>
     </div>
     <div class="apk-note">
-      <b>¿Cómo instalo un APK?</b> Descarga el archivo, ábrelo y Android te va a pedir permiso para
-      "instalar apps desconocidas" — se lo das a tu navegador o gestor de archivos, y ya. Es normal:
-      es el mismo mecanismo que usan las apps que aún no están en la tienda.
+      <b>¿Play o APK?</b> Si la instalas desde Google Play, las actualizaciones te llegan solas — es
+      lo más cómodo. El APK es la misma app firmada con la misma clave, para quien prefiera
+      instalarla a mano: al abrirlo Android te pedirá permiso para "instalar apps desconocidas",
+      se lo das a tu navegador o gestor de archivos, y ya.
       <b>Tus datos no se pierden al actualizar:</b> instala la versión nueva encima de la vieja y todo sigue ahí.
       Aun así, en Ajustes → Exportar respaldo puedes guardarte una copia antes de cada actualización.
     </div>
@@ -412,6 +425,14 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
         <p>No. Al instalar una versión nueva encima de la anterior se conserva todo: apuntes, finanzas, recordatorios y ajustes. Lo que sí borra tus datos es <b>desinstalar</b> la app. Por eso en Ajustes tienes "Exportar respaldo", que te guarda una copia completa de la base de datos donde tú quieras.</p>
       </details>
       <details>
+        <summary>¿Está en la Google Play Store?</summary>
+        <p>Sí, ya está publicada: <a href="https://play.google.com/store/apps/details?id=com.miapunte.app" target="_blank" rel="noopener">búscala en Google Play</a>. Es la forma recomendada de instalarla, porque las actualizaciones te llegan solas. El APK directo sigue disponible para quien prefiera instalarla a mano.</p>
+      </details>
+      <details>
+        <summary>Instalé el APK, ¿me puedo pasar a la versión de Play?</summary>
+        <p>Sí, y sin perder nada. Las dos versiones están firmadas con la misma clave, así que Google Play se instala encima de la que ya tienes y conserva tus apuntes, gastos y recordatorios. No hace falta desinstalar. Si aun así quieres ir sobre seguro, exporta un respaldo desde Ajustes antes.</p>
+      </details>
+      <details>
         <summary>¿Y la versión para iPhone?</summary>
         <p>Está en camino. La app está construida con .NET MAUI, que compila para iOS, así que es cuestión de tiempo y de publicación — no de reescribirla.</p>
       </details>
@@ -424,8 +445,8 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
     <h2>Deja de anotar en el chat contigo mismo. <span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent">Apúntalo bien.</span></h2>
     <p>Gratis, sin cuenta, sin anuncios. Android 8.0 o superior.</p>
     <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-      <a class="btn btn-p" href="#descargar">⬇ Descargar Mi Apunte</a>
-      <a class="btn btn-o" href="/miapunte/soporte/">¿Necesitas ayuda?</a>
+      <a class="btn btn-p" href="https://play.google.com/store/apps/details?id=com.miapunte.app" target="_blank" rel="noopener">▶ Descargar en Google Play</a>
+      <a class="btn btn-o" href="#descargar">Otras formas de instalar</a>
     </div>
   </div>
 </div>
