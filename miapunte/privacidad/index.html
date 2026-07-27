@@ -76,7 +76,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--dim);font-siz
 
 <div class="wrap">
   <h1>Política de <span>Privacidad</span></h1>
-  <p class="meta">Última actualización: 13 de julio de 2026 · Aplicación: <b>Mi Apunte</b> (com.miapunte.app) · Desarrollador: SgrySoft</p>
+  <p class="meta">Última actualización: 27 de julio de 2026 · Aplicación: <b>Mi Apunte</b> (com.miapunte.app) · Desarrollador: SgrySoft</p>
 
   <div class="summary">
     <div class="lock">🔐</div>
@@ -96,15 +96,17 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--dim);font-siz
   <h2><span class="n">4.</span>Permisos que utiliza la app</h2>
   <ul>
     <li><b>Notificaciones (Android):</b> para mostrarte los recordatorios que tú programas. Puedes revocar este permiso en cualquier momento desde los ajustes del sistema.</li>
-    <li><b>Alarmas programadas (Android):</b> para que los recordatorios se disparen a la hora exacta que configuraste.</li>
+    <li><b>Micrófono (Android):</b> solo se solicita en el momento en que tú tocas el botón de dictar un apunte, y solo mientras dictas. La app no accede al micrófono en ningún otro momento ni en segundo plano. Ver la sección 5 para cómo se procesa la voz.</li>
     <li><b>Cámara (Android):</b> solo se solicita en el momento en que tú eliges fotografiar un recibo para extraer sus datos. La app no accede a la cámara en ningún otro momento ni en segundo plano.</li>
     <li><b>Fotos:</b> solo cuando tú eliges una imagen de recibo desde la galería, mediante el selector del propio sistema. La app no examina tu galería.</li>
     <li><b>Almacenamiento/archivos:</b> únicamente cuando tú decides guardar o compartir una imagen, PDF o respaldo.</li>
   </ul>
 
-  <h2><span class="n">5.</span>Lectura de recibos (reconocimiento de texto)</h2>
-  <p>La función de escanear recibos usa <b>reconocimiento de texto en el propio dispositivo</b> (Google ML Kit). La foto del recibo <b>nunca sale de tu teléfono</b>: no se envía a ningún servidor, ni nuestro ni de terceros. La imagen se guarda en el almacenamiento privado de la app, junto a la transacción que tú creaste, y se elimina si borras esa transacción o los datos de la app.</p>
+  <h2><span class="n">5.</span>Procesamiento en tu dispositivo: recibos, estados de cuenta y dictado</h2>
+  <p><b>Recibos:</b> la función de escanear recibos usa <b>reconocimiento de texto en el propio dispositivo</b> (Google ML Kit). La foto del recibo <b>nunca sale de tu teléfono</b>: no se envía a ningún servidor, ni nuestro ni de terceros. La imagen se guarda en el almacenamiento privado de la app, junto a la transacción que tú creaste, y se elimina si borras esa transacción o los datos de la app.</p>
   <p>Para funcionar, Google Play Services puede descargar una vez el modelo de reconocimiento de texto al dispositivo. Esa descarga la realiza el sistema operativo y no incluye ninguna imagen ni dato tuyo.</p>
+  <p><b>Estados de cuenta:</b> cuando importas un estado de cuenta bancario (CSV o PDF), el archivo lo eliges tú mediante el selector del sistema y <b>se lee por completo dentro de tu teléfono</b>. La app no se conecta a tu banco, no te pide credenciales bancarias y el archivo no se transmite a ningún servidor. Los movimientos que decidas importar se guardan en la base de datos local, y puedes deshacer una importación completa desde la propia app.</p>
+  <p><b>Dictado por voz:</b> al dictar un apunte, el audio lo procesa el <b>servicio de reconocimiento de voz de tu propio teléfono</b> — el mismo que usa el micrófono del teclado. Mi Apunte no graba, no almacena ni transmite ese audio; recibe únicamente el texto ya reconocido. Según el fabricante y la configuración de tu dispositivo, ese servicio del sistema puede procesar la voz en el propio equipo o usar su servicio en línea, exactamente igual que cuando dictas en cualquier otra aplicación; eso lo gobierna la configuración de voz de tu teléfono, no esta app.</p>
 
   <h2><span class="n">6.</span>Compartir contenido</h2>
   <p>Cuando usas las funciones de "Compartir" (texto, imagen, PDF o respaldo), el contenido se envía a la aplicación que tú elijas mediante el sistema de compartir de tu dispositivo. Ese envío lo controlas tú por completo.</p>

@@ -76,7 +76,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--dim);font-siz
 
 <div class="wrap">
   <h1>Privacy <span>Policy</span></h1>
-  <p class="meta">Last updated: July 13, 2026 · App: <b>Mi Apunte</b> (com.miapunte.app) · Developer: SgrySoft</p>
+  <p class="meta">Last updated: July 27, 2026 · App: <b>Mi Apunte</b> (com.miapunte.app) · Developer: SgrySoft</p>
 
   <div class="summary">
     <div class="lock">🔐</div>
@@ -96,15 +96,17 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--dim);font-siz
   <h2><span class="n">4.</span>Permissions used by the app</h2>
   <ul>
     <li><b>Notifications (Android):</b> to show the reminders you schedule. You can revoke this permission at any time in system settings.</li>
-    <li><b>Scheduled alarms (Android):</b> so reminders fire at the exact time you set.</li>
+    <li><b>Microphone (Android):</b> requested only at the moment you tap the dictation button on a note, and only while you dictate. The app never accesses the microphone at any other time or in the background. See section 5 for how voice is processed.</li>
     <li><b>Camera (Android):</b> requested only at the moment you choose to photograph a receipt to extract its data. The app never accesses the camera at any other time or in the background.</li>
     <li><b>Photos:</b> only when you pick a receipt image from your gallery, through the system's own picker. The app does not scan your gallery.</li>
     <li><b>Storage/files:</b> only when you choose to save or share an image, PDF or backup.</li>
   </ul>
 
-  <h2><span class="n">5.</span>Receipt reading (text recognition)</h2>
-  <p>The receipt scanning feature uses <b>on-device text recognition</b> (Google ML Kit). The receipt photo <b>never leaves your phone</b>: it is not sent to any server, ours or third-party. The image is stored in the app's private storage alongside the transaction you created, and is removed if you delete that transaction or the app's data.</p>
+  <h2><span class="n">5.</span>On-device processing: receipts, bank statements and dictation</h2>
+  <p><b>Receipts:</b> the receipt scanning feature uses <b>on-device text recognition</b> (Google ML Kit). The receipt photo <b>never leaves your phone</b>: it is not sent to any server, ours or third-party. The image is stored in the app's private storage alongside the transaction you created, and is removed if you delete that transaction or the app's data.</p>
   <p>To work, Google Play Services may download the text recognition model to your device once. That download is performed by the operating system and contains none of your images or data.</p>
+  <p><b>Bank statements:</b> when you import a bank statement (CSV or PDF), you pick the file yourself through the system picker and it is <b>read entirely inside your phone</b>. The app never connects to your bank, never asks for banking credentials, and the file is not transmitted to any server. The movements you choose to import are stored in the local database, and a whole import can be undone from within the app.</p>
+  <p><b>Voice dictation:</b> when you dictate a note, the audio is handled by <b>your own phone's speech recognition service</b> — the same one the keyboard's microphone uses. Mi Apunte does not record, store or transmit that audio; it only receives the recognised text. Depending on your device's maker and settings, that system service may process speech on the device itself or through its online service, exactly as when you dictate in any other app; that behaviour is governed by your phone's voice settings, not by this app.</p>
 
   <h2><span class="n">6.</span>Sharing content</h2>
   <p>When you use the "Share" features (text, image, PDF or backup), the content is sent to the app you choose through your device's share system. That transfer is entirely under your control.</p>
