@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assistance et aide — Mi Apunte</title>
+<meta name="description" content="Aide de Mi Apunte : comment sauvegarder et restaurer vos données, que faire si un rappel ne sonne pas ou si le scan de reçus se trompe. Contact direct avec le développeur.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://sgermosen.com/miapunte/fr/assistance/">
+<link rel="alternate" hreflang="es" href="https://sgermosen.com/miapunte/soporte/">
+<link rel="alternate" hreflang="en" href="https://sgermosen.com/miapunte/en/support/">
+<link rel="alternate" hreflang="fr" href="https://sgermosen.com/miapunte/fr/assistance/">
+<link rel="alternate" hreflang="x-default" href="https://sgermosen.com/miapunte/soporte/">
+<link rel="icon" type="image/png" href="/assets/img/miapunte-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sgermosen.com/miapunte/fr/assistance/">
+<meta property="og:title" content="Assistance et aide — Mi Apunte">
+<meta property="og:description" content="Guides rapides et contact direct avec le développeur de Mi Apunte.">
+<meta property="og:image" content="https://sgermosen.com/assets/img/miapunte-feature.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Comment installer Mi Apunte ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Le plus simple est de l'installer depuis Google Play sur https://play.google.com/store/apps/details?id=com.miapunte.app, où les mises à jour arrivent toutes seules. Si vous préférez l'APK direct : téléchargez le fichier, ouvrez-le depuis vos téléchargements et Android demandera l'autorisation d'installer des apps de source inconnue ; accordez-la à votre navigateur ou gestionnaire de fichiers et continuez." }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment sauvegarder mes données dans Mi Apunte ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Allez dans Paramètres et touchez Exporter la sauvegarde. L'app génère une copie complète de votre base de données et vous laisse la garder ou la partager où vous voulez. Faites-le avant chaque mise à jour." }
+    },
+    {
+      "@type": "Question",
+      "name": "Mon rappel n'a pas sonné, que faire ?",
+      "acceptedAnswer": { "@type": "Answer", "text": "C'est presque toujours l'économiseur de batterie d'Android, qui suspend l'app. Allez dans les Paramètres d'Android, cherchez Mi Apunte, entrez dans Batterie et choisissez Sans restriction. Vérifiez aussi que l'autorisation de notifications est accordée." }
+    },
+    {
+      "@type": "Question",
+      "name": "Le scan du reçu n'a pas bien lu les données",
+      "acceptedAnswer": { "@type": "Answer", "text": "Prenez la photo avec une bonne lumière, le reçu bien à plat et cadré en entier. Si ça échoue quand même, vous pouvez corriger n'importe quel champ à la main avant d'enregistrer : le scan ne fait que pré-remplir, il ne décide jamais à votre place." }
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#0b1523; --bg2:#0f1d30; --card:#152840; --line:#22405f;
+  --txt:#e9f2fa; --mut:#a3bacf; --dim:#6d8aa5;
+  --acc:#4FC3F7; --gold:#FF8F00; --green:#00C853;
+  --grad:linear-gradient(100deg,#4FC3F7,#00C853);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--txt);font-family:'Inter',system-ui,sans-serif;line-height:1.7}
+a{color:var(--acc);text-decoration:none}
+nav{position:sticky;top:0;z-index:50;background:#0b1523cc;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:880px;margin:0 auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.06rem;color:var(--txt)}
+.brand img{width:30px;height:30px;border-radius:8px}
+.brand span{color:var(--acc)}
+.nav-r{display:flex;gap:16px;align-items:center}
+.nav-r a{color:var(--mut);font-size:.9rem;font-weight:600}
+.lang{border:1px solid var(--line);border-radius:99px;padding:5px 13px;font-size:.8rem!important;font-weight:800!important;color:var(--txt)!important}
+.wrap{max-width:880px;margin:0 auto;padding:56px 24px 70px}
+h1{font-size:clamp(1.9rem,4.5vw,2.6rem);font-weight:900;letter-spacing:-.03em;line-height:1.15;margin-bottom:12px}
+h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--mut);max-width:60ch;margin-bottom:40px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:56px}
+@media(max-width:680px){.contact{grid-template-columns:1fr}}
+.cbox{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 26px}
+.cbox .ic{font-size:1.6rem}
+.cbox h3{font-size:1rem;font-weight:800;margin:10px 0 4px}
+.cbox p{color:var(--mut);font-size:.88rem;margin-bottom:10px}
+.cbox a{font-weight:700;font-size:.93rem}
+h2{font-size:1.35rem;font-weight:900;letter-spacing:-.02em;margin:0 0 18px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin-bottom:12px}
+.faq summary{font-weight:800;cursor:pointer;font-size:1rem}
+.faq p{color:var(--mut);margin-top:12px;font-size:.93rem}
+.faq p b{color:var(--txt)}
+.faq ol{margin:12px 0 0 20px;color:var(--mut);font-size:.93rem}
+.faq ol li{padding:4px 0}
+.faq ol li b{color:var(--txt)}
+.warn{background:#FF8F000d;border:1px solid #FF8F0033;border-radius:14px;padding:18px 22px;color:var(--mut);font-size:.9rem;margin:34px 0}
+.warn b{color:var(--txt)}
+.back{display:inline-flex;align-items:center;gap:8px;margin-top:40px;padding:12px 22px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--txt);font-weight:700;font-size:.92rem}
+.back:hover{border-color:var(--acc)}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--dim);font-size:.85rem}
+.foot-in{max-width:880px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.foot-in a{color:var(--mut)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="/miapunte/fr/"><img src="/assets/img/miapunte-icon.png" alt="">Mi <span>Apunte</span></a>
+    <div class="nav-r">
+      <a href="/miapunte/fr/confidentialite/">Confidentialité</a>
+      <a class="lang" href="/miapunte/soporte/">ES</a>
+      <a class="lang" href="/miapunte/en/support/">EN</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <h1>Assistance et <span>aide</span></h1>
+  <p class="lead">Mi Apunte est maintenue par une seule personne : votre e-mail est lu par un humain — pas par un système de tickets. Écrivez-moi et je vous réponds.</p>
+
+  <div class="contact">
+    <div class="cbox">
+      <span class="ic">✉️</span>
+      <h3>Écrivez-moi</h3>
+      <p>Questions, bugs, suggestions ou une fonction qui vous manquerait.</p>
+      <a href="mailto:sgrysoft@gmail.com?subject=Mi%20Apunte%20—%20Assistance">sgrysoft@gmail.com</a>
+    </div>
+    <div class="cbox">
+      <span class="ic">🐞</span>
+      <h3>Vous avez trouvé un bug ?</h3>
+      <p>Racontez-moi ce que vous faisiez, ce que vous attendiez et ce qui s'est passé. Si possible, joignez une capture et indiquez le modèle de votre téléphone.</p>
+      <a href="mailto:sgrysoft@gmail.com?subject=Mi%20Apunte%20—%20Rapport%20de%20bug">Signaler un bug</a>
+    </div>
+  </div>
+
+  <h2>Questions courantes</h2>
+  <div class="faq">
+    <details open>
+      <summary>Comment l'installer ?</summary>
+      <p>Le plus simple est de <a href="https://play.google.com/store/apps/details?id=com.miapunte.app" target="_blank" rel="noopener">l'installer depuis Google Play</a> : un toucher, et les mises à jour arrivent toutes seules.</p>
+      <p>Si vous préférez l'APK direct :</p>
+      <ol>
+        <li>Téléchargez le fichier depuis la <a href="/miapunte/fr/#telecharger">page de téléchargement</a>.</li>
+        <li>Ouvrez-le depuis vos téléchargements. Android dira qu'il ne peut pas installer d'apps de source inconnue.</li>
+        <li>Touchez <b>Paramètres</b> sur cet avertissement et activez l'autorisation <b>pour votre navigateur ou gestionnaire de fichiers</b>.</li>
+        <li>Revenez en arrière et installez. C'est fait.</li>
+      </ol>
+      <p>C'est tout à fait normal : c'est le même mécanisme que pour toute app installée hors de la boutique.</p>
+    </details>
+
+    <details>
+      <summary>J'ai l'APK installé, dois-je passer à la version Google Play ?</summary>
+      <p>Vous pouvez, et vous ne perdez rien. Les deux versions sont signées avec la même clé : Google Play s'installe par-dessus celle que vous avez déjà et conserve vos notes, dépenses et rappels. Pas besoin de désinstaller.</p>
+      <p>L'avantage : les mises à jour arrivent automatiquement au lieu de retélécharger l'APK. Pour plus de sûreté, exportez d'abord une sauvegarde.</p>
+    </details>
+
+    <details>
+      <summary>Comment sauvegarder mes données ? (faites-le)</summary>
+      <p>Allez dans <b>Paramètres → Exporter la sauvegarde</b>. L'app génère une copie complète de votre base de données et vous laisse la garder ou la partager où vous voulez : Drive, WhatsApp, votre e-mail, une clé USB.</p>
+      <p><b>Faites-le avant chaque mise à jour.</b> Mettre à jour n'efface rien, mais une sauvegarde prend dix secondes et vous couvre contre tout accident.</p>
+    </details>
+
+    <details>
+      <summary>Est-ce que je perds mes données en mettant à jour ?</summary>
+      <p>Non. Installer une nouvelle version par-dessus l'ancienne conserve tout : notes, finances, rappels et réglages.</p>
+      <p>Ce qui efface vos données, c'est <b>désinstaller</b> l'app. Si vous devez la désinstaller pour une raison quelconque, exportez d'abord une sauvegarde.</p>
+    </details>
+
+    <details>
+      <summary>Un rappel n'a pas sonné</summary>
+      <p>C'est presque toujours <b>l'économiseur de batterie</b> d'Android, qui suspend l'app et l'empêche de se réveiller. La solution :</p>
+      <ol>
+        <li>Paramètres d'Android → Applications → <b>Mi Apunte</b>.</li>
+        <li>Entrez dans <b>Batterie</b> et choisissez <b>Sans restriction</b>.</li>
+        <li>Vérifiez dans <b>Notifications</b> que l'autorisation est accordée.</li>
+      </ol>
+      <p>Sur Xiaomi, Huawei et Samsung, ce réglage est souvent plus caché et plus agressif — cherchez « démarrage automatique » ou « apps protégées ».</p>
+    </details>
+
+    <details>
+      <summary>Le scan du reçu n'a pas bien lu les données</summary>
+      <p>Ça aide beaucoup de prendre la photo <b>avec une bonne lumière</b>, avec le reçu <b>à plat</b> (sans plis) et <b>cadré en entier</b>, sans couper le total.</p>
+      <p>Si ça échoue quand même, <b>corrigez le champ à la main avant d'enregistrer</b>. Le scan ne fait que pré-remplir — il ne décide jamais. Les reçus très flous, thermiques effacés ou aux typographies étranges peuvent lui poser problème.</p>
+      <p>Cette fonction est pour l'instant <b>réservée à Android</b>.</p>
+    </details>
+
+    <details>
+      <summary>Comment changer la langue ?</summary>
+      <p>Dans <b>Paramètres → Langue</b>. L'espagnol, l'anglais et le français sont disponibles, et le changement est immédiat.</p>
+    </details>
+
+    <details>
+      <summary>J'ai oublié le mot de passe d'une note protégée</summary>
+      <p>Il n'y a aucun moyen de le récupérer. Le mot de passe est stocké sous forme de hash — même moi je ne peux pas le lire, et c'est exactement ce qui le rend sûr.</p>
+      <p>Si vous avez perdu le mot de passe d'une note, son contenu devient inaccessible. C'est pourquoi il vaut mieux réserver la protection aux notes qui en ont vraiment besoin.</p>
+    </details>
+
+    <details>
+      <summary>Comment effacer toutes mes données ?</summary>
+      <p>Comme Mi Apunte ne garde rien sur aucun serveur, il n'y a rien à demander ni personne à qui le demander : vous effacez les données vous-même et elles disparaissent immédiatement et complètement.</p>
+      <p>Paramètres d'Android → Applications → Mi Apunte → <b>Stockage → Effacer les données</b>. Ou désinstallez simplement l'app.</p>
+    </details>
+  </div>
+
+  <div class="warn">
+    <b>À propos de votre vie privée :</b> Mi Apunte ne collecte aucune de vos données, donc quand vous
+    m'écrivez je <b>n'ai aucun moyen de voir vos notes ni vos finances</b>. Si vous me signalez un bug,
+    décrivez-moi les étapes pour le reproduire — et s'il vous plaît, ne m'envoyez pas votre sauvegarde
+    sauf si je vous la demande expressément. Détails dans la
+    <a href="/miapunte/fr/confidentialite/">politique de confidentialité</a>.
+  </div>
+
+  <a class="back" href="/miapunte/fr/">← Retour à Mi Apunte</a>
+</div>
+
+<footer>
+  <div class="foot-in">
+    <span>Mi Apunte © <span id="y"></span> · Une app de <a href="/">Starling Germosen</a></span>
+    <span><a href="/miapunte/fr/">Accueil</a> · <a href="/miapunte/fr/confidentialite/">Confidentialité</a> · <a href="/miapunte/soporte/">Español</a> · <a href="/miapunte/en/support/">English</a></span>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
