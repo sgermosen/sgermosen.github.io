@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+# paginas de LottoKing por mercado, listadas aparte para que queden explicitas
+Allow: /products/lottoking/
+Allow: /products/lottoking/nicaragua/
+Allow: /products/lottoking/bolet/
 
 Sitemap: https://sgermosen.com/sitemap.xml

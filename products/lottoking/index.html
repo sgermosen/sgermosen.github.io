@@ -35,7 +35,12 @@
     {
       "@type": "SoftwareApplication",
       "name": "LottoKing",
-      "url": "https://sgermosen.com/products/lottoking/",
+      "url": "https://lotto.praysoft.net/sistema-para-bancas",
+      "sameAs": [
+        "https://lotto.praysoft.net/",
+        "https://lotto.praysoft.net/bolet-haiti",
+        "https://lotto.praysoft.net/lottery-bank-software"
+      ],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "Sistema de gestión para bancas de lotería",
       "operatingSystem": "Web (navegador), Android 7.0+",
@@ -183,6 +188,10 @@ figcaption{margin-top:11px;font-size:13.5px;color:var(--ink3);text-align:center}
 .lot-card li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #EEF1ED;padding-bottom:7px}
 .lot-card li:last-child{border-bottom:0}
 .lot-card time{color:var(--ink3);font-variant-numeric:tabular-nums;font-size:14px;white-space:nowrap}
+/* dos columnas solo en escritorio: abajo de 900px la media query general ya deja una sola */
+@media (min-width:901px){.lot-grid.two{grid-template-columns:repeat(2,1fr)}}
+.lot-card a.go{color:var(--secondary);font-weight:700;text-decoration:none}
+.lot-card a.go:hover{text-decoration:underline}
 
 /* pasos */
 .steps{counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
@@ -253,6 +262,8 @@ footer{background:var(--panel);border-top:1px solid var(--line);padding:40px 0 3
       <a href="#app">App</a>
       <a href="#loterias">Loterías</a>
       <a href="#faq">Preguntas</a>
+      <!-- sitio oficial del producto: todo el marketing nuevo vive alli, el enlace le pasa autoridad -->
+      <a href="https://lotto.praysoft.net/sistema-para-bancas">Sitio oficial</a>
       <a class="btn btn-p" href="https://wa.me/18492077714?text=Hola%20Starling%2C%20quiero%20una%20demo%20de%20LottoKing%20para%20mi%20banca" rel="noopener">Pedir demo</a>
     </nav>
   </div>
@@ -261,14 +272,15 @@ footer{background:var(--panel);border-top:1px solid var(--line);padding:40px 0 3
 <main>
 <section class="hero">
   <div class="hero-in">
-    <span class="eyebrow">En producción desde <b>2021</b> · bancas en RD y Haití</span>
+    <span class="eyebrow">En producción desde <b>2021</b> · bancas en RD, Haití y Nicaragua</span>
     <h1>Tú en Miami.<br>Tus terminales en <span>Haití</span>.</h1>
     <p class="sub">Tus vendedores facturan desde un teléfono Android. Tú abres el portal desde donde estés y ves cada ticket, cada número caliente y el balance del día, sin llamar a nadie.</p>
     <div class="hero-cta">
-      <a class="btn btn-p btn-lg" href="https://wa.me/18492077714?text=Hola%20Starling%2C%20quiero%20una%20demo%20de%20LottoKing%20para%20mi%20banca" rel="noopener">Pedir una demo por WhatsApp</a>
-      <a class="btn btn-o" href="#portal">Ver el sistema por dentro</a>
+      <!-- CTA principal del hero: manda al sitio oficial, que es donde vive el producto desde ahora -->
+      <a class="btn btn-p btn-lg" href="https://lotto.praysoft.net/sistema-para-bancas">Ver el sistema en lotto.praysoft.net</a>
+      <a class="btn btn-o" href="https://wa.me/18492077714?text=Hola%20Starling%2C%20quiero%20una%20demo%20de%20LottoKing%20para%20mi%20banca" rel="noopener">Pedir una demo por WhatsApp</a>
     </div>
-    <p class="microcopy">Te respondo yo, no un bot · Demo con datos de prueba · Sin compromiso</p>
+    <p class="microcopy">Sitio oficial del producto: <a href="https://lotto.praysoft.net/sistema-para-bancas" style="color:var(--secondary);font-weight:600">lotto.praysoft.net</a> · Te respondo yo, no un bot · Sin compromiso</p>
   </div>
   <div class="hero-shot">
     <img src="/assets/img/lottoking/portal-panel.jpg" alt="Panel del dueño en LottoKing con ventas, premios, comisión y balance del día, gráfico por lotería y tabla por vendedor" width="1280" height="800" fetchpriority="high" decoding="async">
@@ -401,13 +413,33 @@ footer{background:var(--panel);border-top:1px solid var(--line);padding:40px 0 3
         <li>Florida Día / Noche <time>13:25 · 21:40</time></li>
         <li>Georgia Día / Noche <time>12:24 · 18:54</time></li>
       </ul>
-      <p style="margin-top:16px;font-size:15px;color:var(--ink3)">Todas las horas son hora de Santo Domingo, cinco minutos antes del sorteo oficial. Puedes activar solo las que tu banca vende.</p>
+      <p style="margin-top:16px;font-size:15px;color:var(--ink3)">Todas las horas son hora de Santo Domingo, cinco minutos antes del sorteo oficial. Puedes activar solo las que tu banca vende. Los resultados de cada día se publican en <a class="go" href="https://lotto.praysoft.net/resultados-loterias-hoy">lotto.praysoft.net</a>.</p>
     </div>
   </div>
   <figure style="margin:40px 0 0">
     <div class="frame"><img src="/assets/img/lottoking/portal-loterias.jpg" alt="Listado de loterías de la banca con código, nombre, abreviatura, hora de cierre y estatus" width="1280" height="800" loading="lazy" decoding="async"></div>
     <figcaption>Así llega el catálogo el primer día. Cada lotería se activa o se apaga con un clic.</figcaption>
   </figure>
+</section>
+
+<section id="mercados" class="wrap" style="padding:74px 0 0">
+  <span class="tag">Dónde se está usando</span>
+  <h2>Bancas en Haití, en Nicaragua y en República Dominicana.</h2>
+  <p class="lead">El mismo sistema, con los sorteos y los premios de cada mercado. Hay bancas con el dueño en Florida y las terminales en Haití, y bancas montando su operación en Nicaragua.</p>
+  <div class="lot-grid two">
+    <div class="lot-card rv">
+      <h3>Nicaragua</h3>
+      <div class="n">Diaria 11:00 · 15:00 · 21:00 · Nacional los martes</div>
+      <p style="margin-top:14px;font-size:15.5px;color:var(--ink2)">La Diaria con sus tres sorteos diarios, el de las 18:00 de sábado y domingo, y la Lotería Nacional del martes, cada uno con su hora de cierre.</p>
+      <p style="margin-top:12px"><a class="go" href="/products/lottoking/nicaragua/">Sistema para bancas en Nicaragua</a></p>
+    </div>
+    <div class="lot-card rv">
+      <h3>Bòlèt</h3>
+      <div class="n">3 lo · Maryaj · Loto 3 · Loto 4</div>
+      <p style="margin-top:14px;font-size:15.5px;color:var(--ink2)">New York, Florida, Georgia, Texas, Tennessee, Chicago, California y Haiti Bolet, en matin, soir y nuit, con los pagos que tú configuras.</p>
+      <p style="margin-top:12px"><a class="go" href="/products/lottoking/bolet/">Sistèm pou bank bòlèt (kreyòl)</a></p>
+    </div>
+  </div>
 </section>
 
 <section class="band">
@@ -458,7 +490,8 @@ footer{background:var(--panel);border-top:1px solid var(--line);padding:40px 0 3
     <p>Te muestro el sistema con datos de prueba, en vivo, y me dices si resuelve lo tuyo. Si no lo resuelve, te lo digo yo primero.</p>
     <div class="hero-cta">
       <a class="btn btn-w btn-lg" href="https://wa.me/18492077714?text=Hola%20Starling%2C%20quiero%20una%20demo%20de%20LottoKing%20para%20mi%20banca" rel="noopener">Pedir la demo por WhatsApp</a>
-      <a class="btn btn-p btn-lg" href="mailto:sgermosen@outlook.com?subject=LottoKing%20%E2%80%94%20solicitar%20demo">Escribir por correo</a>
+      <!-- segundo boton del cierre al sitio oficial: el correo sigue disponible en la seccion de preguntas -->
+      <a class="btn btn-p btn-lg" href="https://lotto.praysoft.net/sistema-para-bancas">Ver el sitio oficial</a>
     </div>
     <p class="note">LottoKing es un software de gestión: no opera ni vende loterías. Cada banca es responsable de operar bajo las leyes de su país. Uso interno de personal autorizado, mayores de 18 años.</p>
   </div>
@@ -467,8 +500,8 @@ footer{background:var(--panel);border-top:1px solid var(--line);padding:40px 0 3
 
 <footer>
   <div class="foot-in">
-    <span>LottoKing © <span id="y"></span> · Producto de <a href="/">Starling Germosen</a></span>
-    <span><a href="/">Portafolio</a> · <a href="/fenix/">Fénix</a> · <a href="/miapunte/">Mi Apunte</a> · <a href="/products/resumibot/">ResumiBot</a> · <a href="/products/estimatpro/">Estimat Pro</a> · <a href="/products/braintrain/">BrainTrain</a> · <a href="/products/academic-system/">AcademicSystem</a></span>
+    <span>LottoKing © <span id="y"></span> · Producto de <a href="/">Starling Germosen</a> · Sitio oficial: <a href="https://lotto.praysoft.net/sistema-para-bancas">lotto.praysoft.net</a></span>
+    <span><a href="/products/lottoking/nicaragua/">Nicaragua</a> · <a href="/products/lottoking/bolet/">Bòlèt</a> · <a href="/">Portafolio</a> · <a href="/fenix/">Fénix</a> · <a href="/miapunte/">Mi Apunte</a> · <a href="/products/resumibot/">ResumiBot</a> · <a href="/products/estimatpro/">Estimat Pro</a> · <a href="/products/braintrain/">BrainTrain</a> · <a href="/products/academic-system/">AcademicSystem</a></span>
   </div>
 </footer>
 
