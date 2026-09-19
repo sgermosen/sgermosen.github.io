@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ResumiBot — Resúmenes con IA para grupos de WhatsApp | Bot de resúmenes, podcasts y noticieros</title>
-<meta name="description" content="ResumiBot lee tus grupos de WhatsApp y convierte miles de mensajes en resúmenes con IA, podcasts narrados, noticieros en video con avatares e infografías. Recordatorios, transcripción de audios, respuestas automáticas y más. SaaS en producción — pruébalo en resumibot.com.">
+<meta name="description" content="ResumiBot lee tus grupos de WhatsApp y convierte miles de mensajes en resúmenes con IA, podcasts narrados, noticieros en video con avatares e infografías. Recordatorios, transcripción de audios, respuestas automáticas y más. SaaS en producción, en español, inglés y portugués — pruébalo gratis en resumibot.com.">
 <meta name="keywords" content="bot resúmenes WhatsApp, resumir grupo WhatsApp, IA WhatsApp, bot WhatsApp inteligencia artificial, resumen automático chat, asistente WhatsApp, transcribir audios WhatsApp, automatización WhatsApp negocios, ResumiBot">
 <meta name="author" content="Starling Germosen">
 <meta name="robots" content="index, follow">
@@ -36,12 +36,13 @@
       "applicationCategory": "CommunicationApplication",
       "operatingSystem": "Web, WhatsApp",
       "description": "SaaS multi-tenant que convierte los mensajes de grupos de WhatsApp en resúmenes con IA, podcasts narrados, noticieros en video con avatares, infografías y análisis de sentimiento. Incluye recordatorios, transcripción de notas de voz, respuestas automáticas y API pública.",
-      "inLanguage": "es",
+      "inLanguage": ["es", "en", "pt"],
+      "sameAs": ["https://resumibot.com/en/", "https://resumibot.com/pt/"],
       "author": { "@type": "Person", "name": "Starling Germosen", "url": "https://sgermosen.com/" },
       "offers": [
-        { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD" },
-        { "@type": "Offer", "name": "Pro", "price": "19", "priceCurrency": "USD", "description": "Mensual" },
-        { "@type": "Offer", "name": "Deluxe", "price": "49", "priceCurrency": "USD", "description": "Mensual, incluye API pública" }
+        { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD", "description": "5 grupos, 50 llamadas de IA al mes, sin tarjeta" },
+        { "@type": "Offer", "name": "Pro", "price": "19", "priceCurrency": "USD", "description": "Mensual: 10 grupos, 500 llamadas de IA al mes, 20 medias al día, modo negocio, API" },
+        { "@type": "Offer", "name": "Deluxe", "price": "49", "priceCurrency": "USD", "description": "Mensual: 25 grupos, 5.000 llamadas de IA al mes, media ilimitada, video noticiero, webhooks, API" }
       ],
       "featureList": "Resúmenes diarios con IA, podcasts narrados, noticieros en video con avatar, infografías, análisis de sentimiento, transcripción de audios, recordatorios y agenda, respuestas automáticas, captura de leads, webhooks, API REST"
     },
@@ -71,7 +72,12 @@
         {
           "@type": "Question",
           "name": "¿Necesito un número de WhatsApp dedicado?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Se recomienda usar un número dedicado para el bot. ResumiBot se conecta mediante el protocolo de WhatsApp Web con emparejamiento por código QR." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí: necesitas un número de WhatsApp aparte para el bot, nunca el tuyo personal. ResumiBot usa una conexión no oficial (la de WhatsApp Web, con código QR) y WhatsApp puede bloquear números por uso automatizado; con una línea dedicada tu número personal nunca está en juego. Cómo conseguir uno: resumibot.com/chip." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿ResumiBot está en inglés y portugués?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí. Las páginas del producto están en resumibot.com/en/ (inglés) y resumibot.com/pt/ (portugués), el bot escribe los resúmenes en el idioma que elijas y el portal del cliente se puede usar en español, inglés o portugués." }
         }
       ]
     },
@@ -128,6 +134,14 @@ h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:900;letter-spacing:-.025em;m
 .fcard .ic{font-size:1.7rem}
 .fcard h3{font-size:1.05rem;font-weight:800;margin:12px 0 6px}
 .fcard p{color:var(--mut);font-size:.9rem}
+a.fcard{display:block;color:inherit;transition:border-color .15s,transform .15s}
+a.fcard:hover{border-color:var(--wa);transform:translateY(-2px)}
+.lang-row{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:20px}
+@media(max-width:640px){.lang-row{grid-template-columns:1fr}}
+.lang-row .fcard h3 span{font-size:.72rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--wa);margin-left:8px}
+.nav-lang{display:flex;gap:6px}
+.nav-lang a{font-size:.78rem;letter-spacing:.06em;border:1px solid var(--line);border-radius:99px;padding:4px 9px}
+.nav-lang a:hover{border-color:var(--wa);color:var(--txt)}
 .dark-band{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .cmd{background:#0d1a12;border:1px solid #1d3a28;border-radius:12px;padding:14px 18px;font-family:ui-monospace,Menlo,monospace;font-size:.86rem;color:#a7e3bd;margin-bottom:10px}
 .cmd b{color:var(--wa)}
@@ -168,6 +182,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
       <a href="#planes">Planes</a>
       <a href="#faq">FAQ</a>
       <a href="/">← Portafolio</a>
+      <span class="nav-lang" aria-label="ResumiBot en otros idiomas"><a href="https://resumibot.com/en/" lang="en" hreflang="en" title="ResumiBot in English">EN</a><a href="https://resumibot.com/pt/" lang="pt" hreflang="pt" title="ResumiBot em português">PT</a></span>
       <a class="nav-cta" href="https://resumibot.com" target="_blank" rel="noopener">Ir a resumibot.com</a>
     </div>
   </div>
@@ -182,6 +197,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
       <a class="btn btn-p" href="https://resumibot.com" target="_blank" rel="noopener">🚀 Probar ResumiBot</a>
       <a class="btn btn-o" href="mailto:sgermosen@outlook.com?subject=ResumiBot%20—%20implementación%20empresarial">Implementación empresarial</a>
     </div>
+    <p class="note" style="margin-top:20px">Gratis para siempre, sin tarjeta. Necesitas un número de WhatsApp aparte para el bot — nunca el tuyo personal (<a href="https://resumibot.com/chip">por qué y cómo conseguirlo</a>).<br><span lang="en">Also in <a href="https://resumibot.com/en/" hreflang="en">English</a></span> · <span lang="pt">Também em <a href="https://resumibot.com/pt/" hreflang="pt">português</a></span></p>
     <div class="hero-img"><img src="/assets/img/resumibot-og.png" alt="ResumiBot — resúmenes con IA, podcasts, noticieros e infografías para grupos de WhatsApp" width="1200" height="630"></div>
   </div>
 </header>
@@ -244,6 +260,31 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
   </div>
 </section>
 
+<section id="landings">
+  <div class="wrap">
+    <span class="tag">Por dónde empezar</span>
+    <h2>Una página para cada tipo de grupo.</h2>
+    <!-- el marketing del producto vive en resumibot.com (42 landings en español y las mismas en
+         inglés y portugués); desde aquí solo se enlaza, como hace la página de LottoKing con su sitio oficial -->
+    <p class="sub2">Todo el marketing de ResumiBot vive en <a href="https://resumibot.com">resumibot.com</a>: 42 páginas en español, y las mismas en inglés y portugués. Estas son las que más gente busca:</p>
+    <div class="grid3">
+      <a class="fcard" href="https://resumibot.com/residencial"><span class="ic">🏘️</span><h3>Residenciales y condominios</h3><p>El grupo de vecinos, resumido cada día: decisiones, cuotas y avisos sin leer 500 mensajes.</p></a>
+      <a class="fcard" href="https://resumibot.com/colegios"><span class="ic">🎒</span><h3>Grupos de padres del colegio</h3><p>Tareas, fechas y avisos de la maestra, en un boletín que sí se lee.</p></a>
+      <a class="fcard" href="https://resumibot.com/negocios"><span class="ic">🏢</span><h3>Negocios que atienden por WhatsApp</h3><p>Bienvenida, ausencia, respuestas por palabra clave y plantillas: atención fuera de hora.</p></a>
+      <a class="fcard" href="https://resumibot.com/equipos"><span class="ic">🧑‍💼</span><h3>Empresas que funcionan por WhatsApp</h3><p>Que quede algo escrito: el acta y los pendientes del día, sin que nadie los redacte.</p></a>
+      <a class="fcard" href="https://resumibot.com/chismosos"><span class="ic">🍿</span><h3>Para los chismosos</h3><p>La discusión buena del día, contada con sabor: <b>!bot chisme</b>.</p></a>
+      <a class="fcard" href="https://resumibot.com/silenciosos"><span class="ic">🤫</span><h3>Para los que leen y nunca escriben</h3><p>Entérate de lo importante sin leer el grupo y sin exponerte.</p></a>
+      <a class="fcard" href="https://resumibot.com/podcast"><span class="ic">🎙️</span><h3>Tu grupo como podcast diario</h3><p>Dos voces conversan sobre lo que pasó. Contenido nuevo cada día sin grabar nada.</p></a>
+      <a class="fcard" href="https://resumibot.com/audios"><span class="ic">🎧</span><h3>Notas de voz eternas</h3><p>La nota de voz de seis minutos, en viñetas. Transcripción con un comando.</p></a>
+      <a class="fcard" href="https://resumibot.com/membresias"><span class="ic">💎</span><h3>Comunidades de pago</h3><p>Material diario para retener miembros: resumen, podcast y noticiero, sin producirlos.</p></a>
+    </div>
+    <div class="lang-row">
+      <a class="fcard" href="https://resumibot.com/en/" lang="en" hreflang="en"><span class="ic">🇺🇸</span><h3>ResumiBot in English<span>EN</span></h3><p>Daily summaries, podcasts and news shows from your WhatsApp groups. Free plan, no card. The bot writes in your language.</p></a>
+      <a class="fcard" href="https://resumibot.com/pt/" lang="pt" hreflang="pt"><span class="ic">🇧🇷</span><h3>ResumiBot em português<span>PT</span></h3><p>Resumos diários, podcast e telejornal dos seus grupos de WhatsApp. Plano grátis, sem cartão. O bot escreve no seu idioma.</p></a>
+    </div>
+  </div>
+</section>
+
 <section id="planes" class="dark-band">
   <div class="wrap">
     <span class="tag">Planes</span>
@@ -253,10 +294,10 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
         <h3>Free</h3>
         <div class="price">$0<small>/mes</small></div>
         <ul>
-          <li>1 grupo conectado</li>
-          <li>Resúmenes con IA básicos</li>
-          <li>Comandos esenciales</li>
-          <li>Ideal para probar el servicio</li>
+          <li>5 grupos conectados</li>
+          <li>50 llamadas de IA al mes</li>
+          <li>Resumen diario y comandos (resumen, tópico, resume de audios)</li>
+          <li>Gratis para siempre, sin tarjeta</li>
         </ul>
       </div>
       <div class="plan hot">
@@ -264,26 +305,26 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
         <h3>Pro</h3>
         <div class="price">$19<small>/mes</small></div>
         <ul>
-          <li>Más grupos y más llamadas de IA</li>
-          <li>Podcasts y audios generados</li>
-          <li>Transcripción de notas de voz</li>
-          <li>Modo negocio completo</li>
-          <li>CV Mailer y audios a demanda</li>
+          <li>10 grupos · 500 llamadas de IA al mes</li>
+          <li>20 medias al día: podcast, infografía, resumen web</li>
+          <li>Clima del grupo y comandos Pro (tema, pendientes, chisme)</li>
+          <li>Modo negocio completo y CV Mailer</li>
+          <li>API (hasta 50 envíos al día)</li>
         </ul>
       </div>
       <div class="plan">
         <h3>Deluxe</h3>
         <div class="price">$49<small>/mes</small></div>
         <ul>
-          <li>Todo lo de Pro, con límites amplios</li>
-          <li>Noticieros en video con avatar</li>
-          <li>Infografías, stickers y clips</li>
-          <li>API pública y webhooks</li>
-          <li>Resúmenes de chats 1:1 y seguimientos</li>
+          <li>25 grupos · 5.000 llamadas de IA al mes</li>
+          <li>Media ilimitada: noticiero en video con avatar</li>
+          <li>Resumen semanal y moderación avanzada</li>
+          <li>Respuesta inteligente, leads y resumen de chats 1:1</li>
+          <li>Webhooks firmados y API (hasta 500 envíos al día)</li>
         </ul>
       </div>
     </div>
-    <p class="note">Precios del SaaS público en resumibot.com. ¿Necesitas una instancia dedicada, white-label o integración a medida? <a href="mailto:sgermosen@outlook.com?subject=ResumiBot%20white-label">Hablemos</a>.</p>
+    <p class="note">Precios del SaaS público en resumibot.com; las cuotas de IA son mensuales y se reinician cada mes. ¿Necesitas una instancia dedicada, white-label o integración a medida? <a href="mailto:sgermosen@outlook.com?subject=ResumiBot%20white-label">Hablemos</a>.</p>
   </div>
 </section>
 
@@ -294,7 +335,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
     <div class="faq">
       <details>
         <summary>¿Cómo se conecta ResumiBot a mi WhatsApp?</summary>
-        <p>Mediante emparejamiento con código QR, igual que WhatsApp Web. Recomendamos usar un número dedicado para el bot: la conexión usa el protocolo de WhatsApp Web y un número exclusivo mantiene tu línea personal separada del servicio.</p>
+        <p>Mediante emparejamiento con código QR, igual que WhatsApp Web. <b>Necesitas un número aparte para el bot — nunca el tuyo personal.</b> Es una conexión no oficial y WhatsApp puede bloquear números por uso automatizado; con una línea dedicada tu número personal nunca está en juego. En <a href="https://resumibot.com/chip">resumibot.com/chip</a> está explicado qué chip usar y qué no hacer con él.</p>
       </details>
       <details>
         <summary>¿Mis mensajes están seguros?</summary>
@@ -302,11 +343,15 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
       </details>
       <details>
         <summary>¿Puedo usar mi propia clave de OpenAI, Claude o Gemini?</summary>
-        <p>Sí — es el modelo BYOK (Bring Your Own Key). Conectas tu clave y consumes directo de tu cuenta del proveedor, sin límites de la plataforma. Si tu clave falla, el sistema cae automáticamente a la clave global para no interrumpir el servicio.</p>
+        <p>Sí — es el modelo BYOK (Bring Your Own Key). Conectas tu clave y consumes directo de tu cuenta del proveedor, sin el límite mensual del plan (con topes técnicos razonables contra abuso). Si tu clave falla, el sistema cae automáticamente a la clave global para no interrumpir el servicio.</p>
       </details>
       <details>
         <summary>¿Sirve para negocios, no solo para grupos?</summary>
         <p>Sí. ResumiBot incluye un modo negocio completo: respuestas automáticas, horarios, bienvenidas, captura de leads, seguimiento de clientes, difusiones, plantillas y hasta respuesta inteligente con IA usando el contexto de tu empresa.</p>
+      </details>
+      <details>
+        <summary>¿Está en inglés y portugués?</summary>
+        <p>Sí. Las páginas del producto están en <a href="https://resumibot.com/en/" lang="en" hreflang="en">resumibot.com/en/</a> y <a href="https://resumibot.com/pt/" lang="pt" hreflang="pt">resumibot.com/pt/</a>, el bot escribe los resúmenes en el idioma que elijas en <i>Voz del Bot</i>, y el portal del cliente se puede usar en español, inglés o portugués.</p>
       </details>
       <details>
         <summary>¿Puedo tener ResumiBot con mi propia marca?</summary>
@@ -319,7 +364,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
 <div class="cta-final">
   <div class="wrap">
     <h2>Deja que la IA lea el grupo <span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent">por ti.</span></h2>
-    <p>Pruébalo gratis hoy — o implementémoslo para tu empresa.</p>
+    <p>Pruébalo gratis, sin tarjeta — o implementémoslo para tu empresa. Recuerda: el bot va en un número aparte, nunca en el tuyo personal.</p>
     <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
       <a class="btn btn-p" href="https://resumibot.com" target="_blank" rel="noopener">Ir a resumibot.com</a>
       <a class="btn btn-o" href="https://wa.me/18492077714?text=Hola%2C%20me%20interesa%20ResumiBot" target="_blank" rel="noopener">💬 Escribir por WhatsApp</a>
