@@ -48,9 +48,9 @@ p.sum{color:var(--mut)}
 .edu{margin-left:18px}
 @media print{
   .toolbar{display:none}
-  body{background:#fff;font-size:12.6px}
-  .page{box-shadow:none;margin:0;max-width:none;padding:10mm 12mm;border-radius:0}
-  h2{margin:16px 0 8px}
+  body{background:#fff;font-size:12.3px}
+  .page{box-shadow:none;margin:0;max-width:none;padding:6mm 10mm;border-radius:0}
+  h2{margin:14px 0 7px}
   a{color:var(--ink)}
   .job-head .co,.headline,h2{color:#0e7490}
   .job-head,.proj{break-inside:avoid}
@@ -171,7 +171,7 @@ p.sum{color:var(--mut)}
 
   <div class="proj">
     <b>ResumiBot — AI WhatsApp assistant SaaS</b><span class="tagp">Live · resumibot.com</span>
-    <p>Founder and sole engineer of a multi-tenant SaaS that turns busy WhatsApp groups into daily AI summaries, narrated podcasts, voiced news-show videos, infographics and sentiment reads, plus a business mode with auto-replies and AI lead capture. Integrates three LLM providers (Google Gemini by default; OpenAI and Anthropic Claude with per-tenant BYOK keys), neural TTS, FFmpeg media pipelines, PayPal subscriptions and a REST API with signed webhooks — Node.js/Express orchestration with a Python media engine and SQLite (WAL), deployed with PM2/Nginx and GitHub Actions CI/CD; site and bot in Spanish, English and Portuguese. The clearest proof of my ability to integrate many technologies into one shipped product.</p>
+    <p>Founder and sole engineer of a multi-tenant SaaS that turns busy WhatsApp groups into daily AI summaries, narrated podcasts, anchor-style news videos with talking avatars, infographics and sentiment reads, plus a business mode with auto-replies and AI lead capture. Integrates three LLM providers (Google Gemini by default; OpenAI and Anthropic Claude with per-tenant BYOK keys), Whisper transcription, neural TTS and XTTS voice cloning (Replicate), talking-avatar video (HeyGen or D-ID), FFmpeg media pipelines, PayPal subscriptions and a REST API with signed webhooks — Node.js/Express orchestration with a Python media engine and SQLite (WAL), deployed with PM2/Nginx and GitHub Actions CI/CD; site and bot in Spanish, English and Portuguese. The clearest proof of my ability to integrate many technologies into one shipped product.</p>
   </div>
 
   <div class="proj">
@@ -181,7 +181,12 @@ p.sum{color:var(--mut)}
 
   <div class="proj">
     <b>LottoKing — lottery retail management platform</b><span class="tagp">In production since 2021</span>
-    <p>End-to-end platform for lottery retail networks ("bancas"): ticket sales with QR/barcode and Bluetooth thermal printing, automated prize calculation across 9 game modes and 12+ lotteries (US, Haiti, Nicaragua, Chile), risk/restriction engine, daily cash reconciliation, ~20 exportable reports and real-time SignalR monitoring. ASP.NET Core + SQL Server, multi-tenant, multi-currency; seller app in Xamarin with an in-progress .NET MAUI rewrite.</p>
+    <p>End-to-end platform for lottery retail networks ("bancas"): ticket sales with QR/barcode and Bluetooth thermal printing, automated prize calculation across 9 game modes and 12+ lotteries (US, Haiti, Nicaragua, Chile), risk/restriction engine, daily cash reconciliation, ~20 exportable reports and real-time SignalR monitoring. ASP.NET Core + SQL Server, multi-tenant, multi-currency; seller apps in Xamarin and .NET MAUI.</p>
+  </div>
+
+  <div class="proj">
+    <b>Parqueo Virtual — QR signs for fair use of visitor parking</b><span class="tagp">Live · 7-day free trial</span>
+    <p>Subscription SaaS for residential complexes, offices and clinics: drivers scan a QR sign at the spot and their time starts running; the guard scans the same sign and instantly sees whether that spot has time registered, and each violation is kept with photo, date and time. Admin portal with a live board and reports, a separate platform-owner portal, and two .NET MAUI Android apps (guard and driver) in testing. .NET 10, ASP.NET Core MVC, EF Core, SQL Server; tenant isolation tested; 1,624 automated .NET tests.</p>
   </div>
 
   <div class="proj">
@@ -197,6 +202,11 @@ p.sum{color:var(--mut)}
   <div class="proj">
     <b>Copa Amistosa — score-prediction game among friends</b><span class="tagp">Release candidate · Android + web</span>
     <p>Prediction game with no money in the app: user-created public or private tournaments with invite codes, predictions locked at kickoff, 3 pts exact score / 1 pt result (doubled with the banker) and a real-time leaderboard. .NET 10 end to end: ASP.NET Core REST API with JWT, SignalR, MVC web panel and .NET MAUI Android app; 80 xUnit tests and GitHub Actions CI.</p>
+  </div>
+
+  <div class="proj">
+    <b>Mi Apunte — notes, expenses and invoices app</b><span class="tagp">Published on Google Play</span>
+    <p>All-in-one personal productivity app in .NET MAUI: eight note types in nested folders, expenses and income with monthly budgets, invoices with PDF export, text-to-image cards (SkiaSharp), reminders with recurrence, reports, backup/restore and folder sync to Drive or OneDrive. Spanish, English and French; no ads, by design. Version 1.2.0 published on Google Play (Aug 2026); 177 automated tests and GitHub Actions CI.</p>
   </div>
 
   <div class="proj">
