@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Estimat Pro — Compara precios de materiales eléctricos antes de comprar | App para electricistas</title>
-<meta name="description" content="Estimat Pro compara el costo total real de tus materiales eléctricos — precio, impuestos, delivery, stock y promociones — en todas las tiendas a la vez. Divide el carrito entre tiendas para ahorrar más y genera órdenes de compra en PDF con QR. App para electricistas y contratistas en EE.UU.">
-<meta name="keywords" content="comparar precios materiales eléctricos, app para electricistas, precios breakers cables, comparador ferretería eléctrica, materiales eléctricos baratos, electrical materials price comparison, app contratistas eléctricos, Estimat Pro, EstimatePro">
+<title>Estimat Pro — Compara el costo total de tus materiales eléctricos entre tiendas</title>
+<meta name="description" content="App para electricistas y contratistas en EE. UU.: armas tu lista de materiales eléctricos y comparas el costo total en cada tienda, con impuestos, delivery, stock y promociones. MVP construido, aún sin publicar.">
+<meta name="keywords" content="comparar precios materiales eléctricos, app para electricistas, app para contratistas eléctricos, comparador de precios de breakers y cable, orden de compra PDF, electrical materials price comparison, Estimat Pro">
 <meta name="author" content="Starling Germosen">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://sgermosen.com/products/estimatpro/">
@@ -13,15 +13,17 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sgermosen.com/products/estimatpro/">
-<meta property="og:title" content="Estimat Pro — Compara · Ahorra · Compra">
-<meta property="og:description" content="El mismo breaker puede costarte $4 más en tu tienda de siempre. Compara el costo total real en todas las tiendas a la vez y divide tu carrito para ahorrar más.">
+<meta property="og:title" content="Estimat Pro — Compara antes de comprar">
+<meta property="og:description" content="Arma tu lista de materiales eléctricos sin ver precios y compara el costo total en cada tienda: precio, impuestos del estado, delivery, stock, distancia y promociones. MVP construido, aún sin publicar.">
 <meta property="og:image" content="https://sgermosen.com/assets/img/estimatpro-feature.png">
+<meta property="og:image:alt" content="Estimat Pro: compara precios de materiales eléctricos en todas las tiendas a la vez.">
 <meta property="og:locale" content="es_US">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Estimat Pro — Compara precios de materiales eléctricos">
-<meta name="twitter:description" content="Precio + impuestos + delivery + stock + promociones, en todas las tiendas a la vez. Para electricistas y contratistas.">
+<meta name="twitter:title" content="Estimat Pro — Compara el costo total de tus materiales eléctricos">
+<meta name="twitter:description" content="Precio, impuestos del estado, delivery, stock y promociones, tienda por tienda. Para electricistas y contratistas en EE. UU. Aún sin publicar.">
 <meta name="twitter:image" content="https://sgermosen.com/assets/img/estimatpro-feature.png">
+<meta name="twitter:image:alt" content="Estimat Pro: compara precios de materiales eléctricos en todas las tiendas a la vez.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -32,15 +34,14 @@
     {
       "@type": "SoftwareApplication",
       "name": "Estimat Pro",
-      "alternateName": "EstimatePro",
       "url": "https://sgermosen.com/products/estimatpro/",
+      "image": "https://sgermosen.com/assets/img/estimatpro-feature.png",
       "applicationCategory": "ShoppingApplication",
-      "operatingSystem": "iOS, Android, Web",
-      "description": "Marketplace de comparación de precios de materiales eléctricos para electricistas, contratistas y remodeladores en Estados Unidos. Compara costo total real (precio + impuestos por estado + delivery + stock + distancia + promociones) entre proveedores, divide el carrito entre tiendas y genera órdenes de compra en PDF con código QR.",
+      "operatingSystem": "Android, iOS, Web",
+      "description": "App para electricistas, contratistas y remodeladores en Estados Unidos que compara el costo total de una lista de materiales eléctricos entre las tiendas que publican en ella: precio, impuestos del estado, delivery, stock, distancia y promociones. Divide la compra entre tiendas y genera una orden de compra en PDF con código QR. No vende materiales ni procesa pagos. MVP construido, aún sin publicar: no está en Google Play ni en App Store.",
       "inLanguage": ["es", "en"],
       "author": { "@type": "Person", "name": "Starling Germosen", "url": "https://sgermosen.com/" },
-      "offers": { "@type": "Offer", "description": "Gratis para compradores. Licenciamiento e implementación white-label disponible.", "price": "0", "priceCurrency": "USD" },
-      "featureList": "Comparación de costo total entre proveedores, carrito sin precios (anti-anclaje), división inteligente del carrito entre tiendas, órdenes de compra PDF con QR, motor de promociones con 6 tipos, panel de proveedores self-service, catálogo maestro con importación CSV, bilingüe español e inglés"
+      "featureList": "Lista de materiales sin precios a la vista, comparación del costo total por tienda (precio, impuestos del estado, delivery, stock, distancia y promociones), etiquetas de mejor precio, más rápido y más cercano con puntuación de conveniencia, división del carrito entre tiendas con tres prioridades, seis tipos de promoción aplicados automáticamente, orden de compra en PDF con código QR, listas guardadas por proyecto, panel para tiendas con aprobación del administrador, panel de administración, catálogo común con importación y exportación CSV, español e inglés"
     },
     {
       "@type": "FAQPage",
@@ -48,27 +49,32 @@
         {
           "@type": "Question",
           "name": "¿Qué es Estimat Pro?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Estimat Pro es una app que compara el costo total real de materiales eléctricos — cable, breakers, interruptores, receptáculos, iluminación, conduit — entre todas las tiendas proveedoras a la vez: precio, impuestos del estado, costo y tiempo de delivery, stock real, distancia a la sucursal y promociones aplicadas automáticamente." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Una app para electricistas, contratistas y remodeladores en Estados Unidos que compara el costo total de una lista de materiales eléctricos entre las tiendas que publican en ella: precio, impuestos del estado, delivery, stock, distancia y promociones. Es un producto de Starling Germosen." }
         },
         {
           "@type": "Question",
-          "name": "¿Cómo funciona la comparación de precios?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Armas tu carrito sin ver precios (para evitar sesgos), y con un solo toque en 'Comparar precios' ves la comparativa completa por proveedor con etiquetas de mejor precio, más rápido y más cercano. También puede dividir tu compra entre varias tiendas para lograr el costo mínimo." }
+          "name": "¿Hace estimados o cuenta materiales a partir de planos?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Estimat Pro no calcula cantidades: tú armas la lista de materiales y la app te muestra cuánto cuesta en total en cada tienda y dónde conviene comprarla." }
         },
         {
           "@type": "Question",
-          "name": "¿Estimat Pro vende los materiales?",
-          "acceptedAnswer": { "@type": "Answer", "text": "No. Estimat Pro no vende materiales ni procesa pagos: genera una orden de compra profesional en PDF con código QR que presentas en la tienda elegida. Te decimos dónde comprar mejor." }
+          "name": "¿Vende materiales o procesa pagos?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Genera una orden de compra en PDF con código QR que presentas en la tienda que elegiste. El pago, y la confirmación del precio final, se hacen en la tienda." }
         },
         {
           "@type": "Question",
-          "name": "¿Cómo publican precios las tiendas proveedoras?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Los proveedores tienen un panel self-service para registrar su tienda, publicar precios y stock sobre el catálogo maestro, configurar zonas de delivery, horarios y promociones, y recibir órdenes. Las cuentas nuevas pasan por aprobación del administrador." }
+          "name": "¿De dónde salen los precios?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Los publica cada tienda desde su panel, y en las comparaciones solo aparecen las tiendas que el administrador aprobó. Una comparación vale 24 horas, y al crear la orden el servidor vuelve a calcular los totales. Hoy ninguna tienda publica precios: la plataforma aún no está en producción." }
         },
         {
           "@type": "Question",
-          "name": "¿Se puede implementar Estimat Pro para otro rubro o mercado?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Sí. La plataforma (backend .NET 8 + app Flutter iOS/Android/Web) es licenciable y adaptable a otros rubros de materiales o mercados. Contacta a sgermosen@outlook.com." }
+          "name": "¿Qué tiene que hacer una tienda para aparecer?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Registrarse y esperar la aprobación del administrador. Después publica sus precios y su stock sobre el catálogo común, configura impuestos, zonas y costos de delivery y promociones, y recibe las órdenes en su panel." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Ya está disponible?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Todavía no. El backend y la app están construidos, pero la app no está en Google Play ni en App Store y la plataforma no tiene servidor de producción. Si quieres verla funcionando, o que tu tienda esté entre las primeras, escribe a sgermosen@outlook.com." }
         }
       ]
     },
@@ -98,12 +104,14 @@ img{max-width:100%}
 .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
 nav{position:fixed;top:0;left:0;right:0;z-index:50;background:#081230cc;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .nav-in{max-width:1080px;margin:0 auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:14px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.06rem;color:var(--txt)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.06rem;color:var(--txt);white-space:nowrap}
 .brand img{width:30px;height:30px}
 .brand span{color:var(--amber)}
 .nav-r{display:flex;gap:18px;align-items:center}
-.nav-r a{color:var(--mut);font-size:.9rem;font-weight:600}
+.nav-r a{color:var(--mut);font-size:.9rem;font-weight:600;white-space:nowrap}
 .nav-cta{background:var(--amber);color:#081230!important;font-weight:800;padding:8px 18px;border-radius:99px}
+@media(max-width:760px){.nav-r .nav-sec{display:none}}
+@media(max-width:400px){.nav-in{padding:12px 16px;gap:10px}.nav-r{gap:12px}.nav-cta{padding:7px 14px}}
 .hero{position:relative;padding:140px 0 80px;overflow:hidden;background:var(--grad)}
 .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 10%,#ffffff14,transparent 55%)}
 .hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:50px;align-items:center;position:relative;z-index:1}
@@ -112,13 +120,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:50;background:#081230cc;backdrop
 h1{font-size:clamp(2.1rem,5vw,3.3rem);font-weight:900;letter-spacing:-.03em;line-height:1.1;margin-bottom:18px;color:#fff}
 h1 span{color:var(--amber)}
 .hero .sub{color:#d7e3f8;font-size:1.06rem;max-width:54ch;margin-bottom:14px}
-.hero .hook{color:#fff;font-weight:800;font-size:1.02rem;margin-bottom:30px}
+.hero .hook{color:#fff;font-weight:700;font-size:1.02rem;max-width:54ch;margin-bottom:30px}
 .btn{display:inline-flex;align-items:center;gap:9px;padding:14px 28px;border-radius:13px;font-weight:800;font-size:.98rem;transition:transform .15s}
 .btn:hover{transform:translateY(-2px)}
 .btn-p{background:var(--amber);color:#081230;box-shadow:0 10px 30px #00000044}
 .btn-o{border:1px solid #ffffff55;color:#fff;background:#ffffff14}
-.hero-shot{display:flex;justify-content:center}
+.hero-shot{display:flex;flex-direction:column;align-items:center}
 .hero-shot img{border-radius:22px;box-shadow:0 30px 70px #00000066;border:1px solid #ffffff2b;max-height:560px;width:auto;object-fit:cover;object-position:top}
+.hero-shot .shot-label{color:#d7e3f8;font-size:.78rem;margin-top:12px;opacity:.85}
 .tagline{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#0a1638;text-align:center;padding:26px 24px}
 .tagline b{font-size:1.3rem;font-weight:900;letter-spacing:.02em}
 .tagline b i{color:var(--amber);font-style:normal}
@@ -129,9 +138,13 @@ h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:900;letter-spacing:-.025em;m
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 @media(max-width:900px){.grid3{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.grid3{grid-template-columns:1fr}}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:700px){.grid2{grid-template-columns:1fr}}
 .fcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
-.fcard .ic{font-size:1.7rem}
+.fcard .ic{display:inline-flex;width:30px;height:30px;color:var(--amber)}
+.fcard .ic svg{width:30px;height:30px}
 .fcard h3{font-size:1.05rem;font-weight:800;margin:12px 0 6px}
+.fcard.plain h3{margin-top:0}
 .fcard p{color:var(--mut);font-size:.9rem}
 .dark-band{background:#0a1638;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:step}
@@ -144,7 +157,8 @@ h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:900;letter-spacing:-.025em;m
 .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 @media(max-width:860px){.shots{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.shots{grid-template-columns:1fr}}
-.shots img{border-radius:18px;border:1px solid var(--line);box-shadow:0 16px 40px #00000055}
+.shots img{width:100%;height:auto;border-radius:18px;border:1px solid var(--line);box-shadow:0 16px 40px #00000055}
+.shot-note{color:var(--dim);font-size:.85rem;margin:-26px 0 26px}
 .tech-flow{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
 .tech-flow span{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:8px 14px;font-size:.84rem;color:var(--mut);font-weight:600}
 .tech-flow span b{color:var(--txt)}
@@ -154,7 +168,7 @@ h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:900;letter-spacing:-.025em;m
 .faq p{color:var(--mut);margin-top:12px;font-size:.93rem}
 .cta-final{text-align:center;padding:90px 0;background:var(--grad)}
 .cta-final h2,.cta-final p{color:#fff}
-.cta-final p{opacity:.85;margin-bottom:30px}
+.cta-final p{opacity:.85;margin:0 auto 30px;max-width:60ch}
 footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-size:.85rem}
 .foot-in{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .foot-in a{color:var(--mut)}
@@ -167,9 +181,9 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
   <div class="nav-in">
     <a class="brand" href="/products/estimatpro/"><img src="/assets/img/estimatpro-icon.svg" alt="">Estimat <span>Pro</span></a>
     <div class="nav-r">
-      <a href="#como">Cómo funciona</a>
-      <a href="#pantallas">Pantallas</a>
-      <a href="#faq">FAQ</a>
+      <a class="nav-sec" href="#como">Cómo funciona</a>
+      <a class="nav-sec" href="#estado">Estado</a>
+      <a class="nav-sec" href="#faq">FAQ</a>
       <a href="/">← Portafolio</a>
       <a class="nav-cta" href="mailto:sgermosen@outlook.com?subject=Estimat%20Pro">Contacto</a>
     </div>
@@ -179,79 +193,100 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
 <header class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="pill">⚡ Para electricistas, contratistas y remodeladores</span>
+      <span class="pill">MVP construido · aún sin publicar</span>
       <h1>Compara <span>antes</span> de comprar.</h1>
-      <p class="sub">Estimat Pro compara el <b>costo total real</b> de tus materiales eléctricos — precio, impuestos del estado, delivery, stock, distancia y promociones — en todas las tiendas a la vez. En 4 toques: agrega → compara → elige tienda → confirma tu orden.</p>
-      <p class="hook">"El mismo breaker puede costarte $4 más en tu tienda de siempre."</p>
+      <p class="sub">Estimat Pro es una app para <b>electricistas, contratistas y remodeladores</b> en Estados Unidos. Armas la lista de materiales eléctricos de un trabajo sin ver precios y, cuando está lista, la app calcula el <b>costo total en cada tienda</b> que publica en ella: precio, impuestos del estado, delivery, stock, distancia y promociones.</p>
+      <p class="hook">No vende materiales ni cobra pagos: te muestra en qué tienda conviene comprar y te entrega la orden de compra en PDF.</p>
       <div style="display:flex;gap:14px;flex-wrap:wrap">
-        <a class="btn btn-p" href="mailto:sgermosen@outlook.com?subject=Estimat%20Pro%20—%20acceso%20anticipado">⚡ Acceso anticipado</a>
-        <a class="btn btn-o" href="https://wa.me/18492077714?text=Hola%2C%20me%20interesa%20Estimat%20Pro" target="_blank" rel="noopener">💬 WhatsApp</a>
+        <a class="btn btn-p" href="mailto:sgermosen@outlook.com?subject=Estimat%20Pro">Me interesa</a>
+        <a class="btn btn-o" href="https://wa.me/18492077714?text=Hola%2C%20me%20interesa%20Estimat%20Pro" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
-    <div class="hero-shot"><img src="/assets/img/estimatpro/01-comparativa.png" alt="Estimat Pro — comparativa de precios de materiales eléctricos entre proveedores" loading="eager" width="923" height="2000"></div>
+    <div class="hero-shot">
+      <img src="/assets/img/estimatpro/01-comparativa.png" alt="Pantalla ilustrativa de la comparativa de Estimat Pro, con datos de ejemplo: tres tiendas con su total, distancia, entrega y la etiqueta de mejor precio" loading="eager" width="923" height="2000">
+      <span class="shot-label">Pantalla ilustrativa · datos de ejemplo</span>
+    </div>
   </div>
 </header>
 
 <div class="tagline"><b>Compara <i>·</i> Ahorra <i>·</i> Compra</b></div>
 
+<section id="que-es" class="dark-band">
+  <div class="wrap">
+    <span class="tag">Qué es</span>
+    <h2>De qué se trata.</h2>
+    <div class="grid3">
+      <div class="fcard plain"><h3>Qué hace</h3><p>Compara dónde conviene comprar los materiales eléctricos de un trabajo. Tú pones la lista; la app suma, tienda por tienda, lo que de verdad vas a pagar y te dice cuál sale mejor, cuál entrega antes y cuál está más cerca.</p></div>
+      <div class="fcard plain"><h3>Para quién</h3><p>Electricistas, contratistas y remodeladores en Estados Unidos, en español y en inglés. Y las tiendas y distribuidoras de materiales eléctricos, que publican sus precios y reciben las órdenes.</p></div>
+      <div class="fcard plain"><h3>Qué no es</h3><p>No hace estimados ni cuenta materiales a partir de planos: la lista la armas tú. Tampoco vende materiales ni procesa pagos; la compra se cierra en la tienda.</p></div>
+    </div>
+  </div>
+</section>
+
 <section id="como">
   <div class="wrap">
     <span class="tag">Cómo funciona</span>
-    <h2>Sin precios inflados. Sin vueltas. Sin sorpresas.</h2>
-    <p class="sub2">Armas el carrito <b style="color:var(--txt)">sin ver precios</b> — así ninguna tienda te ancla — y cuando estás listo, un solo toque revela la verdad completa:</p>
+    <h2>De la lista a la orden, en cuatro pasos.</h2>
+    <p class="sub2">Armas la lista <b style="color:var(--txt)">sin ver precios</b>, para que ningún precio suelto te ancle, y un solo toque en «Comparar precios» muestra la comparación completa:</p>
     <div class="steps">
-      <div class="step"><b>Arma tu carrito</b><span>Cable, breakers, interruptores, receptáculos, iluminación, conduit — desde el catálogo maestro, sin precios a la vista.</span></div>
-      <div class="step"><b>Compara todo</b><span>Un toque y ves cada proveedor con costo total: precio + impuestos del estado + delivery + stock real + distancia + promociones auto-aplicadas.</span></div>
-      <div class="step"><b>Elige con datos</b><span>Etiquetas de ★ mejor precio, más rápido y más cercano, con un score de conveniencia por tienda. O deja que divida el carrito por ti.</span></div>
-      <div class="step"><b>Confirma tu orden</b><span>PDF profesional con código QR, listo para presentar en el mostrador o compartir por WhatsApp. Sin pagos intermedios.</span></div>
+      <div class="step"><b>Arma tu lista</b><span>Cable, breakers, interruptores, receptáculos, iluminación, conduit: del catálogo común, con sus especificaciones y sin precios a la vista. Puedes guardarla como lista de un proyecto.</span></div>
+      <div class="step"><b>Compara</b><span>Ves cada tienda con su total: precio, impuestos del estado, costo y tiempo de delivery o pickup, stock, distancia a la sucursal más cercana y promociones aplicadas.</span></div>
+      <div class="step"><b>Elige</b><span>Etiquetas de mejor precio, más rápido y más cercano, y una puntuación de conveniencia por tienda. O pide que reparta la compra entre varias tiendas.</span></div>
+      <div class="step"><b>Genera la orden</b><span>Una orden de compra en PDF con número y código QR, para presentarla en el mostrador o compartirla. El pago se hace en la tienda.</span></div>
     </div>
   </div>
 </section>
 
 <section class="dark-band">
   <div class="wrap">
-    <span class="tag">Diferenciadores</span>
-    <h2>Lo que ninguna otra app de ferretería hace.</h2>
+    <span class="tag">Funciones</span>
+    <h2>Qué calcula y qué incluye.</h2>
     <div class="grid3">
-      <div class="fcard"><span class="ic">🧮</span><h3>Costo total, no precio de etiqueta</h3><p>Impuestos por estado, delivery con tiempos, stock disponible y distancia a la sucursal más cercana — todo en un solo número comparable.</p></div>
-      <div class="fcard"><span class="ic">✂️</span><h3>División inteligente del carrito</h3><p>El optimizador reparte tu compra entre tiendas según tu prioridad: costo mínimo, menos tiendas o más rápido. Ahorro real en pedidos grandes.</p></div>
-      <div class="fcard"><span class="ic">🏷️</span><h3>Motor de promociones</h3><p>6 tipos de promoción (monto mínimo, cantidad, envío gratis, % por categoría, combos) aplicadas automáticamente en la comparación.</p></div>
-      <div class="fcard"><span class="ic">📄</span><h3>Órdenes PDF con QR</h3><p>Número legible ORD-YYYY-#####, desglose completo y QR de verificación. Totales siempre recalculados en el servidor — nunca se confía en el cliente.</p></div>
-      <div class="fcard"><span class="ic">🏪</span><h3>Panel para proveedores</h3><p>Las tiendas publican precios, stock, zonas de delivery y promociones en self-service, con aprobación del administrador para mantener la calidad.</p></div>
-      <div class="fcard"><span class="ic">🌎</span><h3>Bilingüe ES / EN</h3><p>Español primero para el mercado hispano de EE.UU., inglés automático según el idioma del dispositivo. iOS, Android y Web con un solo código Flutter.</p></div>
+      <div class="fcard"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8"/><path d="M8 11h.01M12 11h.01M16 11h.01M8 14.5h.01M12 14.5h.01M16 14.5h.01"/><path d="M8 18h8"/></svg></span><h3>Costo total, no precio de etiqueta</h3><p>Impuestos según el estado, costo y tiempo de delivery o pickup, stock disponible y distancia a la sucursal más cercana, en un solo total comparable por tienda.</p></div>
+      <div class="fcard"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h6l4-6h7"/><path d="M9 12l4 6h7"/><path d="M17 3l3 3-3 3"/><path d="M17 15l3 3-3 3"/></svg></span><h3>División del carrito</h3><p>Si el cable sale mejor en una tienda y los breakers en otra, sugiere cómo repartir la compra según tu prioridad: menor costo, menos tiendas o disponible hoy.</p></div>
+      <div class="fcard"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4a1 1 0 011-1h8l9 9-9 9z"/><circle cx="8" cy="8" r="1.5"/></svg></span><h3>Promociones automáticas</h3><p>Seis tipos (por monto mínimo, por cantidad, por cantidad de un producto, envío gratis, porcentaje por categoría y combo) se aplican solos al comparar; las acumulables se suman.</p></div>
+      <div class="fcard"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h2v2H9zM13 17h2v2h-2zM13 13h2M9 18h2"/></svg></span><h3>Orden de compra en PDF</h3><p>Número ORD-AAAA-#####, desglose de impuestos y descuentos y un QR con la referencia de la orden. El servidor recalcula los totales: no se fía de lo que envía la app.</p></div>
+      <div class="fcard"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9l1.5-5h13L20 9"/><path d="M4 9h16v1.5a2.7 2.7 0 01-5.3 0 2.7 2.7 0 01-5.4 0 2.7 2.7 0 01-5.3 0z"/><path d="M5.5 12.5V20h13v-7.5"/><path d="M10 20v-4.5h4V20"/></svg></span><h3>Panel para tiendas</h3><p>Cada tienda publica sus precios y su stock sobre el catálogo común, configura impuestos, zonas de delivery y promociones, y recibe las órdenes. Entra en las comparaciones cuando el administrador la aprueba.</p></div>
+      <div class="fcard"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg></span><h3>Español e inglés</h3><p>La app sigue el idioma del teléfono. Una sola base de código Flutter para Android, iOS y web; sin conexión, muestra el catálogo y las órdenes que ya tenía guardados.</p></div>
     </div>
   </div>
 </section>
 
 <section id="pantallas">
   <div class="wrap">
-    <span class="tag">La app real</span>
-    <h2>Así se ve Estimat Pro.</h2>
+    <span class="tag">Pantallas</span>
+    <h2>Así se ve la app.</h2>
+    <p class="sub2">Las seis pantallas del flujo: lista, desglose, división, orden, panel de la tienda y comparativa.</p>
+    <p class="shot-note">Pantallas ilustrativas · datos de ejemplo</p>
     <div class="shots">
-      <img src="/assets/img/estimatpro/04-carrito.png" alt="Carrito sin precios de Estimat Pro" loading="lazy">
-      <img src="/assets/img/estimatpro/05-desglose.png" alt="Desglose de costo total por proveedor" loading="lazy">
-      <img src="/assets/img/estimatpro/06-division.png" alt="División inteligente del carrito entre tiendas" loading="lazy">
-      <img src="/assets/img/estimatpro/07-orden.png" alt="Orden de compra PDF con código QR" loading="lazy">
-      <img src="/assets/img/estimatpro/08-proveedor.png" alt="Panel de proveedores de Estimat Pro" loading="lazy">
-      <img src="/assets/img/estimatpro/01-comparativa.png" alt="Comparativa de precios entre proveedores" loading="lazy">
+      <img src="/assets/img/estimatpro/04-carrito.png" alt="Pantalla ilustrativa con datos de ejemplo: la lista de materiales sin precios y el botón Comparar precios" loading="lazy" width="1080" height="2340">
+      <img src="/assets/img/estimatpro/05-desglose.png" alt="Pantalla ilustrativa con datos de ejemplo: el desglose de una tienda con impuestos, promoción aplicada y opciones de entrega" loading="lazy" width="1080" height="2340">
+      <img src="/assets/img/estimatpro/06-division.png" alt="Pantalla ilustrativa con datos de ejemplo: la compra repartida entre dos tiendas" loading="lazy" width="1080" height="2340">
+      <img src="/assets/img/estimatpro/07-orden.png" alt="Pantalla ilustrativa con datos de ejemplo: la orden de compra generada, con su número y código QR" loading="lazy" width="1080" height="2340">
+      <img src="/assets/img/estimatpro/08-proveedor.png" alt="Pantalla ilustrativa con datos de ejemplo: el panel de la tienda con sus precios, su stock y una orden recibida" loading="lazy" width="1080" height="2340">
+      <img src="/assets/img/estimatpro/01-comparativa.png" alt="Pantalla ilustrativa con datos de ejemplo: la comparativa entre tres tiendas" loading="lazy" width="1080" height="2340">
     </div>
   </div>
 </section>
 
-<section id="tech" class="dark-band">
+<section id="estado" class="dark-band">
   <div class="wrap">
-    <span class="tag">Tecnología</span>
-    <h2>Listo para las tiendas. Listo para escalar.</h2>
-    <p class="sub2">Producto de <a href="/">Starling Germosen</a>, con kit completo de publicación para App Store y Play Store, suite de pruebas y arquitectura limpia lista para producción.</p>
-    <div class="tech-flow">
-      <span><b>Backend:</b> .NET 8 · Clean Architecture · REST API · Swagger</span>
-      <span><b>App:</b> Flutter (iOS · Android · Web) · Material 3 · bilingüe</span>
-      <span><b>Datos:</b> EF Core · SQL Server / SQLite · historial de precios con auditoría</span>
-      <span><b>Seguridad:</b> JWT con refresh tokens rotados · BCrypt · rate limiting</span>
-      <span><b>PDF:</b> QuestPDF + QRCoder</span>
-      <span><b>Calidad:</b> 32 pruebas xUnit · 18 pruebas Flutter · E2E Playwright · Docker</span>
+    <span class="tag">Estado</span>
+    <h2>Construida, todavía sin publicar.</h2>
+    <p class="sub2">Estimat Pro es un producto de <a href="/">Starling Germosen</a>. El backend y la app están construidos y el flujo completo funciona en un entorno de desarrollo con datos de ejemplo. Todavía no tiene servidor de producción, no está en Google Play ni en App Store y ninguna tienda publica precios en ella.</p>
+    <div class="grid2">
+      <div class="fcard plain"><h3>Hecho</h3><p>API REST con roles de cliente, tienda y administrador; motores de comparación, de promociones y de división del carrito; órdenes en PDF con QR. App Flutter con catálogo, comparación, listas guardadas, panel de la tienda, panel de administración y modo sin conexión.</p></div>
+      <div class="fcard plain"><h3>Falta</h3><p>Servidor y base de datos de producción, la app firmada y publicada en Google Play y App Store, la política de privacidad publicada y las primeras tiendas que publiquen sus precios.</p></div>
     </div>
-    <p class="note">¿Quieres esta plataforma para otro rubro (plomería, construcción, repuestos) o para tu cadena de tiendas? El motor de comparación es adaptable — <a href="mailto:sgermosen@outlook.com?subject=Estimat%20Pro%20white-label">conversemos</a>.</p>
+    <div class="tech-flow">
+      <span><b>Backend:</b> .NET 8 · ASP.NET Core Web API · Clean Architecture · Swagger</span>
+      <span><b>App:</b> Flutter (Android · iOS · web) · Material 3 · español e inglés</span>
+      <span><b>Datos:</b> EF Core 8 · SQL Server o SQLite · historial de cambios de precio</span>
+      <span><b>Seguridad:</b> JWT con refresh tokens rotados · BCrypt · límite de peticiones</span>
+      <span><b>PDF:</b> QuestPDF + QRCoder</span>
+      <span><b>Pruebas:</b> 32 del backend con xUnit · 6 de la app · Dockerfile</span>
+    </div>
+    <p class="note">¿Tienes una tienda o distribuidora de materiales eléctricos, o te interesa este motor de comparación para otro rubro? <a href="mailto:sgermosen@outlook.com?subject=Estimat%20Pro">Escríbeme</a>.</p>
   </div>
 </section>
 
@@ -261,20 +296,28 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
     <h2>Dudas rápidas.</h2>
     <div class="faq">
       <details>
-        <summary>¿Estimat Pro cobra comisión o procesa pagos?</summary>
-        <p>No. Estimat Pro no vende materiales ni procesa pagos: genera una orden de compra en PDF que presentas directamente en la tienda. El modelo es neutral — te decimos dónde comprar mejor.</p>
+        <summary>¿Qué es Estimat Pro?</summary>
+        <p>Una app para electricistas, contratistas y remodeladores en Estados Unidos que compara el costo total de una lista de materiales eléctricos entre las tiendas que publican en ella: precio, impuestos del estado, delivery, stock, distancia y promociones. Es un producto de Starling Germosen.</p>
       </details>
       <details>
-        <summary>¿Los precios que veo son reales?</summary>
-        <p>Los precios los publican las propias tiendas proveedoras y quedan congelados por 24 horas al momento de comparar. Los totales de las órdenes siempre se recalculan en el servidor con historial de cambios auditado.</p>
+        <summary>¿Hace estimados o cuenta materiales a partir de planos?</summary>
+        <p>No. Estimat Pro no calcula cantidades: tú armas la lista de materiales y la app te muestra cuánto cuesta en total en cada tienda y dónde conviene comprarla.</p>
       </details>
       <details>
-        <summary>¿Qué gana una tienda al publicar sus precios?</summary>
-        <p>Clientes nuevos con intención de compra inmediata. La tienda configura su catálogo, delivery y promociones en minutos, y recibe órdenes listas para despachar — sin comisión por venta.</p>
+        <summary>¿Vende materiales o procesa pagos?</summary>
+        <p>No. Genera una orden de compra en PDF con código QR que presentas en la tienda que elegiste. El pago, y la confirmación del precio final, se hacen en la tienda.</p>
       </details>
       <details>
-        <summary>¿Cuándo estará disponible en las tiendas de apps?</summary>
-        <p>El kit de publicación para App Store y Play Store está completo (fichas bilingües, política de privacidad, formularios de datos). Solicita acceso anticipado a <a href="mailto:sgermosen@outlook.com">sgermosen@outlook.com</a>.</p>
+        <summary>¿De dónde salen los precios?</summary>
+        <p>Los publica cada tienda desde su panel, y en las comparaciones solo aparecen las tiendas que el administrador aprobó. Una comparación vale 24 horas, y al crear la orden el servidor vuelve a calcular los totales. Hoy ninguna tienda publica precios: la plataforma aún no está en producción.</p>
+      </details>
+      <details>
+        <summary>¿Qué tiene que hacer una tienda para aparecer?</summary>
+        <p>Registrarse y esperar la aprobación del administrador. Después publica sus precios y su stock sobre el catálogo común, configura impuestos, zonas y costos de delivery y promociones, y recibe las órdenes en su panel.</p>
+      </details>
+      <details>
+        <summary>¿Ya está disponible?</summary>
+        <p>Todavía no. El backend y la app están construidos, pero la app no está en Google Play ni en App Store y la plataforma no tiene servidor de producción. Si quieres verla funcionando, o que tu tienda esté entre las primeras, escribe a <a href="mailto:sgermosen@outlook.com?subject=Estimat%20Pro">sgermosen@outlook.com</a>.</p>
       </details>
     </div>
   </div>
@@ -282,11 +325,11 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-siz
 
 <div class="cta-final">
   <div class="wrap">
-    <h2>Deja de regalar dinero en materiales.</h2>
-    <p>Acceso anticipado para electricistas y tiendas fundadoras.</p>
+    <h2>¿Te interesa Estimat Pro?</h2>
+    <p>Si eres electricista o contratista, o tienes una tienda de materiales eléctricos, escríbeme para verla funcionando o para hablar de llevarla a tu tienda.</p>
     <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-      <a class="btn btn-p" href="mailto:sgermosen@outlook.com?subject=Estimat%20Pro%20—%20acceso%20anticipado">⚡ Quiero acceso anticipado</a>
-      <a class="btn btn-o" href="https://wa.me/18492077714?text=Hola%2C%20me%20interesa%20Estimat%20Pro" target="_blank" rel="noopener">💬 WhatsApp</a>
+      <a class="btn btn-p" href="mailto:sgermosen@outlook.com?subject=Estimat%20Pro">Escríbeme</a>
+      <a class="btn btn-o" href="https://wa.me/18492077714?text=Hola%2C%20me%20interesa%20Estimat%20Pro" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </div>
 </div>
