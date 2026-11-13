@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Parqueo Virtual">
+  <rect width="64" height="64" rx="14" fill="#0b5fff"/>
+  <path d="M22 48V16h13.5c6.6 0 11 4.2 11 10.3S42.1 36.6 35.5 36.6H29V48h-7zm7-17.6h5.8c2.8 0 4.6-1.6 4.6-4.1s-1.8-4.1-4.6-4.1H29v8.2z" fill="#fff"/>
+  <rect x="44" y="40" width="4" height="4" fill="#fff"/>
+  <rect x="50" y="40" width="4" height="4" fill="#fff"/>
+  <rect x="44" y="46" width="4" height="4" fill="#fff"/>
+  <rect x="50" y="46" width="4" height="4" fill="#9ec0ff"/>
+</svg>

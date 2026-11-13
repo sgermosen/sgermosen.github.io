@@ -3,264 +3,550 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Torneo Predicciones — App de predicciones deportivas con amigos | Quinielas de béisbol, baloncesto y fútbol</title>
-<meta name="description" content="Torneo Predicciones es la app social de predicciones deportivas: predice el marcador de cada partido, gana puntos por precisión y compite en grupos privados con tu propia tabla de posiciones. Béisbol (LIDOM, MLB), baloncesto (NBA, LNB) y fútbol. iOS y Android, lista para tu liga o comunidad.">
-<meta name="keywords" content="app predicciones deportivas, quiniela con amigos, app quiniela LIDOM, predicciones MLB, quiniela mundial, app pool deportivo, predicciones fútbol app, torneo predicciones, liga de predicciones">
+<title>Copa Amistosa — Torneos de predicciones entre amigos</title>
+<meta name="description" content="Candidato de lanzamiento: app Android y panel web para torneos de predicciones entre amigos, sin dinero dentro de la app. Ranking en vivo.">
+<meta name="keywords" content="torneo de predicciones, predicciones de marcadores, predicciones entre amigos, app de predicciones deportivas, ranking de predicciones, torneo de predicciones para la oficina, Copa Amistosa">
 <meta name="author" content="Starling Germosen">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://sgermosen.com/products/torneo-predicciones/">
-<link rel="icon" type="image/png" href="/assets/img/torneo-logo.png">
+<link rel="alternate" hreflang="es" href="https://sgermosen.com/products/torneo-predicciones/">
+<link rel="alternate" hreflang="x-default" href="https://sgermosen.com/products/torneo-predicciones/">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/img/torneo-predicciones/icono-64.png">
+<link rel="apple-touch-icon" href="/assets/img/torneo-predicciones/icono-180.png">
 <!-- Open Graph -->
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Starling Germosen">
 <meta property="og:url" content="https://sgermosen.com/products/torneo-predicciones/">
-<meta property="og:title" content="Torneo Predicciones — ¿Quién predice mejor en tu grupo?">
-<meta property="og:description" content="Predice marcadores, gana puntos por precisión y compite en grupos privados. Béisbol, baloncesto y fútbol. iOS y Android.">
-<meta property="og:image" content="https://sgermosen.com/assets/img/torneo-logo.png">
-<meta property="og:locale" content="es_DO">
+<meta property="og:title" content="Copa Amistosa — Tus amigos predicen. La app lleva la cuenta.">
+<meta property="og:description" content="Torneos de predicciones de marcadores entre amigos, sin dinero dentro de la app. App Android y panel web, en fase de candidato de lanzamiento.">
+<meta property="og:image" content="https://sgermosen.com/assets/img/torneo-predicciones/copa-amistosa-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Copa Amistosa: tus amigos predicen, la app lleva la cuenta. Pantalla de predicción de la app con datos de ejemplo.">
+<meta property="og:locale" content="es_LA">
 <!-- Twitter -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Torneo Predicciones — App de predicciones deportivas">
-<meta name="twitter:description" content="Predice marcadores, gana puntos por precisión y compite en grupos privados con tus amigos.">
-<meta name="twitter:image" content="https://sgermosen.com/assets/img/torneo-logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Copa Amistosa — Torneos de predicciones entre amigos">
+<meta name="twitter:description" content="App Android y panel web, sin dinero dentro de la app. Candidato de lanzamiento: aún no está en tiendas.">
+<meta name="twitter:image" content="https://sgermosen.com/assets/img/torneo-predicciones/copa-amistosa-og.png">
+<meta name="twitter:image:alt" content="Copa Amistosa: tus amigos predicen, la app lleva la cuenta. Pantalla de predicción de la app con datos de ejemplo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "SoftwareApplication",
-      "name": "Torneo Predicciones",
+      "name": "Copa Amistosa",
       "url": "https://sgermosen.com/products/torneo-predicciones/",
-      "applicationCategory": "GameApplication",
-      "operatingSystem": "iOS, Android",
-      "description": "Juego social de predicciones deportivas: los usuarios predicen el marcador de cada partido, ganan 1 punto por acertar el ganador y 3 por el marcador exacto, y compiten en grupos privados con tablas de posiciones propias. Multi-deporte y multi-torneo (béisbol, baloncesto, fútbol) con panel administrativo web para organizar ligas, equipos y partidos, y notificaciones push.",
+      "applicationCategory": "SportsApplication",
+      "applicationSubCategory": "Torneos de predicciones de marcadores entre amigos",
+      "operatingSystem": "Android, Web (navegador)",
       "inLanguage": "es",
-      "author": { "@type": "Person", "name": "Starling Germosen", "url": "https://sgermosen.com/" },
-      "offers": { "@type": "Offer", "description": "Licenciamiento e implementación para ligas, medios y comunidades. Solicitar demo.", "price": "0", "priceCurrency": "USD" },
-      "featureList": "Predicción de marcadores con puntuación por precisión, grupos privados con moderación y tabla de posiciones propia, multi-deporte y multi-torneo, panel web para organizar ligas equipos y partidos, notificaciones push, modo offline con sincronización, login con Facebook, historial de resultados personales"
+      "creativeWorkStatus": "Candidato de lanzamiento: aún no desplegado para el público ni publicado en tiendas",
+      "description": "App Android y panel web para torneos de predicciones de marcadores entre amigos, sin dinero dentro de la app. Cada usuario crea su torneo, público o privado, invita a su grupo con un código y predice antes de la hora de inicio. Al cerrarse el partido se reparten los puntos (3 por marcador exacto, 1 por acertar el resultado y el doble con el banker) y el ranking se actualiza en vivo. Candidato de lanzamiento: aún no desplegado para el público ni publicado en tiendas.",
+      "featureList": [
+        "Torneos creados y administrados desde la app",
+        "Torneos públicos o privados",
+        "Invitación con código y alta por correo de usuarios que ya tienen cuenta",
+        "Aceptar o bloquear miembros",
+        "Puntos separados por torneo",
+        "Torneos internos para organizar fases",
+        "3 puntos por marcador exacto, 1 por acertar el resultado y el doble con el banker",
+        "Bloqueo automático de las predicciones a la hora de inicio",
+        "Ranking y tabla de posiciones en vivo",
+        "Panel web para administrar torneos y cerrar partidos"
+      ],
+      "screenshot": [
+        "https://sgermosen.com/assets/img/torneo-predicciones/app-prediccion.webp",
+        "https://sgermosen.com/assets/img/torneo-predicciones/app-gestion-torneo.webp",
+        "https://sgermosen.com/assets/img/torneo-predicciones/app-ranking.webp",
+        "https://sgermosen.com/assets/img/torneo-predicciones/panel-partido-cerrado.webp"
+      ],
+      "image": "https://sgermosen.com/assets/img/torneo-predicciones/icono-512.png",
+      "author": { "@type": "Person", "name": "Starling Germosen", "url": "https://sgermosen.com/" }
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "¿Cómo se gana en Torneo Predicciones?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Predices el marcador de cada partido antes de que empiece. Si aciertas el ganador obtienes 1 punto; si aciertas el marcador exacto, 3 puntos. Quien acumule más puntos domina la tabla de su grupo." }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Qué deportes soporta?",
-          "acceptedAnswer": { "@type": "Answer", "text": "El sistema es multi-deporte por diseño: béisbol (LIDOM, MLB), baloncesto (NBA, LNB), fútbol (ligas y mundiales) y cualquier competencia que se organice como liga → equipos → torneo → partidos." }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Puedo crear un grupo privado con mis amigos?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Sí. Creas tu grupo, apruebas quién entra, y el grupo tiene su propia tabla de posiciones — perfecto para la oficina, la familia o tu peña deportiva." }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Se puede implementar para mi liga, medio deportivo o marca?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Sí. La plataforma completa (app iOS/Android + backend con panel administrativo) se puede licenciar y personalizar con tu marca para campañas de engagement deportivo. Contacta a sgermosen@outlook.com." }
-        }
+        { "@type": "Question", "name": "¿Se juega con dinero?", "acceptedAnswer": { "@type": "Answer", "text": "No. Es un juego de predicciones entre amigos, sin dinero dentro de la app. Los puntos se ganan acertando y sirven para ordenar el ranking." } },
+        { "@type": "Question", "name": "¿Cómo se ganan los puntos?", "acceptedAnswer": { "@type": "Answer", "text": "3 por el marcador exacto, 1 por acertar el ganador o el empate y 0 si fallas. Si marcaste ese partido como banker, los puntos valen el doble. Hay un solo banker por torneo: si marcas otro, el anterior se desmarca." } },
+        { "@type": "Question", "name": "¿Hasta cuándo puedo cambiar mi predicción?", "acceptedAnswer": { "@type": "Answer", "text": "Hasta la hora de inicio del partido. A esa hora el partido se bloquea solo y ya no se puede predecir ni editar." } },
+        { "@type": "Question", "name": "¿Qué deportes sirven?", "acceptedAnswer": { "@type": "Answer", "text": "Cualquiera que se decida por marcador, como el fútbol o el béisbol. El marcador se marca con botones + y −, así que va mejor con marcadores bajos. Los partidos y los resultados los carga el organizador: no hay conexión con ninguna liga." } },
+        { "@type": "Question", "name": "¿Puedo hacer un torneo solo para mi grupo?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, en el candidato actual: al crearlo lo marcas como privado y solo se entra con el código de invitación o si el dueño agrega a alguien por su correo, siempre que esa persona ya tenga cuenta. Si después quieres abrirlo, lo haces público." } },
+        { "@type": "Question", "name": "¿Para qué sirven los torneos internos?", "acceptedAnswer": { "@type": "Answer", "text": "Para organizar fases dentro del mismo torneo, como Apertura y Clausura. Solo agrupan partidos: el puntaje y el ranking siguen siendo los del torneo completo." } },
+        { "@type": "Question", "name": "¿Funciona sin internet?", "acceptedAnswer": { "@type": "Answer", "text": "No. Las predicciones, los puntos y el ranking viven en el servidor, y la app no guarda datos para usarlos sin conexión." } },
+        { "@type": "Question", "name": "¿Ya está en Google Play o en el App Store?", "acceptedAnswer": { "@type": "Answer", "text": "Todavía no. Es un candidato de lanzamiento: el código tiene 80 pruebas automatizadas y se probó en un emulador con Android 14, pero aún no está desplegado para el público ni publicado. No hay versión para iPhone." } },
+        { "@type": "Question", "name": "¿Me la puedes implementar para mi comunidad, oficina o marca?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. La implemento, la personalizo con tu nombre y tus colores, la despliego y le doy soporte. Escríbeme por WhatsApp o al correo y vemos qué necesita tu grupo." } }
       ]
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Starling Germosen", "item": "https://sgermosen.com/" },
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://sgermosen.com/" },
         { "@type": "ListItem", "position": 2, "name": "Productos", "item": "https://sgermosen.com/#products" },
-        { "@type": "ListItem", "position": 3, "name": "Torneo Predicciones", "item": "https://sgermosen.com/products/torneo-predicciones/" }
+        { "@type": "ListItem", "position": 3, "name": "Copa Amistosa", "item": "https://sgermosen.com/products/torneo-predicciones/" }
       ]
     }
   ]
 }
 </script>
+
 <style>
 :root{
-  --bg:#160f08; --bg2:#1d140b; --card:#241a0e; --line:#3d2c17;
-  --txt:#faf3e9; --mut:#cdb599; --dim:#8d7354;
-  --acc:#f59e0b; --acc2:#fb923c; --grad:linear-gradient(100deg,#f59e0b,#fb923c);
+  --bg:#FFFFFF; --hero:#F3F5F8; --panel:#F8F9FB;
+  --ink:#131A24; --ink2:#4A5568; --ink3:#5F6B7A; --line:#E2E6EC;
+  --primary:#FFB020; --primary-h:#F0A010; --secondary:#8F5A00; --dark:#0C1420;
+  --shadow-md:0 4px 6px -1px rgba(19,26,36,.1),0 2px 4px -2px rgba(19,26,36,.1);
+  --shadow-lg:0 10px 15px -3px rgba(19,26,36,.1),0 4px 6px -4px rgba(19,26,36,.1);
+  --wrap:1160px;
 }
-*{margin:0;padding:0;box-sizing:border-box}
+*{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--txt);font-family:'Inter',system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
-a{color:var(--acc);text-decoration:none}
-img{max-width:100%}
-.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-nav{position:fixed;top:0;left:0;right:0;z-index:50;background:#160f08cc;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.nav-in{max-width:1080px;margin:0 auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:14px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.02rem;color:var(--txt)}
-.brand img{width:30px;height:30px;border-radius:8px}
-.brand span{color:var(--acc)}
-.nav-r{display:flex;gap:18px;align-items:center}
-.nav-r a{color:var(--mut);font-size:.9rem;font-weight:600}
-.nav-cta{background:var(--grad);color:#160f08!important;font-weight:800;padding:8px 18px;border-radius:99px}
-.hero{position:relative;padding:140px 0 80px;overflow:hidden}
-.hero::before{content:"";position:absolute;top:-300px;right:-200px;width:800px;height:700px;border-radius:50%;background:radial-gradient(circle,#f59e0b22,transparent 65%);pointer-events:none}
-.hero-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:50px;align-items:center;position:relative;z-index:1}
-@media(max-width:860px){.hero-grid{grid-template-columns:1fr}}
-.pill{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;border-radius:99px;padding:6px 14px;background:#f59e0b22;color:var(--acc);border:1px solid #f59e0b55;margin-bottom:20px}
-h1{font-size:clamp(2.1rem,5vw,3.3rem);font-weight:900;letter-spacing:-.03em;line-height:1.1;margin-bottom:18px}
-h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero .sub{color:var(--mut);font-size:1.06rem;max-width:56ch;margin-bottom:30px}
-.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 28px;border-radius:13px;font-weight:800;font-size:.98rem;transition:transform .15s}
-.btn:hover{transform:translateY(-2px)}
-.btn-p{background:var(--grad);color:#160f08;box-shadow:0 10px 30px #f59e0b33}
-.btn-o{border:1px solid var(--line);color:var(--txt);background:var(--card)}
-.score-demo{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:0 30px 70px #000a}
-.score-demo h4{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:16px}
-.match{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);font-weight:700;font-size:.95rem}
-.match:last-child{border-bottom:none}
-.match .pts{font-weight:900;padding:4px 12px;border-radius:99px;font-size:.8rem}
-.pts.win{background:#f59e0b22;color:var(--acc)}
-.pts.exact{background:#22c55e22;color:#4ade80}
-.pts.zero{background:#ffffff10;color:var(--dim)}
-section{padding:80px 0}
-.tag{color:var(--acc);font-weight:800;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase}
-h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:900;letter-spacing:-.025em;margin:10px 0 14px}
-.sub2{color:var(--mut);max-width:66ch;margin-bottom:40px}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-@media(max-width:900px){.grid3{grid-template-columns:1fr 1fr}}
-@media(max-width:640px){.grid3{grid-template-columns:1fr}}
-.fcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
-.fcard .ic{font-size:1.7rem}
-.fcard h3{font-size:1.05rem;font-weight:800;margin:12px 0 6px}
-.fcard p{color:var(--mut);font-size:.9rem}
-.dark-band{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.tech-flow{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-.tech-flow span{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:8px 14px;font-size:.84rem;color:var(--mut);font-weight:600}
-.tech-flow span b{color:var(--txt)}
-.faq{max-width:800px}
-.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin-bottom:12px}
-.faq summary{font-weight:800;cursor:pointer;font-size:1rem}
-.faq p{color:var(--mut);margin-top:12px;font-size:.93rem}
-.cta-final{text-align:center;padding:90px 0}
-.cta-final p{color:var(--mut);margin-bottom:30px}
-footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-size:.85rem}
-.foot-in{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.foot-in a{color:var(--mut)}
-.note{font-size:.8rem;color:var(--dim);margin-top:14px}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 "Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:Manrope,system-ui,sans-serif;margin:0;text-wrap:balance;font-optical-sizing:auto}
+p{margin:0}
+a{color:inherit}
+img{max-width:100%;height:auto;display:block}
+[id]{scroll-margin-top:88px}
+:where(a,button,summary):focus-visible{outline:2px solid var(--secondary);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:var(--wrap);margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:9px;font-family:Manrope;font-weight:800;font-size:19px;text-decoration:none;letter-spacing:-.01em;white-space:nowrap}
+.brand svg{flex:none;border-radius:7px}
+.brand em{font-style:normal;color:var(--secondary)}
+.nav-r{display:flex;align-items:center;gap:26px}
+.nav-r a{color:var(--ink2);text-decoration:none;font-size:16px;font-weight:600;transition:color .15s}
+.nav-r a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:Manrope;font-weight:700;text-decoration:none;border:0;cursor:pointer;border-radius:999px;transition:background-color .15s,color .15s,border-color .15s}
+.btn-p{background:var(--primary);color:var(--ink);padding:11px 24px;font-size:16px}
+.nav-r a.btn-p{color:var(--ink)}
+.btn-p:hover{background:var(--primary-h)}
+.btn-lg{padding:15px 30px;font-size:17px}
+.btn-o{background:transparent;color:var(--ink);border:1px solid #C9D0DA;padding:14px 28px;font-size:17px}
+.btn-o:hover{border-color:var(--ink);background:#fff}
+.btn-w{background:#fff;color:var(--ink);padding:15px 30px;font-size:17px}
+.btn-w:hover{background:#EEF1F5}
+
+/* hero */
+.hero{position:relative;padding:78px 0 0;overflow:hidden;background:var(--hero);border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;inset:0;z-index:0;
+  background-image:linear-gradient(90deg,#7a869a14 1px,transparent 0),linear-gradient(180deg,#7a869a14 1px,transparent 0);
+  background-size:44px 44px;
+  -webkit-mask-image:radial-gradient(ellipse 55% 55% at 50% 40%,#000 55%,transparent 100%);
+          mask-image:radial-gradient(ellipse 55% 55% at 50% 40%,#000 55%,transparent 100%)}
+.hero-in{position:relative;z-index:1;max-width:var(--wrap);margin:0 auto;padding:0 20px;text-align:center}
+.eyebrow{display:inline-block;max-width:100%;font-size:14px;font-weight:600;line-height:1.45;color:var(--ink2);background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 15px}
+.eyebrow b{color:var(--secondary);font-weight:700}
+h1{font-size:clamp(33px,5.2vw,56px);font-weight:800;line-height:1.12;letter-spacing:-.02em;margin:22px auto 0;max-width:22ch}
+h1 span{color:var(--secondary)}
+.hero p.sub{margin:20px auto 0;max-width:60ch;font-size:19px;color:var(--ink2)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:30px}
+.microcopy{margin-top:14px;font-size:14.5px;color:var(--ink3)}
+
+/* tablero del hero: ejemplo de jornada + captura */
+.hero-board{position:relative;z-index:1;max-width:1000px;margin:52px auto -1px;padding:0 20px}
+.board{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);background:#fff;border:1px solid #D5DBE3;border-bottom:0;border-top-left-radius:12px;border-top-right-radius:12px;box-shadow:0 -2px 40px rgba(19,26,36,.13);overflow:hidden;text-align:left}
+.jornada{padding:30px 32px 28px}
+.j-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 14px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.j-k{font:700 13px/1.3 Manrope,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--secondary)}
+.j-t{font-size:15px;color:var(--ink3)}
+.j-list{list-style:none;margin:0;padding:0}
+.j-list li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 14px;align-items:center;padding:13px 0;border-bottom:1px solid #EDF0F4}
+.j-m{grid-column:1;grid-row:1;font-family:Manrope,sans-serif;font-weight:700;font-size:17px}
+.j-m b{font-variant-numeric:tabular-nums;font-weight:800;margin:0 3px}
+.j-p{grid-column:1;grid-row:2;font-size:14.5px;color:var(--ink3)}
+.pt{grid-column:2;grid-row:1 / span 2;font:700 14px/1 Manrope,sans-serif;border-radius:999px;padding:7px 12px;white-space:nowrap}
+.pt-3{background:var(--primary);color:var(--ink)}
+.pt-1{background:#FFEFD0;color:#6B4300}
+.pt-b{background:var(--dark);color:#FFD27A}
+.pt-0{background:#EEF1F5;color:var(--ink2)}
+.j-total{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-top:14px;font-weight:600}
+.j-total b{font-family:Manrope,sans-serif;font-size:22px;font-weight:800}
+.j-note{margin-top:10px;font-size:14px;color:var(--ink3)}
+.shot{background:var(--dark);padding:24px 28px 0;display:flex;flex-direction:column;align-items:center}
+.shot img{margin-top:auto;width:100%;max-width:290px;border:1px solid #2A3547;border-bottom:0;border-top-left-radius:16px;border-top-right-radius:16px}
+.ex-dark{font-size:13.5px;color:#9AA6B8;text-align:center;margin-bottom:18px}
+
+/* franja de datos */
+.strip{background:#fff;border-bottom:1px solid var(--line);padding:26px 0}
+.strip-in{max-width:var(--wrap);margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;justify-content:center;color:var(--ink3);font-size:15px}
+.strip-in b{color:var(--ink);font-weight:700}
+.codes{display:flex;flex-wrap:wrap;gap:7px;margin-top:22px}
+.codes span{font:600 13px/1 "Source Sans 3",sans-serif;letter-spacing:.02em;color:var(--ink2);border:1px solid var(--line);border-radius:6px;padding:7px 10px;background:var(--panel)}
+
+/* secciones */
+section{padding:74px 0}
+/* .wrap trae padding:0 20px y, por especificidad, le quitaria el aire vertical a la seccion */
+section.wrap{padding:74px 20px}
+.kick{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.tag{display:block;font-size:14px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--secondary)}
+.state{display:inline-block;font-size:13.5px;font-weight:600;line-height:1.3;color:var(--ink2);background:#fff;border:1px solid #D5DBE3;border-radius:999px;padding:4px 12px}
+h2{font-size:clamp(27px,3.6vw,40px);font-weight:800;letter-spacing:-.015em;line-height:1.18;margin-top:12px;max-width:19ch}
+.lead{margin-top:14px;max-width:62ch;color:var(--ink2)}
+.feat{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:56px;align-items:center}
+.feat.ph{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}
+.feat + .feat{margin-top:88px}
+.feat.rev .txt{order:2}
+.feat h2{max-width:16ch}
+.feat p.d{margin-top:14px;color:var(--ink2)}
+.blist{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:18px}
+.blist li{display:grid;grid-template-columns:24px 1fr;gap:13px}
+.blist svg{width:22px;height:22px;color:var(--secondary);margin-top:4px}
+.blist h3{font-size:17px;font-weight:700;font-family:"Source Sans 3",sans-serif}
+.blist p{font-size:16px;color:var(--ink2);margin-top:2px}
+.frame{border:1px solid var(--line);border-radius:14px;padding:9px;background:var(--panel);box-shadow:var(--shadow-lg)}
+.frame img{border-radius:8px}
+.frame.phone{max-width:340px;margin-inline:auto;border-radius:22px}
+.frame.phone img{border-radius:15px}
+/* panel web: dos recortes de la misma captura, al mismo ancho (662 px) y sin agrandarlos */
+.frame.frags{max-width:682px;margin-inline:auto}
+.frame.frags img + img{margin-top:9px}
+figure{margin:0}
+figcaption{margin-top:11px;font-size:14px;color:var(--ink3);text-align:center}
+.ex{display:block;margin-top:4px;font-size:13.5px;font-weight:600;color:var(--ink2)}
+
+/* app */
+.band{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.phones{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:44px}
+.phones img{border:1px solid var(--line);border-radius:20px;background:var(--dark);box-shadow:var(--shadow-md)}
+.phones-note{margin-top:18px;text-align:center;font-size:14px;font-weight:600;color:var(--ink2)}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:46px}
+
+/* estado */
+.lot-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:38px}
+.lot-card{border:1px solid var(--line);border-radius:12px;padding:22px;background:#fff}
+.lot-card h3{font-size:17px;font-weight:800}
+.lot-card .n{font-size:14px;color:var(--ink3);margin-top:3px}
+.lot-card ul{list-style:none;margin:15px 0 0;padding:0;display:grid;gap:7px;font-size:15.5px;color:var(--ink2)}
+.lot-card li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #EEF1F4;padding-bottom:7px}
+.lot-card li:last-child{border-bottom:0}
+.lot-card .v{color:var(--ink3);font-size:14.5px;text-align:right;white-space:nowrap}
+
+/* pasos */
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.step{counter-increment:s;border-top:2px solid var(--primary);padding-top:18px}
+.step::before{content:"0" counter(s);font-family:Manrope;font-weight:800;font-size:14px;color:var(--secondary);letter-spacing:.06em}
+.step h3{font-size:19px;font-weight:800;margin-top:8px}
+.step p{margin-top:8px;color:var(--ink2);font-size:16px}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px}
+.faq-l a{color:var(--secondary);font-weight:700;text-decoration:none;font-size:clamp(18px,2.2vw,25px);font-family:Manrope;word-break:break-word}
+.faq-l a:hover{text-decoration:underline}
+details{border-top:1px solid var(--line);padding:22px 4px 0;margin-bottom:20px}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:18px;font-family:Manrope;font-weight:700;font-size:19px;line-height:1.35}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-weight:600;color:var(--ink3);transition:transform .2s;flex:none}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:12px;color:var(--ink2);font-size:16.5px;max-width:64ch}
+
+/* stats + cta */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
+.stat b{display:block;font-family:Manrope;font-size:32px;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+.stat span{display:block;margin-top:6px;color:var(--ink2);font-size:16px}
+.cta{position:relative;overflow:hidden;border-radius:24px;background-color:var(--dark);
+  background-image:linear-gradient(90deg,#172234 1px,transparent 0),linear-gradient(180deg,#172234 1px,transparent 0);
+  background-size:96px 64px;padding:66px 24px;text-align:center;color:#fff}
+.cta::after{content:"";position:absolute;inset:0;background:radial-gradient(circle 560px at 50% 420px,#1D2A40,transparent);pointer-events:none}
+.cta > *{position:relative;z-index:1}
+.cta h2{font-weight:700;color:#fff;margin:0 auto;max-width:20ch}
+.cta p{margin:16px auto 0;max-width:52ch;color:#C3CCDA}
+.cta .hero-cta{margin-top:28px}
+.cta p.note{margin-top:24px;font-size:14px;color:#9AA6B8;max-width:70ch;margin-inline:auto;line-height:1.55}
+
+/* footer */
+footer{background:var(--panel);border-top:1px solid var(--line);padding:40px 0 30px;font-size:15px;color:var(--ink2)}
+.foot-in{max-width:var(--wrap);margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
+.foot-in a{color:var(--ink2);text-decoration:none}
+.foot-in a:hover{color:var(--ink);text-decoration:underline}
+
+/* reveal */
+.anim .rv:not(.on){opacity:0;transform:translateY(26px)}
+.anim .rv{transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+.anim .rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.anim .rv{opacity:1!important;transform:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+@media (max-width:900px){
+  .nav-r a:not(.btn){display:none}
+  .feat,.feat.ph{grid-template-columns:1fr;gap:32px}
+  .feat.rev .txt{order:0}
+  .feat + .feat{margin-top:64px}
+  .lot-grid,.steps,.stats,.phones,.trio{grid-template-columns:1fr}
+  .faq-grid{grid-template-columns:1fr;gap:28px}
+  section{padding:56px 0}
+  section.wrap{padding:56px 20px}
+  .hero{padding-top:52px}
+  .phones{gap:24px;max-width:320px;margin-inline:auto}
+  .board{grid-template-columns:1fr}
+  .shot img{max-width:260px}
+}
+/* en el telefono la tabla del panel no se lee; las viñetas ya cuentan el panel */
+@media (max-width:600px){#panel figure{display:none}}
+@media (max-width:480px){
+  .eyebrow{font-size:13px;padding:6px 12px}
+  .jornada{padding:22px 18px 22px}
+  .j-m{font-size:16px}
+  .pt{font-size:13px;padding:6px 10px}
+  .btn-lg,.btn-o{padding:14px 24px}
+  .nav-in{padding:12px 16px;gap:10px}
+  .nav-r .btn-p{padding:9px 16px;font-size:15px}
+  .lot-card li{flex-wrap:wrap;row-gap:2px}
+  .lot-card .v{margin-left:auto}
+}
 </style>
 </head>
 <body>
 
-<nav>
+<header class="nav">
   <div class="nav-in">
-    <a class="brand" href="/products/torneo-predicciones/"><img src="/assets/img/torneo-logo.png" alt="">Torneo <span>Predicciones</span></a>
-    <div class="nav-r">
-      <a href="#funciones">Funciones</a>
-      <a href="#implementa">Para tu liga</a>
-      <a href="#faq">FAQ</a>
-      <a href="/">← Portafolio</a>
-      <a class="nav-cta" href="mailto:sgermosen@outlook.com?subject=Torneo%20Predicciones">Contacto</a>
-    </div>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="pill">🏆 iOS &amp; Android · Multi-deporte</span>
-      <h1>¿Quién predice mejor <span>en tu grupo?</span></h1>
-      <p class="sub">Torneo Predicciones convierte cada jornada en una competencia entre amigos: predice el marcador de cada partido, gana puntos por precisión y demuestra en la tabla quién sabe de verdad. <b style="color:var(--txt)">Béisbol, baloncesto, fútbol</b> — LIDOM, MLB, NBA, mundiales y la liga que tú quieras.</p>
-      <div style="display:flex;gap:14px;flex-wrap:wrap">
-        <a class="btn btn-p" href="mailto:sgermosen@outlook.com?subject=Torneo%20Predicciones%20—%20demo">🏆 Solicitar demo</a>
-        <a class="btn btn-o" href="https://wa.me/18492077714?text=Hola%2C%20me%20interesa%20Torneo%20Predicciones" target="_blank" rel="noopener">💬 WhatsApp</a>
-      </div>
-    </div>
-    <div class="score-demo">
-      <h4>Tu jornada de hoy</h4>
-      <div class="match"><span>Águilas 5 – 3 Licey <small style="color:var(--dim)">(predijiste 4–3)</small></span><span class="pts win">+1 ganador</span></div>
-      <div class="match"><span>Lakers 112 – 108 Heat <small style="color:var(--dim)">(predijiste 112–108)</small></span><span class="pts exact">+3 exacto</span></div>
-      <div class="match"><span>Madrid 1 – 2 Barça <small style="color:var(--dim)">(predijiste 2–1)</small></span><span class="pts zero">0 pts</span></div>
-      <div class="match"><b>Total de la jornada</b><span class="pts exact">+4 puntos 🔥</span></div>
-    </div>
+    <a class="brand" href="/products/torneo-predicciones/">
+      <svg width="30" height="30" viewBox="76 76 304 304" aria-hidden="true"><defs><radialGradient id="ca-bg" cx="50%" cy="42%" r="72%"><stop offset="0%" stop-color="#1D2A40"/><stop offset="100%" stop-color="#0C1420"/></radialGradient></defs><rect width="456" height="456" fill="url(#ca-bg)"/><g fill="none" stroke="#FFB020" stroke-width="26"><circle cx="228" cy="228" r="116" opacity=".32"/><circle cx="228" cy="228" r="76" opacity=".62"/><circle cx="228" cy="228" r="38"/></g><circle cx="228" cy="228" r="15" fill="#FFB020"/></svg>
+      <span>Copa <em>Amistosa</em></span></a>
+    <nav class="nav-r" aria-label="Secciones">
+      <a href="#torneos">Torneos</a>
+      <a href="#en-vivo">En vivo</a>
+      <a href="#panel">Panel web</a>
+      <a href="#estado">Estado</a>
+      <a href="#faq">Preguntas</a>
+      <a class="btn btn-p" href="https://wa.me/18492077714?text=Hola%20Starling%2C%20quiero%20implementar%20Copa%20Amistosa%20en%20mi%20grupo" rel="noopener">Escríbeme</a>
+    </nav>
   </div>
 </header>
 
-<section id="funciones">
-  <div class="wrap">
-    <span class="tag">El juego</span>
-    <h2>Precisión sobre suerte.</h2>
-    <p class="sub2">No es apostar: es demostrar cuánto sabes. Acierta el ganador y llévate 1 punto. Clava el marcador exacto y llévate 3. La tabla no miente.</p>
-    <div class="grid3">
-      <div class="fcard"><span class="ic">🎯</span><h3>Predicciones por marcador</h3><p>Elige torneo, elige partido y registra tu predicción antes del inicio. Puedes editarla hasta que cierre el partido.</p></div>
-      <div class="fcard"><span class="ic">👥</span><h3>Grupos privados</h3><p>Crea tu grupo — la oficina, la familia, la peña — con solicitudes de entrada, moderación de miembros y tabla de posiciones propia.</p></div>
-      <div class="fcard"><span class="ic">📊</span><h3>Tablas y resultados</h3><p>Posiciones en vivo, historial de tus resultados y tus puntos sincronizados en todos tus dispositivos.</p></div>
-      <div class="fcard"><span class="ic">🔔</span><h3>Notificaciones push</h3><p>Entérate cuando cierra un partido, cuando publican resultados y cuando alguien te pasa en la tabla.</p></div>
-      <div class="fcard"><span class="ic">📴</span><h3>Funciona offline</h3><p>Caché local en el teléfono: consulta tus datos sin señal y sincroniza al reconectar.</p></div>
-      <div class="fcard"><span class="ic">⚡</span><h3>Entra en segundos</h3><p>Registro local o login con Facebook en un toque, con foto de perfil desde la cámara.</p></div>
+<main>
+<section class="hero">
+  <div class="hero-in">
+    <span class="eyebrow"><b>Candidato de lanzamiento</b> · app Android + panel web</span>
+    <h1>Tus amigos predicen.<br>La app lleva la <span>cuenta</span>.</h1>
+    <p class="sub">Cada quien crea su torneo, invita a su grupo y predice el marcador antes del inicio. Al cerrarse el partido, la app reparte los puntos y actualiza el ranking en vivo. Sin dinero dentro de la app.</p>
+    <div class="hero-cta">
+      <a class="btn btn-p btn-lg" href="https://wa.me/18492077714?text=Hola%20Starling%2C%20quiero%20implementar%20Copa%20Amistosa%20en%20mi%20grupo" rel="noopener">Escribir por WhatsApp</a>
+      <a class="btn btn-o" href="mailto:sgermosen@outlook.com?subject=Copa%20Amistosa">Escribir por correo</a>
+    </div>
+    <p class="microcopy">Aún no está en tiendas ni abierta al público · La implemento para tu comunidad, oficina o marca · Te respondo yo</p>
+  </div>
+  <div class="hero-board">
+    <div class="board">
+      <div class="jornada">
+        <div class="j-head"><span class="j-k">Ejemplo de jornada</span><span class="j-t">Copa de la oficina</span></div>
+        <ul class="j-list">
+          <li><span class="j-m">Halcones <b>2–1</b> Pumas</span><span class="j-p">Predijiste 2–1</span><span class="pt pt-3">+3 exacto</span></li>
+          <li><span class="j-m">Lobos <b>1–1</b> Cóndores</span><span class="j-p">Predijiste 0–0</span><span class="pt pt-1">+1 empate</span></li>
+          <li><span class="j-m">Linces <b>0–2</b> Búhos</span><span class="j-p">Predijiste 0–1 · banker</span><span class="pt pt-b">+2 banker</span></li>
+          <li><span class="j-m">Zorros <b>1–0</b> Osos</span><span class="j-p">Predijiste 0–2</span><span class="pt pt-0">0 puntos</span></li>
+        </ul>
+        <div class="j-total"><span>Total de la jornada</span><b>6 puntos</b></div>
+        <p class="j-note">Equipos y marcadores de ejemplo. Exacto: 3. Ganador o empate: 1. Fallo: 0. El banker duplica.</p>
+      </div>
+      <div class="shot">
+        <p class="ex-dark">Capturas de la app con datos de ejemplo</p>
+        <img src="/assets/img/torneo-predicciones/app-prediccion.webp" alt="Pantalla Predicción de la app: marcador 2 a 1 marcado con botones más y menos, interruptor Banker que dobla los puntos del partido y botón Guardar predicción" width="660" height="939" fetchpriority="high" decoding="async">
+      </div>
     </div>
   </div>
 </section>
 
-<section id="implementa" class="dark-band">
-  <div class="wrap">
-    <span class="tag">Para ligas, medios y marcas</span>
-    <h2>Tu audiencia, enganchada toda la temporada.</h2>
-    <p class="sub2">Torneo Predicciones se licencia como plataforma completa con tu marca: la app + el panel web donde tu equipo organiza ligas, equipos, torneos y partidos, y publica los resultados que disparan el cálculo de puntos automáticamente.</p>
-    <div class="grid3">
-      <div class="fcard"><span class="ic">🏟️</span><h3>Ligas y torneos ilimitados</h3><p>Estructura Liga → Equipos → Torneo → Partidos configurable para cualquier deporte y temporada.</p></div>
-      <div class="fcard"><span class="ic">🖥️</span><h3>Panel administrativo web</h3><p>Crea partidos, ciérralos con el resultado oficial y el sistema reparte los puntos solo. Gestión de usuarios incluida.</p></div>
-      <div class="fcard"><span class="ic">🎨</span><h3>Con tu marca</h3><p>App y backend personalizables para campañas de radio, TV, medios deportivos, cervecerías, bancas o comunidades de fans.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="tech">
-  <div class="wrap">
-    <span class="tag">Tecnología</span>
-    <h2>Una base sólida, lista para relanzar.</h2>
-    <p class="sub2">Producto de <a href="/">Starling Germosen</a>. App funcional de punta a punta con backend en Azure — lista para implementarse con tu marca, o para modernizarse a .NET 8 / MAUI como parte del proyecto.</p>
-    <div class="tech-flow">
-      <span><b>App:</b> Xamarin.Forms (iOS · Android) · MVVM · SQLite offline</span>
-      <span><b>Backend:</b> ASP.NET Core · API REST · panel Razor · Identity</span>
-      <span><b>Nube:</b> Microsoft Azure · SQL Azure · Notification Hubs (push)</span>
-      <span><b>Extras:</b> login Facebook · emails de confirmación y recuperación (MailKit) · validación anti-inyección</span>
-    </div>
-  </div>
-</section>
-
-<section id="faq" class="dark-band">
-  <div class="wrap">
-    <span class="tag">Preguntas frecuentes</span>
-    <h2>Rápidas y al grano.</h2>
-    <div class="faq">
-      <details>
-        <summary>¿Esto es una app de apuestas?</summary>
-        <p>No. Es un juego de precisión y orgullo deportivo: los puntos se ganan por acertar, no se apuesta dinero dentro de la app. Las "apuestas amistosas" son retos entre amigos fuera de la plataforma.</p>
-      </details>
-      <details>
-        <summary>¿Puedo usarla para el próximo mundial o la temporada de LIDOM?</summary>
-        <p>Sí — cualquier competencia que pueda organizarse como liga con equipos, torneos y partidos se puede montar desde el panel administrativo en minutos.</p>
-      </details>
-      <details>
-        <summary>¿Qué incluye el licenciamiento?</summary>
-        <p>La plataforma completa: app iOS/Android con tu marca, backend con panel administrativo, configuración de tus torneos y acompañamiento en el lanzamiento. Opcionalmente, modernización del stack a .NET 8 / .NET MAUI. Escríbeme a <a href="mailto:sgermosen@outlook.com">sgermosen@outlook.com</a>.</p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<div class="cta-final">
-  <div class="wrap">
-    <h2>La próxima temporada se juega <span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent">también en tu app.</span></h2>
-    <p>Demo funcional disponible — ideal para ligas, medios deportivos y marcas.</p>
-    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-      <a class="btn btn-p" href="mailto:sgermosen@outlook.com?subject=Torneo%20Predicciones%20—%20demo">Solicitar demo</a>
-      <a class="btn btn-o" href="https://wa.me/18492077714?text=Hola%2C%20me%20interesa%20Torneo%20Predicciones" target="_blank" rel="noopener">💬 WhatsApp +1 849 207-7714</a>
-    </div>
+<div class="strip">
+  <div class="strip-in">
+    <span><b>3</b> puntos por marcador exacto</span><span><b>1</b> por acertar ganador o empate</span><span><b>x2</b> con el banker</span><span><b>Sin dinero</b> dentro de la app</span>
   </div>
 </div>
 
+<section id="torneos" class="wrap">
+  <div class="feat ph rv">
+    <div class="txt">
+      <div class="kick"><span class="tag">Tu torneo</span><span class="state">Nuevo · aún no desplegado</span></div>
+      <h2>Cada quien crea su torneo desde el teléfono.</h2>
+      <p class="d">Quien lo crea queda como dueño. Desde la app acepta o bloquea miembros, crea ligas, equipos y partidos, y cierra cada partido con el marcador final, que es lo que reparte los puntos.</p>
+      <ul class="blist">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg><div><h3>Público o privado</h3><p>Un torneo público aparece en la lista de todos. A uno privado solo se entra con invitación o con el código. El dueño puede cambiarlo después.</p></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg><div><h3>Invitación con código o alta por correo</h3><p>El código se comparte como texto desde el menú de compartir del teléfono. A quien ya tiene cuenta, el dueño lo agrega con su correo y entra directo.</p></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21v-2a4 4 0 014-4h6a4 4 0 014 4v2"/><circle cx="10" cy="7" r="4"/><path d="M17 11l2 2 4-4"/></svg><div><h3>Moderación de miembros</h3><p>Quien pide entrar sin código queda pendiente hasta que el dueño lo acepte. Un miembro bloqueado sale del ranking.</p></div></li>
+      </ul>
+    </div>
+    <figure>
+      <div class="frame phone"><img src="/assets/img/torneo-predicciones/app-gestion-torneo.webp" alt="Gestión de un torneo privado en la app: aviso de que solo entra quien tenga invitación o código, botón Hacer público, un miembro con el botón Bloquear y el campo para agregar a alguien por su correo" width="720" height="1078" loading="lazy" decoding="async"></div>
+      <figcaption>Gestión de un torneo privado: visibilidad, miembros y alta por correo de quien ya tiene cuenta.<span class="ex">Capturas de la app con datos de ejemplo</span></figcaption>
+    </figure>
+  </div>
+
+  <div class="feat ph rev rv">
+    <div class="txt">
+      <div class="kick"><span class="tag">Fases y torneos</span><span class="state">Nuevo · aún no desplegado</span></div>
+      <h2>Apertura y Clausura dentro del mismo torneo.</h2>
+      <p class="d">Los torneos internos agrupan los partidos de cada fase. Solo sirven para organizar: el puntaje y el ranking siguen siendo los del torneo completo.</p>
+      <ul class="blist">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M8 17V10M13 17V6M18 17v-4"/></svg><div><h3>Tus puntos, torneo por torneo</h3><p>Si juegas en varios torneos, cada uno lleva su propio puntaje y la lista te muestra «Tus puntos» en cada uno. Los torneos internos no llevan puntaje aparte. El perfil suma todos.</p></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><div><h3>Ligas, equipos y partidos</h3><p>El dueño los crea desde la app. El administrador general también puede hacerlo desde el panel web.</p></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg><div><h3>Cualquier deporte que se decida por marcador</h3><p>Fútbol, béisbol y otros. El marcador se marca con botones + y −, así que va mejor con marcadores bajos.</p></div></li>
+      </ul>
+    </div>
+    <figure>
+      <div class="frame phone"><img src="/assets/img/torneo-predicciones/app-torneos-internos.webp" alt="Gestión del torneo en la app: lista de equipos con sus siglas y la sección Torneos internos con Apertura escrito y el botón Agregar torneo" width="720" height="1043" loading="lazy" decoding="async"></div>
+      <figcaption>Equipos del torneo y un torneo interno, «Apertura», a punto de crearse.<span class="ex">Capturas de la app con datos de ejemplo</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="en-vivo" class="band">
+  <div class="wrap">
+    <div class="kick"><span class="tag">En vivo</span><span class="state">Probado en emulador · aún no abierto al público</span></div>
+    <h2>Se cierra el partido y la tabla cambia sin recargar.</h2>
+    <p class="lead">Con la pantalla del torneo abierta, cuando se cierra un partido la app muestra el resultado, la tabla de posiciones y el ranking de amigos ya actualizados. Las predicciones se bloquean solas a la hora de inicio y los puntos se reparten al cerrar.</p>
+    <div class="phones">
+      <figure class="rv"><img src="/assets/img/torneo-predicciones/app-torneos.webp" alt="Lista de torneos con los botones Crear torneo y Unirme con código, y la tarjeta de un torneo con la etiqueta Miembro y Tus puntos" width="600" height="687" loading="lazy" decoding="async"><figcaption>Crea un torneo o únete con el código.</figcaption></figure>
+      <figure class="rv"><img src="/assets/img/torneo-predicciones/app-en-vivo.webp" alt="Torneo con el indicador En vivo, el resumen de la jornada y el partido TIG 2 a 1 LEO terminado, con la predicción 2 a 1 debajo" width="600" height="1263" loading="lazy" decoding="async"><figcaption>El partido termina y tu predicción queda debajo.</figcaption></figure>
+      <figure class="rv"><img src="/assets/img/torneo-predicciones/app-ranking.webp" alt="Tabla de posiciones de los equipos y ranking de amigos con 3 y 1 puntos, actualizados después del cierre" width="600" height="483" loading="lazy" decoding="async"><figcaption>Tabla y ranking de amigos, al momento.</figcaption></figure>
+    </div>
+    <p class="phones-note">Capturas de la app con datos de ejemplo</p>
+    <ul class="blist trio">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><h3>Bloqueo a la hora de inicio</h3><p>El servidor cierra cada partido a nuevas predicciones a la hora de inicio. Después no se puede predecir ni editar.</p></div></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg><div><h3>Resumen de la jornada</h3><p>Un texto por torneo con el líder, quién lo persigue y el último resultado.</p></div></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 5-7"/></svg><div><h3>Tus estadísticas</h3><p>Puntos acumulados, precisión, racha actual, mejor racha y aciertos exactos.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<section id="panel" class="wrap">
+  <div class="feat rv">
+    <div class="txt">
+      <div class="kick"><span class="tag">Panel web</span><span class="state">Aún no abierto al público</span></div>
+      <h2>Se carga el marcador final y los puntos se reparten.</h2>
+      <p class="d">El panel web lleva la marca Copa Amistosa y es para el administrador general: crea torneos, ligas, equipos y partidos, cierra cada partido con el marcador oficial y acepta o retira miembros.</p>
+      <ul class="blist">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><div><h3>Cierre con el marcador oficial</h3><p>Al guardarlo, el sistema calcula los puntos de todas las predicciones del partido.</p></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg><div><h3>Predicciones desde el navegador</h3><p>Los jugadores también pueden predecir desde la web, con banker incluido.</p></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg><div><h3>Cada dueño, desde su app</h3><p>Quien crea un torneo en el teléfono lo administra desde la app. El panel queda para el administrador general.</p></div></li>
+      </ul>
+    </div>
+    <figure>
+      <div class="frame frags"><img src="/assets/img/torneo-predicciones/panel-aviso-cierre.webp" alt="Aviso del panel web: el partido quedó cerrado y los puntos se repartieron" width="662" height="50" loading="lazy" decoding="async"><img src="/assets/img/torneo-predicciones/panel-partido-cerrado.webp" alt="Tabla de partidos del panel web: Halcones contra Pumas, estado Terminado, resultado 2 a 1" width="662" height="116" loading="lazy" decoding="async"></div>
+      <figcaption>Halcones 2–1 Pumas, cerrado desde el panel: los puntos ya se repartieron.<span class="ex">Captura del panel web con datos de ejemplo</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="estado" class="band">
+  <div class="wrap">
+    <span class="tag">Estado</span>
+    <h2>Candidato de lanzamiento, listo para implementar.</h2>
+    <p class="lead">Todo lo que describe esta página está programado, y las funciones principales tienen pruebas automatizadas y recorridos en emulador. Todavía no hay una versión desplegada para el público ni está en las tiendas. Esto es lo que hay hoy.</p>
+    <div class="lot-grid">
+      <div class="lot-card rv">
+        <h3>Hecho y probado</h3>
+        <div class="n">Código en .NET 10</div>
+        <ul>
+          <li>Pruebas automatizadas <span class="v">80</span></li>
+          <li>Pruebas y compilación de la app Android <span class="v">con cada cambio del código</span></li>
+          <li>Recorridos completos en emulador <span class="v">Android 14</span></li>
+          <li>Arranque con Docker <span class="v">API + SQL Server 2022</span></li>
+        </ul>
+      </div>
+      <div class="lot-card rv">
+        <h3>Lo que aún no hay</h3>
+        <div class="n">Hoy</div>
+        <ul>
+          <li>Versión para el público <span class="v">no</span></li>
+          <li>Prueba en teléfonos físicos <span class="v">no</span></li>
+          <li>Google Play <span class="v">no publicada</span></li>
+          <li>Versión para iPhone <span class="v">no hay</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ingenieria" class="wrap">
+  <div class="kick"><span class="tag">Ingeniería</span><span class="state">La app, aún no desplegada</span></div>
+  <h2>.NET 10 de punta a punta, con 80 pruebas.</h2>
+  <p class="lead">La API REST, el panel web y la app Android están escritos en C# con .NET&nbsp;10. La API y la app comparten los mismos contratos; el panel web vive en el mismo backend y usa las mismas reglas de puntuación.</p>
+  <ul class="blist trio">
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg><div><h3>Tiempo real con SignalR</h3><p>El cierre de un partido llega a las pantallas abiertas del torneo sin recargar.</p></div></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><div><h3>Acceso protegido</h3><p>Tokens JWT de vida corta que la app renueva sola, bloqueo de 15 minutos tras 5 intentos fallidos y un tope de 10 intentos por minuto por IP.</p></div></li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h9"/></svg><div><h3>Pruebas en cada cambio</h3><p>80 pruebas automatizadas, incluidas las de integración contra la API. Cada cambio que se sube al código las corre y compila la app Android.</p></div></li>
+  </ul>
+  <div class="codes">
+    <span>.NET 10</span><span>ASP.NET Core</span><span>.NET MAUI</span><span>SignalR</span><span>EF Core 10</span><span>SQLite</span><span>SQL Server</span><span>Docker</span><span>xUnit</span><span>OpenTelemetry</span>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="tag">Para tu comunidad, oficina o marca</span>
+    <h2>De la conversación a la copa de tu grupo.</h2>
+    <div class="steps">
+      <div class="step rv"><h3>Hablamos de tu grupo</h3><p>Quiénes van a jugar, qué competición siguen y si el torneo será público o privado.</p></div>
+      <div class="step rv"><h3>La adapto a tu marca</h3><p>Tu nombre y tus colores en la app y en el panel, y los ajustes que pida tu competición.</p></div>
+      <div class="step rv"><h3>La despliego y la acompaño</h3><p>La pongo en marcha en un servidor para tu grupo y le doy soporte.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="wrap">
+  <div class="faq-grid">
+    <div class="faq-l">
+      <span class="tag">Preguntas</span>
+      <h2>Lo que conviene saber antes de decidir.</h2>
+      <p class="lead" style="margin-bottom:26px">Si falta la tuya, escríbeme y te contesto directo.</p>
+      <a href="https://wa.me/18492077714?text=Hola%20Starling%2C%20tengo%20una%20pregunta%20sobre%20Copa%20Amistosa" rel="noopener">WhatsApp +1 849 207 7714</a><br>
+      <a href="mailto:sgermosen@outlook.com?subject=Copa%20Amistosa" style="font-size:18px">sgermosen@outlook.com</a>
+    </div>
+    <div>
+      <details><summary>¿Se juega con dinero?</summary><p>No. Es un juego de predicciones entre amigos, sin dinero dentro de la app. Los puntos se ganan acertando y sirven para ordenar el ranking.</p></details>
+      <details><summary>¿Cómo se ganan los puntos?</summary><p>3 por el marcador exacto, 1 por acertar el ganador o el empate y 0 si fallas. Si marcaste ese partido como banker, los puntos valen el doble. Hay un solo banker por torneo: si marcas otro, el anterior se desmarca.</p></details>
+      <details><summary>¿Hasta cuándo puedo cambiar mi predicción?</summary><p>Hasta la hora de inicio del partido. A esa hora el partido se bloquea solo y ya no se puede predecir ni editar.</p></details>
+      <details><summary>¿Qué deportes sirven?</summary><p>Cualquiera que se decida por marcador, como el fútbol o el béisbol. El marcador se marca con botones + y −, así que va mejor con marcadores bajos. Los partidos y los resultados los carga el organizador: no hay conexión con ninguna liga.</p></details>
+      <details><summary>¿Puedo hacer un torneo solo para mi grupo?</summary><p>Sí, en el candidato actual: al crearlo lo marcas como privado y solo se entra con el código de invitación o si el dueño agrega a alguien por su correo, siempre que esa persona ya tenga cuenta. Si después quieres abrirlo, lo haces público.</p></details>
+      <details><summary>¿Para qué sirven los torneos internos?</summary><p>Para organizar fases dentro del mismo torneo, como Apertura y Clausura. Solo agrupan partidos: el puntaje y el ranking siguen siendo los del torneo completo.</p></details>
+      <details><summary>¿Funciona sin internet?</summary><p>No. Las predicciones, los puntos y el ranking viven en el servidor, y la app no guarda datos para usarlos sin conexión.</p></details>
+      <details><summary>¿Ya está en Google Play o en el App Store?</summary><p>Todavía no. Es un candidato de lanzamiento: el código tiene 80 pruebas automatizadas y se probó en un emulador con Android 14, pero aún no está desplegado para el público ni publicado. No hay versión para iPhone.</p></details>
+      <details><summary>¿Me la puedes implementar para mi comunidad, oficina o marca?</summary><p>Sí. La implemento, la personalizo con tu nombre y tus colores, la despliego y le doy soporte. Escríbeme por WhatsApp o al correo y vemos qué necesita tu grupo.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" style="padding:56px 20px 0;border-top:1px solid var(--line)">
+  <div class="stats">
+    <div class="stat rv"><b>80 pruebas</b><span>Automatizadas. Corren solas con cada cambio del código, junto con la compilación de la app Android.</span></div>
+    <div class="stat rv"><b>3 · 1 · 0</b><span>Puntos por marcador exacto, por resultado y por fallo. El banker los duplica.</span></div>
+    <div class="stat rv"><b>Sin dinero</b><span>Dentro de la app. Se juega por el primer lugar del ranking.</span></div>
+  </div>
+</section>
+
+<section class="wrap" style="padding:58px 20px 78px">
+  <div class="cta">
+    <h2>¿Quién predice mejor en tu grupo?</h2>
+    <p>La implemento y la personalizo para tu comunidad, tu oficina o tu marca. Escríbeme y te digo qué haría falta para ponerla en marcha.</p>
+    <div class="hero-cta">
+      <a class="btn btn-w btn-lg" href="https://wa.me/18492077714?text=Hola%20Starling%2C%20quiero%20implementar%20Copa%20Amistosa%20en%20mi%20grupo" rel="noopener">Escribir por WhatsApp</a>
+      <a class="btn btn-p btn-lg" href="mailto:sgermosen@outlook.com?subject=Copa%20Amistosa">Escribir por correo</a>
+    </div>
+    <p class="note">Copa Amistosa es un juego de predicciones entre amigos, sin dinero dentro de la app. Es un candidato de lanzamiento: todavía no está publicado en tiendas ni desplegado para el público. Las capturas usan datos de ejemplo.</p>
+  </div>
+</section>
+</main>
+
 <footer>
   <div class="foot-in">
-    <span>Torneo Predicciones © <span id="y"></span> · Producto de <a href="/">Starling Germosen</a></span>
-    <span><a href="/">Portafolio</a> · <a href="/products/resumibot/">ResumiBot</a> · <a href="/products/lottoking/">LottoKing</a> · <a href="/products/estimatpro/">Estimat Pro</a> · <a href="/products/academic-system/">AcademicSystem</a></span>
+    <span>Copa Amistosa © <span id="y"></span> · Producto de <a href="/">Starling Germosen</a></span>
+    <span><a href="/">Portafolio</a> · <a href="/products/resumibot/">ResumiBot</a> · <a href="/products/lottoking/">LottoKing</a> · <a href="/products/parqueo-virtual/">Parqueo Virtual</a> · <a href="/products/estimatpro/">Estimat Pro</a> · <a href="/products/academic-system/">Gestudent</a> · <a href="/products/braintrain/">BrainTrain</a> · <a href="/products/props-digitales/">Props Digitales</a> · <a href="/miapunte/">Mi Apunte</a> · <a href="/fenix/">Fénix</a></span>
   </div>
 </footer>
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.documentElement.classList.add('anim');
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } }), { threshold: .12 });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+}
+</script>
 </body>
 </html>

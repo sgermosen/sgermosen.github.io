@@ -3,306 +3,575 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AcademicSystem — Sistema de gestión académica para escuelas y academias | Matrícula, notas y kardex</title>
-<meta name="description" content="AcademicSystem es la plataforma de gestión académica lista para tu institución: matrícula en línea con validación de prerrequisitos, calificaciones ponderadas, kardex automático con GPA, asistencia, certificados, reportes y app móvil. Multi-idioma (ES/EN/FR), white-label y en producción con instituciones reales.">
-<meta name="keywords" content="sistema de gestión académica, software para escuelas, sistema de matrícula en línea, kardex digital, software academias, sistema de notas escolar, plataforma educativa white label, gestión estudiantil, AcademicSystem, Gestudent">
+<title>Gestudent — Sistema académico para institutos y escuelas | Matrícula, notas y Kardex</title>
+<meta name="description" content="Núcleo académico en producción con una institución real: matrícula que valida prerrequisitos, cupo y horario, notas por componentes, Kardex con GPA y 12 reportes.">
+<meta name="keywords" content="sistema académico, sistema de gestión académica, software para institutos, software para academias, software para escuelas, sistema de matrícula en línea, sistema de notas, Kardex con GPA, récord académico, Gestudent">
 <meta name="author" content="Starling Germosen">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://sgermosen.com/products/academic-system/">
-<link rel="icon" type="image/svg+xml" href="/assets/img/academic-icon.svg">
+<link rel="alternate" hreflang="es" href="https://sgermosen.com/products/academic-system/">
+<link rel="alternate" hreflang="x-default" href="https://sgermosen.com/products/academic-system/">
+<link rel="icon" type="image/svg+xml" href="/assets/img/academic-system/gestudent-icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/academic-system/gestudent-icon-32.png">
+<link rel="apple-touch-icon" href="/assets/img/academic-system/gestudent-icon-180.png">
 <!-- Open Graph -->
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Starling Germosen">
 <meta property="og:url" content="https://sgermosen.com/products/academic-system/">
-<meta property="og:title" content="AcademicSystem — Gestión académica completa para tu institución">
-<meta property="og:description" content="Matrícula inteligente, notas ponderadas, kardex automático con GPA, asistencia, certificados y reportes — en 3 idiomas, con tu marca. En producción con instituciones reales.">
-<meta property="og:image" content="https://sgermosen.com/assets/img/starling-germosen.jpg">
-<meta property="og:locale" content="es_DO">
+<meta property="og:title" content="Gestudent — La inscripción se valida sola. El Kardex se calcula solo.">
+<meta property="og:description" content="Sistema académico web para institutos, academias y escuelas. Núcleo académico en producción con una institución real: matrícula con validaciones, notas por componentes, Kardex con GPA y 12 reportes.">
+<meta property="og:image" content="https://sgermosen.com/assets/img/academic-system/gestudent-og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gestudent, sistema académico web. Icono de la app, un libro abierto con una estrella sobre fondo índigo, junto al texto: La inscripción se valida sola. El Kardex se calcula solo.">
+<meta property="og:locale" content="es_LA">
 <!-- Twitter -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="AcademicSystem — Gestión académica para escuelas y academias">
-<meta name="twitter:description" content="Matrícula, notas, kardex con GPA, asistencia, certificados y reportes. White-label, trilingüe, con app móvil.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gestudent — Sistema académico: matrícula, notas y Kardex">
+<meta name="twitter:description" content="Matrícula que valida prerrequisitos, cupo, fecha y horario; notas por componentes; Kardex con GPA y estatus. Núcleo académico en producción con una institución real.">
+<meta name="twitter:image" content="https://sgermosen.com/assets/img/academic-system/gestudent-og.png">
+<meta name="twitter:image:alt" content="Gestudent, sistema académico web. Icono de la app, un libro abierto con una estrella sobre fondo índigo, junto al texto: La inscripción se valida sola. El Kardex se calcula solo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "SoftwareApplication",
-      "name": "AcademicSystem",
-      "alternateName": "Gestudent",
+      "name": "Gestudent",
       "url": "https://sgermosen.com/products/academic-system/",
+      "image": "https://sgermosen.com/assets/img/academic-system/gestudent-icon-512.png",
       "applicationCategory": "EducationalApplication",
-      "operatingSystem": "Web, iOS, Android",
-      "description": "Plataforma de gestión académica para universidades, seminarios, academias y escuelas: matrícula en línea con validación de prerrequisitos, calificaciones ponderadas por componentes, kardex (historial académico) automático con GPA y estatus académico, asistencia, certificados con validación, reportes exportables, API REST y app móvil. Multi-tenant white-label y trilingüe (español, inglés, francés).",
-      "inLanguage": ["es", "en", "fr"],
-      "author": { "@type": "Person", "name": "Starling Germosen", "url": "https://sgermosen.com/" },
-      "offers": { "@type": "Offer", "description": "Licenciamiento white-label por institución. Solicitar demo.", "price": "0", "priceCurrency": "USD" },
-      "featureList": "Matrícula en línea con prerrequisitos y control de cupos, calificaciones ponderadas con nota literal automática, kardex con GPA por período y estatus académico, asistencia por sesión, certificados con sello digital y validación, detección de conflictos de horario, reportes con exportación CSV, 3 portales por rol (admin, docente, estudiante), multi-tenant white-label, 3 idiomas, API REST con JWT, app móvil .NET MAUI"
+      "applicationSubCategory": "Sistema de gestión académica",
+      "operatingSystem": "Web",
+      "inLanguage": "es",
+      "description": "Sistema académico web para institutos, academias, escuelas y seminarios. En producción con una institución real: matrícula en línea que valida prerrequisitos, cupo, fecha límite y choques de horario; notas por cinco componentes con total y letra; Kardex con GPA por período y acumulado y estatus académico; asistencia, horarios, 12 reportes administrativos y un portal para cada rol.",
+      "featureList": [
+        "Matrícula en línea que exige prerrequisitos aprobados con 70 o más, cupo, fecha límite y que no haya choques de horario",
+        "Inscripción en lote por el administrador o el docente, con excepción de prerrequisito",
+        "Notas por cinco componentes fijos: asistencia, práctica, examen 1, examen 2 y proyecto, con total y letra",
+        "Kardex con GPA por período y acumulado, créditos intentados y aprobados y estatus académico",
+        "Sesiones de clase y asistencia",
+        "Secciones, aulas con capacidad y aviso de choques de horario",
+        "12 reportes administrativos, 6 de ellos descargables en CSV",
+        "Portales para administrador, docente y estudiante",
+        "Acceso con correo, cédula, matrícula o código de empleado",
+        "Logo, colores y pie de página de la institución según el dominio"
+      ],
+      "author": { "@type": "Person", "name": "Starling Germosen", "url": "https://sgermosen.com/" }
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "¿Qué es AcademicSystem?",
-          "acceptedAnswer": { "@type": "Answer", "text": "AcademicSystem es una plataforma completa de gestión académica para instituciones educativas: administra estudiantes, docentes, materias, períodos, matrícula, calificaciones, asistencia, kardex, certificados y reportes, con portales dedicados para administradores, docentes y estudiantes." }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Cómo funciona la matrícula en línea?",
-          "acceptedAnswer": { "@type": "Answer", "text": "El estudiante se inscribe él mismo desde su portal: el sistema valida automáticamente prerrequisitos aprobados, cupos disponibles, fechas límite y conflictos de horario antes de confirmar la inscripción. Los administradores pueden autorizar excepciones." }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Qué es el kardex automático?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Es el historial académico completo del estudiante generado automáticamente: notas por período, tendencia del GPA, créditos cursados y aprobados, y clasificación de estatus académico (Lista del Decano, Buen Estado, Advertencia, Probatoria)." }
-        },
-        {
-          "@type": "Question",
-          "name": "¿AcademicSystem está en producción?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Sí, está desplegado y operando con una institución real, con estudiantes, docentes y administradores activos." }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Puedo tenerlo con la marca de mi institución?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Sí. La plataforma es multi-tenant white-label: cada institución tiene su logo, colores, dominio e idiomas. Contacta a sgermosen@outlook.com para una demo." }
-        }
+        { "@type": "Question", "name": "¿Gestudent está en producción?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. La versión de 2025, con el núcleo académico, funciona en producción con una institución real: matrícula, notas, Kardex, asistencia, horarios y reportes. La nueva versión, con aula virtual, evaluaciones y pagos, ya está programada, pero todavía no se ha desplegado, y la app sigue en desarrollo." } },
+        { "@type": "Question", "name": "¿Para qué tipo de institución sirve?", "acceptedAnswer": { "@type": "Answer", "text": "Para instituciones pequeñas y medianas, como institutos, academias, escuelas y seminarios, que trabajan con materias con créditos y prerrequisitos, períodos con secciones y un récord académico con GPA." } },
+        { "@type": "Question", "name": "¿Los estudiantes tienen que instalar algo?", "acceptedAnswer": { "@type": "Answer", "text": "No. El portal se usa desde el navegador. La app Gestudent para Android e iOS está en desarrollo y todavía no está en Google Play ni en el App Store." } },
+        { "@type": "Question", "name": "¿Cómo se calcula la nota?", "acceptedAnswer": { "@type": "Answer", "text": "Con cinco componentes fijos: asistencia, práctica, examen 1, examen 2 y proyecto. El sistema calcula el total y la letra, y el docente decide cuándo se publican. Los pesos no se pueden configurar." } },
+        { "@type": "Question", "name": "¿Puede llevar la marca de mi institución?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. El portal toma el logo, los colores y el pie de página de la institución según el dominio desde el que se entra. Hoy cada institución necesita su propia instalación." } },
+        { "@type": "Question", "name": "¿En qué idiomas está?", "acceptedAnswer": { "@type": "Answer", "text": "En español, inglés y francés, y cada usuario elige el suyo. En la versión que está en producción el inglés y el francés están incompletos; en la nueva versión los tres están completos." } },
+        { "@type": "Question", "name": "¿Puedo cargar mis datos desde Excel?", "acceptedAnswer": { "@type": "Answer", "text": "Todavía no en producción. En la nueva versión, aún no desplegada, una plantilla con instrucciones carga estudiantes, materias, notas e historial; los docentes no se importan por esa vía." } }
       ]
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Starling Germosen", "item": "https://sgermosen.com/" },
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://sgermosen.com/" },
         { "@type": "ListItem", "position": 2, "name": "Productos", "item": "https://sgermosen.com/#products" },
-        { "@type": "ListItem", "position": 3, "name": "AcademicSystem", "item": "https://sgermosen.com/products/academic-system/" }
+        { "@type": "ListItem", "position": 3, "name": "Gestudent", "item": "https://sgermosen.com/products/academic-system/" }
       ]
     }
   ]
 }
 </script>
+
 <style>
 :root{
-  --bg:#0d1021; --bg2:#12162e; --card:#161b3a; --line:#262e5c;
-  --txt:#edeffa; --mut:#a6adda; --dim:#6e77ab;
-  --acc:#818cf8; --acc2:#38bdf8; --gold:#fbbf24; --grad:linear-gradient(100deg,#818cf8,#38bdf8);
+  --bg:#FFFFFF; --hero:#F5F5F8; --panel:#FAFAFC;
+  --ink:#15161F; --ink2:#4A4E62; --ink3:#666A80; --line:#E4E5EC; --line2:#EEEFF4;
+  --primary:#4F46E5; --primary-h:#4338CA; --primary-d:#3730A3; --tint:#EEF0FE; --dash:#A9ACEF; --dark:#15142E;
+  --shadow-md:0 4px 6px -1px rgba(21,22,31,.1),0 2px 4px -2px rgba(21,22,31,.1);
+  --shadow-lg:0 10px 15px -3px rgba(21,22,31,.1),0 4px 6px -4px rgba(21,22,31,.1);
+  --wrap:1160px;
 }
-*{margin:0;padding:0;box-sizing:border-box}
+*{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--txt);font-family:'Inter',system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
-a{color:var(--acc2);text-decoration:none}
-img{max-width:100%}
-.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-nav{position:fixed;top:0;left:0;right:0;z-index:50;background:#0d1021cc;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.nav-in{max-width:1080px;margin:0 auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:14px}
-.brand{font-weight:900;font-size:1.06rem;color:var(--txt);display:flex;align-items:center;gap:10px}
-.brand span{color:var(--acc)}
-.nav-r{display:flex;gap:18px;align-items:center}
-.nav-r a{color:var(--mut);font-size:.9rem;font-weight:600}
-.nav-cta{background:var(--grad);color:#0d1021!important;font-weight:800;padding:8px 18px;border-radius:99px}
-.hero{position:relative;padding:140px 0 80px;overflow:hidden}
-.hero::before{content:"";position:absolute;top:-300px;left:50%;transform:translateX(-50%);width:900px;height:700px;border-radius:50%;background:radial-gradient(circle,#818cf824,transparent 65%);pointer-events:none}
-.hero .wrap{position:relative;z-index:1;text-align:center}
-.pill{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;border-radius:99px;padding:6px 14px;background:#818cf822;color:var(--acc);border:1px solid #818cf855;margin-bottom:20px}
-h1{font-size:clamp(2.1rem,5vw,3.4rem);font-weight:900;letter-spacing:-.03em;line-height:1.1;max-width:22ch;margin:0 auto 18px}
-h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero .sub{color:var(--mut);font-size:1.08rem;max-width:64ch;margin:0 auto 32px}
-.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 28px;border-radius:13px;font-weight:800;font-size:.98rem;transition:transform .15s}
-.btn:hover{transform:translateY(-2px)}
-.btn-p{background:var(--grad);color:#0d1021;box-shadow:0 10px 30px #818cf833}
-.btn-o{border:1px solid var(--line);color:var(--txt);background:var(--card)}
-.statband{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2);margin-top:64px}
-.stat-in{max-width:1080px;margin:0 auto;padding:30px 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
-@media(max-width:760px){.stat-in{grid-template-columns:repeat(2,1fr)}}
-.stat b{display:block;font-size:1.8rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-.stat span{color:var(--mut);font-size:.84rem;font-weight:600}
-section{padding:80px 0}
-.tag{color:var(--gold);font-weight:800;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase}
-h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:900;letter-spacing:-.025em;margin:10px 0 14px}
-.sub2{color:var(--mut);max-width:66ch;margin-bottom:40px}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-@media(max-width:900px){.grid3{grid-template-columns:1fr 1fr}}
-@media(max-width:640px){.grid3{grid-template-columns:1fr}}
-.fcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
-.fcard .ic{font-size:1.7rem}
-.fcard h3{font-size:1.05rem;font-weight:800;margin:12px 0 6px}
-.fcard p{color:var(--mut);font-size:.9rem}
-.dark-band{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.roles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-@media(max-width:860px){.roles{grid-template-columns:1fr}}
-.role{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
-.role b{display:block;color:var(--acc);margin-bottom:8px;font-size:1.02rem}
-.role ul{list-style:none}
-.role li{color:var(--mut);font-size:.87rem;padding:3px 0 3px 20px;position:relative}
-.role li::before{content:"✓";position:absolute;left:0;color:var(--acc2);font-weight:800}
-.tech-flow{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-.tech-flow span{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:8px 14px;font-size:.84rem;color:var(--mut);font-weight:600}
-.tech-flow span b{color:var(--txt)}
-.faq{max-width:800px}
-.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin-bottom:12px}
-.faq summary{font-weight:800;cursor:pointer;font-size:1rem}
-.faq p{color:var(--mut);margin-top:12px;font-size:.93rem}
-.cta-final{text-align:center;padding:90px 0}
-.cta-final p{color:var(--mut);margin-bottom:30px}
-footer{border-top:1px solid var(--line);padding:30px 0;color:var(--dim);font-size:.85rem}
-.foot-in{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.foot-in a{color:var(--mut)}
-.note{font-size:.8rem;color:var(--dim);margin-top:14px}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 "Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:Manrope,system-ui,sans-serif;margin:0;text-wrap:balance;font-optical-sizing:auto}
+p{margin:0}
+a{color:inherit}
+img{max-width:100%;display:block}
+[id]{scroll-margin-top:88px}
+:where(a,button,summary):focus-visible{outline:2px solid var(--primary);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:12px;top:-64px;z-index:60;background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;font-weight:600;text-decoration:none}
+.skip:focus{top:12px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:var(--wrap);margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:9px;font-family:Manrope;font-weight:800;font-size:19px;text-decoration:none;letter-spacing:-.01em}
+.brand svg{width:30px;height:30px;flex:none}
+.nav-r{display:flex;align-items:center;gap:26px}
+.nav-r a{color:var(--ink2);text-decoration:none;font-size:16px;font-weight:600;transition:color .15s}
+.nav-r a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:Manrope;font-weight:700;text-decoration:none;border:0;cursor:pointer;border-radius:999px;transition:background-color .15s,color .15s,border-color .15s}
+.nav-r a.btn-p,.btn-p{background:var(--primary);color:#fff;padding:11px 24px;font-size:16px}
+.nav-r a.btn-p:hover,.btn-p:hover{background:var(--primary-h);color:#fff}
+.btn-lg{padding:15px 30px;font-size:17px}
+.btn-o{background:transparent;color:var(--ink);border:1px solid #CBCDD8;padding:14px 28px;font-size:17px}
+.btn-o:hover{border-color:var(--ink);background:#fff}
+.btn-w{background:#fff;color:var(--ink);padding:15px 30px;font-size:17px}
+.btn-w:hover{background:#ECEDF6}
+.btn-g{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.45);padding:14px 28px;font-size:17px}
+.btn-g:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+
+/* hero */
+.hero{position:relative;padding:78px 0 0;overflow:hidden;background:var(--hero);border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;inset:0;z-index:0;
+  background-image:linear-gradient(90deg,#666a8014 1px,transparent 0),linear-gradient(180deg,#666a8014 1px,transparent 0);
+  background-size:44px 44px;
+  -webkit-mask-image:radial-gradient(ellipse 55% 55% at 50% 40%,#000 55%,transparent 100%);
+          mask-image:radial-gradient(ellipse 55% 55% at 50% 40%,#000 55%,transparent 100%)}
+.hero-in{position:relative;z-index:1;max-width:var(--wrap);margin:0 auto;padding:0 20px;text-align:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--ink2);background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 15px}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--primary);flex:none}
+.eyebrow b{color:var(--primary);font-weight:700}
+.mbr{display:none}
+h1{font-size:clamp(33px,5.2vw,56px);font-weight:800;line-height:1.12;letter-spacing:-.02em;margin:22px auto 0;max-width:22ch}
+h1 .l{display:block}
+h1 .a{color:var(--primary)}
+.hero p.sub{margin:20px auto 0;max-width:60ch;font-size:19px;color:var(--ink2)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:30px}
+.microcopy{margin-top:14px;font-size:14.5px;color:var(--ink3)}
+.hero-shot{position:relative;z-index:1;max-width:1000px;margin:52px auto -1px;padding:0 20px}
+
+/* ciclo del nucleo (sustituye a la captura del hero: Gestudent va sin capturas) */
+.cycle{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:#fff;border:1px solid #D9DBE5;border-bottom:0;border-radius:12px 12px 0 0;box-shadow:0 -2px 40px rgba(21,22,31,.10);text-align:left}
+.cycle li{position:relative;padding:26px 24px 32px}
+.cycle li + li{border-left:1px solid var(--line)}
+.cycle li + li::before{content:"";position:absolute;left:-7px;top:31px;width:12px;height:12px;background:#fff;border-top:1px solid #D9DBE5;border-right:1px solid #D9DBE5;transform:rotate(45deg)}
+.cycle .n{display:block;font-family:Manrope;font-weight:800;font-size:13px;letter-spacing:.06em;color:var(--primary)}
+.cycle .h{display:block;font-family:Manrope;font-weight:800;font-size:19px;margin-top:6px;color:var(--ink)}
+.cycle p{font-size:15.5px;line-height:1.5;color:var(--ink2);margin-top:6px}
+
+/* franja de datos */
+.strip{background:#fff;border-bottom:1px solid var(--line);padding:26px 0}
+.strip-in{max-width:var(--wrap);margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;justify-content:center;color:var(--ink3);font-size:15px}
+.strip-in b{color:var(--ink);font-weight:600}
+
+/* secciones */
+section{padding:74px 0}
+.tag{display:block;font-size:14px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--primary)}
+h2{font-size:clamp(27px,3.6vw,40px);font-weight:800;letter-spacing:-.015em;line-height:1.18;margin-top:12px;max-width:19ch}
+.lead{margin-top:14px;max-width:62ch;color:var(--ink2)}
+.feat{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:56px;align-items:center}
+.feat + .feat{margin-top:88px}
+.feat.rev .txt{order:2}
+.feat h2{max-width:16ch}
+.feat p.d{margin-top:14px;color:var(--ink2)}
+.feat figure{margin:0}
+.blist{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:18px}
+.blist li{display:grid;grid-template-columns:24px 1fr;gap:13px}
+.blist svg{width:22px;height:22px;color:var(--primary);margin-top:4px}
+.blist h3{font-size:17px;font-weight:700;font-family:"Source Sans 3",sans-serif;line-height:1.45}
+.blist p{font-size:16px;color:var(--ink2);margin-top:2px}
+figcaption{margin-top:11px;font-size:13.5px;color:var(--ink3);text-align:center}
+
+/* fichas de regla (en lugar de capturas) */
+.spec{border:1px solid var(--line);border-radius:14px;padding:9px;background:var(--panel);box-shadow:var(--shadow-lg)}
+.spec-in{background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px 28px 26px}
+.spec-t{font-family:Manrope;font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
+.checks{list-style:none;margin:10px 0 0;padding:0}
+.checks li{display:grid;grid-template-columns:30px 1fr;gap:12px;align-items:start;padding:15px 0;border-top:1px solid var(--line2)}
+.checks li:first-child{border-top:0}
+.checks svg{width:26px;height:26px;color:var(--primary)}
+.checks strong{display:block;font-family:Manrope;font-weight:800;font-size:17px;line-height:1.35;color:var(--ink)}
+.checks span{display:block;font-size:16px;color:var(--ink2);margin-top:2px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chips span{font:600 14.5px/1.2 "Source Sans 3",sans-serif;color:var(--ink2);border:1px solid var(--line);border-radius:999px;padding:7px 13px;background:var(--panel)}
+.chips b{color:var(--primary-d);font-weight:700}
+.sub-t{margin-top:18px;padding-top:16px;border-top:1px solid var(--line2)}
+.cols{columns:2;column-gap:28px;list-style:none;margin:12px 0 0;padding:0}
+.cols li{break-inside:avoid;padding:9px 0;border-top:1px solid var(--line2);font-size:16px;color:var(--ink2)}
+.spec-f{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:15.5px;color:var(--ink2)}
+.spec-f b{color:var(--ink)}
+
+/* portales */
+.band{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:38px}
+.card{border:1px solid var(--line);border-radius:12px;padding:24px;background:#fff}
+.card h3{font-size:18px;font-weight:800}
+.card .n{font-size:14px;color:var(--ink3);margin-top:3px}
+.card ul{list-style:none;margin:14px 0 0;padding:0;font-size:16px;color:var(--ink2)}
+.card li{display:grid;grid-template-columns:18px 1fr;gap:10px;padding:9px 0;border-top:1px solid var(--line2)}
+.card li svg{width:16px;height:16px;color:var(--primary);margin-top:5px}
+
+/* nueva version: borde punteado = aun no desplegado */
+.state{display:inline-flex;align-items:center;gap:9px;margin-top:18px;font-size:15px;font-weight:700;color:var(--primary-d);background:var(--tint);border:1px dashed var(--dash);border-radius:999px;padding:6px 15px}
+.state::before{content:"";width:9px;height:9px;border-radius:50%;border:2px solid currentColor;box-sizing:border-box;flex:none}
+.dev-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:36px}
+.dev{border:1px dashed #8A8EB0;border-radius:12px;padding:22px 22px 24px;background:#fff}
+.dev h3{font-size:17px;font-weight:800}
+.dev p{margin-top:8px;font-size:16px;color:var(--ink2)}
+.pill-s{display:inline-block;margin-bottom:10px;font-size:13px;font-weight:700;line-height:1.5;color:var(--primary-d);background:var(--tint);border:1px dashed var(--dash);border-radius:999px;padding:0 9px;white-space:nowrap}
+.also{margin-top:22px;font-size:16px;color:var(--ink2);max-width:86ch}
+.also b{color:var(--ink);font-weight:600}
+.app-row{display:flex;align-items:center;gap:18px;margin-top:26px;border:1px dashed #8A8EB0;border-radius:14px;padding:18px 22px;background:var(--panel)}
+.app-row img{width:56px;height:56px;flex:none}
+.app-row h3{font-size:17px;font-weight:800}
+.app-row p{font-size:16px;color:var(--ink2);margin-top:2px}
+
+/* como esta hecho */
+.tech{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:56px;align-items:start}
+.stack{margin:0;border-top:1px solid var(--line)}
+.stack div{display:grid;grid-template-columns:120px 1fr;gap:18px;padding:15px 0;border-bottom:1px solid var(--line)}
+.stack dt{font-family:Manrope;font-weight:800;font-size:15px;line-height:1.6;color:var(--ink)}
+.stack dd{margin:0;font-size:16.5px;color:var(--ink2)}
+.stack em{font-style:normal;display:inline-block;margin-left:4px;font-size:13px;font-weight:700;line-height:1.5;color:var(--primary-d);background:var(--tint);border:1px dashed var(--dash);border-radius:999px;padding:0 9px;white-space:nowrap}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:56px;padding-top:44px;border-top:1px solid var(--line)}
+.stat b{display:block;font-family:Manrope;font-size:32px;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+.stat span{display:block;margin-top:6px;color:var(--ink2);font-size:16px}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px}
+.faq-l a{color:var(--primary);font-weight:700;text-decoration:none;font-size:clamp(18px,2.2vw,25px);font-family:Manrope;word-break:break-word}
+.faq-l a:hover{text-decoration:underline}
+details{border-top:1px solid var(--line);padding:22px 4px 0;margin-bottom:20px}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:18px;font-family:Manrope;font-weight:700;font-size:19px;line-height:1.35}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-weight:600;color:var(--ink3);transition:transform .2s;flex:none}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:12px;color:var(--ink2);font-size:16.5px;max-width:64ch}
+
+/* cta */
+.cta{position:relative;overflow:hidden;border-radius:24px;background-color:var(--dark);
+  background-image:linear-gradient(90deg,#22214A 1px,transparent 0),linear-gradient(180deg,#22214A 1px,transparent 0);
+  background-size:96px 64px;padding:66px 24px;text-align:center;color:#fff}
+.cta::after{content:"";position:absolute;inset:0;background:radial-gradient(circle 560px at 50% 420px,#2A2766,transparent);pointer-events:none}
+.cta > *{position:relative;z-index:1}
+.cta h2{font-weight:700;color:#fff;margin:0 auto;max-width:20ch}
+.cta p{margin:16px auto 0;max-width:52ch;color:#C5C7E0}
+.cta .hero-cta{margin-top:28px}
+.note{margin-top:24px;font-size:14px;color:#A3A6C8;max-width:70ch;margin-inline:auto;line-height:1.55}
+
+/* footer */
+footer{background:var(--panel);border-top:1px solid var(--line);padding:40px 0 30px;font-size:15px;color:var(--ink2)}
+.foot-in{max-width:var(--wrap);margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
+.foot-in a{color:var(--ink2);text-decoration:none;white-space:nowrap}
+.foot-in a:hover{color:var(--ink);text-decoration:underline}
+
+/* reveal */
+.anim .rv:not(.on){opacity:0;transform:translateY(26px)}
+.anim .rv{transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+.anim .rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.anim .rv{opacity:1!important;transform:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+@media (max-width:900px){
+  .nav-r a:not(.btn){display:none}
+  .feat{grid-template-columns:1fr;gap:32px}
+  .feat.rev .txt{order:0}
+  .feat + .feat{margin-top:64px}
+  .cards,.dev-grid,.stats,.tech{grid-template-columns:1fr}
+  .tech{gap:30px}
+  .stats{margin-top:40px;padding-top:34px;gap:28px}
+  .faq-grid{grid-template-columns:1fr;gap:28px}
+  section{padding:56px 0}
+  .hero{padding-top:52px}
+  .cycle{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cycle li + li::before{display:none}
+  .cycle li + li{border-left:0}
+  .cycle li:nth-child(even){border-left:1px solid var(--line)}
+  .cycle li:nth-child(n+3){border-top:1px solid var(--line)}
+}
+@media (max-width:600px){
+  .cycle{grid-template-columns:1fr}
+  .cycle li{padding:20px 20px 22px}
+  .cycle li:nth-child(even){border-left:0}
+  .cycle li + li{border-top:1px solid var(--line)}
+  .spec-in{padding:20px 18px 22px}
+  .cols{column-gap:18px}
+  .cols li{font-size:15px}
+  .eyebrow{border-radius:18px;text-align:left}
+  .mbr{display:inline}
+  .stack div{grid-template-columns:1fr;gap:2px}
+  .app-row{align-items:flex-start}
+  .cta{padding:52px 20px}
+}
 </style>
 </head>
 <body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
 
-<nav>
+<header class="nav">
   <div class="nav-in">
-    <a class="brand" href="/products/academic-system/">🎓 Academic<span>System</span></a>
-    <div class="nav-r">
+    <a class="brand" href="/products/academic-system/">
+      <svg viewBox="0 0 456 456" aria-hidden="true"><rect width="456" height="456" rx="102" fill="#4F46E5"/><g fill="#FFF"><path d="M112 296V190q54-18 108 0v106q-54-18-108 0z"/><path d="M344 296V190q-54-18-108 0v106q54-18 108 0z"/><rect x="224" y="188" width="8" height="106" rx="4"/><path d="M228 96l13 32 31 12-31 12-13 32-13-32-31-12 31-12z"/></g></svg>
+      <span>Gestudent</span></a>
+    <nav class="nav-r" aria-label="Secciones">
       <a href="#funciones">Funciones</a>
       <a href="#portales">Portales</a>
-      <a href="#faq">FAQ</a>
-      <a href="/">← Portafolio</a>
-      <a class="nav-cta" href="mailto:sgermosen@outlook.com?subject=AcademicSystem%20—%20solicitar%20demo">Solicitar demo</a>
-    </div>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="wrap">
-    <span class="pill">● En producción con instituciones reales</span>
-    <h1>La gestión académica de tu institución, <span>resuelta.</span></h1>
-    <p class="sub">Matrícula en línea con validación inteligente, calificaciones ponderadas, kardex automático con GPA, asistencia, certificados y reportes — con <b style="color:var(--txt)">tu marca, tu dominio y tus colores</b>. Para universidades, seminarios, academias y escuelas.</p>
-    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-      <a class="btn btn-p" href="mailto:sgermosen@outlook.com?subject=AcademicSystem%20—%20solicitar%20demo">🎓 Solicitar demo</a>
-      <a class="btn btn-o" href="https://wa.me/18492077714?text=Hola%2C%20me%20interesa%20AcademicSystem" target="_blank" rel="noopener">💬 WhatsApp</a>
-    </div>
-  </div>
-  <div class="statband">
-    <div class="stat-in">
-      <div class="stat"><b>3</b><span>portales: admin · docente · estudiante</span></div>
-      <div class="stat"><b>3</b><span>idiomas: ES · EN · FR</span></div>
-      <div class="stat"><b>26,500+</b><span>líneas de código .NET 8</span></div>
-      <div class="stat"><b>100%</b><span>white-label multi-institución</span></div>
-    </div>
+      <a href="#nueva-version">Nueva versión</a>
+      <a href="#faq">Preguntas</a>
+      <a class="btn btn-p" href="https://wa.me/18492077714?text=Hola%20Starling%2C%20me%20interesa%20Gestudent%20para%20mi%20instituci%C3%B3n" rel="noopener">Escríbeme</a>
+    </nav>
   </div>
 </header>
 
-<section id="funciones">
-  <div class="wrap">
-    <span class="tag">Funciones clave</span>
-    <h2>Automatiza lo que hoy se hace en Excel y papel.</h2>
-    <div class="grid3">
-      <div class="fcard"><span class="ic">📝</span><h3>Matrícula inteligente</h3><p>El estudiante se inscribe solo: el sistema valida prerrequisitos aprobados, cupos, fechas límite y choques de horario antes de confirmar. Con excepciones autorizadas por admin.</p></div>
-      <div class="fcard"><span class="ic">🧮</span><h3>Notas ponderadas</h3><p>Asistencia, práctica, exámenes y proyecto con pesos configurables — total y calificación literal calculados automáticamente, con publicación controlada por el docente.</p></div>
-      <div class="fcard"><span class="ic">📜</span><h3>Kardex automático</h3><p>Historial académico completo con GPA por período, tendencia, créditos y estatus académico automático: Lista del Decano, Buen Estado, Advertencia o Probatoria.</p></div>
-      <div class="fcard"><span class="ic">🗓️</span><h3>Horarios sin conflictos</h3><p>Secciones, aulas y docentes con detección automática de choques de horario y flujo de aprobación para excepciones.</p></div>
-      <div class="fcard"><span class="ic">🏅</span><h3>Certificados verificables</h3><p>Emisión de certificados con sello y firma digital, descarga por el estudiante y validación de autenticidad.</p></div>
-      <div class="fcard"><span class="ic">📈</span><h3>Reportes al instante</h3><p>Matrícula, distribución de notas, rendimiento estudiantil y carga docente — exportables a CSV con un clic, más vistas listas para imprimir.</p></div>
+<main id="contenido">
+<section class="hero">
+  <div class="hero-in">
+    <span class="eyebrow"><span>Núcleo académico en producción<br class="mbr"> con <b>una institución real</b></span></span>
+    <h1><span class="l">La inscripción se valida sola.</span> <span class="l">El Kardex se calcula <span class="a">solo</span>.</span></h1>
+    <p class="sub">Gestudent es un sistema académico web para institutos, academias, escuelas y seminarios. Antes de inscribir revisa prerrequisitos, cupo, fecha límite y horario; después calcula la nota final, el GPA y el estatus de cada estudiante.</p>
+    <div class="hero-cta">
+      <a class="btn btn-p btn-lg" href="https://wa.me/18492077714?text=Hola%20Starling%2C%20me%20interesa%20Gestudent%20para%20mi%20instituci%C3%B3n" rel="noopener">Escribir por WhatsApp</a>
+      <a class="btn btn-o" href="mailto:sgermosen@outlook.com?subject=Gestudent">Escribir un correo</a>
     </div>
+    <p class="microcopy">Te respondo yo directamente · Sin compromiso</p>
+  </div>
+  <div class="hero-shot">
+    <ol class="cycle" aria-label="Cómo trabaja el núcleo académico">
+      <li><span class="n">01</span><span class="h">Inscripción</span><p>Prerrequisitos, cupo, fecha límite y horario, revisados antes de aceptar.</p></li>
+      <li><span class="n">02</span><span class="h">Notas</span><p>Cinco componentes por calificación. El total y la letra salen solos.</p></li>
+      <li><span class="n">03</span><span class="h">Kardex</span><p>GPA por período y acumulado, créditos y estatus académico.</p></li>
+      <li><span class="n">04</span><span class="h">Reportes</span><p>Doce para la administración; seis se descargan en CSV.</p></li>
+    </ol>
   </div>
 </section>
 
-<section id="portales" class="dark-band">
-  <div class="wrap">
-    <span class="tag">Un portal para cada rol</span>
-    <h2>Cada usuario entra a lo suyo. Nada más, nada menos.</h2>
-    <div class="roles">
-      <div class="role">
-        <b>🛠️ Administrador</b>
-        <ul>
-          <li>Dashboard con estadísticas del sistema</li>
-          <li>Estudiantes, docentes, materias, períodos</li>
-          <li>Oferta académica con importación entre períodos</li>
-          <li>Prerrequisitos, secciones, aulas y horarios</li>
-          <li>Cuentas, contraseñas y activación</li>
-        </ul>
-      </div>
-      <div class="role">
-        <b>👨‍🏫 Docente</b>
-        <ul>
-          <li>Cursos asignados y listas de inscritos</li>
-          <li>Captura de notas por componentes ponderados</li>
-          <li>Sesiones de clase y toma de asistencia</li>
-          <li>Reportes de rendimiento y exportación CSV</li>
-          <li>Override de prerrequisitos cuando aplica</li>
-        </ul>
-      </div>
-      <div class="role">
-        <b>🎒 Estudiante</b>
-        <ul>
-          <li>Dashboard con GPA y créditos al día</li>
-          <li>Auto-matrícula validada y retiro en fecha</li>
-          <li>Notas, historial y kardex completo</li>
-          <li>Certificados descargables y verificables</li>
-          <li>Horario imprimible y app móvil companion</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="tech">
-  <div class="wrap">
-    <span class="tag">Tecnología</span>
-    <h2>Moderno por dentro, tuyo por fuera.</h2>
-    <p class="sub2">Producto de <a href="/">Starling Germosen</a>. Cada institución opera aislada en la misma plataforma, con su propia identidad visual — el modelo SaaS que permite empezar hoy sin comprar servidores.</p>
-    <div class="tech-flow">
-      <span><b>Backend:</b> .NET 8 · ASP.NET Core MVC · arquitectura por capas (Domain / Application / Infrastructure)</span>
-      <span><b>Datos:</b> EF Core 8 · SQL Server · 16 entidades · 22 servicios</span>
-      <span><b>Seguridad:</b> ASP.NET Identity + JWT para API/móvil · confirmación por email</span>
-      <span><b>Móvil:</b> app companion .NET MAUI (iOS · Android · Windows) + colección Postman</span>
-      <span><b>Extras:</b> login flexible (email, cédula, matrícula o código de empleado) · Cloudinary · IDs automáticos AAAA-0001</span>
-      <span><b>Idiomas:</b> español · inglés · francés (843+ cadenas por idioma)</span>
-    </div>
-    <p class="note">Módulo de pagos/facturación en hoja de ruta — la plataforma actual cubre el ciclo académico completo. La app móvil cubre el flujo del estudiante y sigue en expansión activa.</p>
-  </div>
-</section>
-
-<section id="faq" class="dark-band">
-  <div class="wrap">
-    <span class="tag">Preguntas frecuentes</span>
-    <h2>Lo que las instituciones preguntan.</h2>
-    <div class="faq">
-      <details>
-        <summary>¿Cuánto toma implementarlo en mi institución?</summary>
-        <p>Al ser multi-tenant, una institución nueva se configura con su logo, colores, materias, períodos y usuarios sin necesidad de un despliegue nuevo. La carga inicial de datos y capacitación se coordina en la implementación.</p>
-      </details>
-      <details>
-        <summary>¿Sirve para academias pequeñas o solo universidades?</summary>
-        <p>Ambas. El modelo de materias, períodos, secciones y prerrequisitos se adapta desde academias con pocos cursos hasta programas universitarios completos, y está probado en producción con un seminario real.</p>
-      </details>
-      <details>
-        <summary>¿Los estudiantes necesitan instalar algo?</summary>
-        <p>No. El portal web es responsive y funciona en cualquier navegador o teléfono. Adicionalmente existe una app móvil companion para consultar notas, matrícula y certificados.</p>
-      </details>
-      <details>
-        <summary>¿Puedo migrar mis datos actuales?</summary>
-        <p>Sí — estudiantes, docentes, materias e historiales pueden cargarse durante la implementación. Escríbeme a <a href="mailto:sgermosen@outlook.com">sgermosen@outlook.com</a> con el formato de tus datos actuales.</p>
-      </details>
-      <details>
-        <summary>¿En qué idiomas está disponible?</summary>
-        <p>Español, inglés y francés, con selección por usuario — listo para el Caribe, Estados Unidos y mercados francófonos.</p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<div class="cta-final">
-  <div class="wrap">
-    <h2>Tu institución, digital <span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent">este mismo período.</span></h2>
-    <p>Demo en vivo con datos de ejemplo — ve el sistema funcionando antes de decidir.</p>
-    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-      <a class="btn btn-p" href="mailto:sgermosen@outlook.com?subject=AcademicSystem%20—%20solicitar%20demo">Solicitar demo</a>
-      <a class="btn btn-o" href="https://wa.me/18492077714?text=Hola%2C%20me%20interesa%20AcademicSystem" target="_blank" rel="noopener">💬 WhatsApp +1 849 207-7714</a>
-    </div>
+<div class="strip">
+  <div class="strip-in">
+    <span><b>1</b> institución en producción</span><span><b>3</b> portales por rol</span><span><b>5</b> componentes por nota</span><span><b>12</b> reportes administrativos</span>
   </div>
 </div>
 
+<section id="funciones">
+  <div class="wrap">
+    <div class="feat rv">
+      <div class="txt">
+        <span class="tag">Matrícula en línea</span>
+        <h2>Si no cumple, no se inscribe.</h2>
+        <p class="d">El estudiante elige sus materias desde su portal. Antes de aceptar la inscripción, el sistema revisa cuatro condiciones; si falla una, la inscripción no pasa.</p>
+        <ul class="blist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg><div><h3>Inscripción en lote</h3><p>El administrador y el docente inscriben a varios estudiantes a la vez y pueden hacer una excepción de prerrequisito.</p></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg><div><h3>Oferta por período</h3><p>Cada oferta une materia, sección, docente, aula y cupo, y la de un período se importa al siguiente.</p></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="12" r="2.5"/><path d="M14 10h4M14 14h3"/></svg><div><h3>Matrículas y códigos automáticos</h3><p>AAAA-0001 para estudiantes y EMP-AAAA-0001 para empleados.</p></div></li>
+        </ul>
+      </div>
+      <figure>
+        <div class="spec"><div class="spec-in">
+          <p class="spec-t">Antes de inscribir, el sistema revisa</p>
+          <ul class="checks">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg><div><strong>Prerrequisitos</strong><span>Aprobados con 70 o más.</span></div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg><div><strong>Cupo</strong><span>Queda cupo disponible.</span></div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg><div><strong>Fecha límite</strong><span>No pasó la fecha límite del período.</span></div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg><div><strong>Horario</strong><span>No choca con otra materia del estudiante.</span></div></li>
+          </ul>
+        </div></div>
+        <figcaption>Las cuatro condiciones de la matrícula en línea.</figcaption>
+      </figure>
+    </div>
+
+    <div class="feat rev rv">
+      <div class="txt">
+        <span class="tag">Notas y Kardex</span>
+        <h2>El docente registra las notas. El Kardex se calcula solo.</h2>
+        <p class="d">Cada calificación tiene cinco componentes fijos. El sistema saca el total y la letra, y el docente decide cuándo los ve el estudiante.</p>
+        <ul class="blist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h12M9 12h12M9 18h12"/><circle cx="4.5" cy="6" r="1.2"/><circle cx="4.5" cy="12" r="1.2"/><circle cx="4.5" cy="18" r="1.2"/></svg><div><h3>Cinco componentes</h3><p>Asistencia, práctica, examen 1, examen 2 y proyecto. Los pesos son fijos.</p></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><div><h3>Se publican cuando el docente decide</h3><p>Hasta entonces, el estudiante no ve la calificación.</p></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6"/><rect x="4" y="9" width="16" height="7" rx="2"/><path d="M7 16h10v5H7z"/></svg><div><h3>Récord para imprimir</h3><p>El Kardex tiene una vista lista para imprimir desde el navegador.</p></div></li>
+        </ul>
+      </div>
+      <figure>
+        <div class="spec"><div class="spec-in">
+          <p class="spec-t">Lo que reúne el Kardex</p>
+          <ul class="checks">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg><div><strong>Historial por período</strong><span>Cada materia cursada, con su nota.</span></div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 5-7"/></svg><div><strong>GPA</strong><span>Del período y acumulado.</span></div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 12l3 3 5-6"/></svg><div><strong>Créditos</strong><span>Intentados y aprobados.</span></div></li>
+          </ul>
+          <div class="sub-t">
+            <p class="spec-t">Estatus automático</p>
+            <div class="chips"><span>Lista del Decano · <b>3.5 o más</b></span><span>Buen estado · <b>3.0 o más</b></span><span>Advertencia</span><span>Probatoria</span></div>
+          </div>
+        </div></div>
+        <figcaption>El Kardex de cada estudiante, con su estatus calculado.</figcaption>
+      </figure>
+    </div>
+
+    <div class="feat rv">
+      <div class="txt">
+        <span class="tag">Horarios, asistencia y reportes</span>
+        <h2>Un choque de horario no pasa sin que alguien lo acepte.</h2>
+        <p class="d">Las secciones llevan días y horas, y las aulas, su capacidad. Si un docente o una sección se cruzan, el sistema avisa y el administrador tiene que aceptarlo de forma explícita.</p>
+        <ul class="blist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M9 13l2 2 4-4"/></svg><div><h3>Sesiones y asistencia</h3><p>El docente crea las sesiones de su curso y pasa lista. La administración ve las estadísticas de asistencia.</p></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><h3>Horario para imprimir</h3><p>Estudiantes y docentes imprimen y exportan su horario.</p></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 11l4 4 4-4"/><path d="M4 21h16"/></svg><div><h3>Descargas en CSV</h3><p>Seis reportes se descargan en CSV, y el docente descarga el de notas de su curso.</p></div></li>
+        </ul>
+      </div>
+      <figure>
+        <div class="spec"><div class="spec-in">
+          <p class="spec-t">Reportes para la administración</p>
+          <ul class="cols">
+            <li>Matrícula</li><li>Distribución de notas</li><li>Rendimiento</li><li>Carga docente</li><li>Cuadro de honor</li>
+            <li>Estudiantes en riesgo</li><li>Resumen ejecutivo</li><li>Asistencia</li><li>Ofertas</li><li>Listados</li>
+          </ul>
+          <p class="spec-f"><b>12</b> reportes en total; <b>6</b> se descargan en CSV.</p>
+        </div></div>
+        <figcaption>Los reportes de la versión que está en producción.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="portales" class="band">
+  <div class="wrap">
+    <span class="tag">Tres portales</span>
+    <h2>Cada rol entra a lo suyo.</h2>
+    <p class="lead">Administración, docentes y estudiantes tienen cada uno su panel y su menú. Se entra con correo, cédula, matrícula o código de empleado.</p>
+    <div class="cards">
+      <div class="card rv">
+        <h3>Administrador</h3>
+        <div class="n">Registro y dirección académica</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Materias con créditos y prerrequisitos</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Períodos con fechas y oferta por período</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Secciones, aulas y choques de horario</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Inscripción en lote</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>12 reportes y estadísticas de asistencia</span></li>
+        </ul>
+      </div>
+      <div class="card rv">
+        <h3>Docente</h3>
+        <div class="n">Clases, asistencia y notas</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Sesiones de clase y asistencia</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Notas por cinco componentes</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Publica las notas cuando decide</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Reporte de notas del curso en CSV</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Su horario, para imprimir y exportar</span></li>
+        </ul>
+      </div>
+      <div class="card rv">
+        <h3>Estudiante</h3>
+        <div class="n">Inscripción y récord académico</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Se inscribe desde su portal</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Ve sus notas cuando el docente las publica</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Su Kardex con GPA y estatus</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Su horario, para imprimir y exportar</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Entra con correo, cédula o matrícula</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="nueva-version">
+  <div class="wrap">
+    <span class="tag">Nueva versión</span>
+    <h2>Aula virtual, evaluaciones y app.</h2>
+    <p class="state">En desarrollo · aún no desplegada</p>
+    <p class="lead">El aula virtual, las evaluaciones y los pagos ya están programados, pero todavía no funcionan en producción, y la app sigue en desarrollo. Lo que hoy usa la institución es el núcleo académico de arriba.</p>
+    <div class="dev-grid">
+      <div class="dev rv"><span class="pill-s">Sin desplegar</span><h3>Aula virtual</h3><p>Módulos, lecciones y materiales por curso: archivo, enlace, video o texto. Progreso por lección y comentarios. Solo entran los inscritos.</p></div>
+      <div class="dev rv"><span class="pill-s">Sin desplegar</span><h3>Tareas y cuestionarios</h3><p>Entregas de texto o de archivo de hasta 10&nbsp;MB, con fecha límite. La opción múltiple se califica al instante y cada materia tiene su banco de preguntas.</p></div>
+      <div class="dev rv"><span class="pill-s">Sin desplegar</span><h3>Clases en vivo</h3><p>El docente programa y abre la clase con Jitsi, y el estudiante entra desde el aula. Calendario con clases, entregas y cuestionarios.</p></div>
+      <div class="dev rv"><span class="pill-s">Sin desplegar</span><h3>Pagos manuales</h3><p>Cargos, pagos y estado de cuenta. El estudiante sube su comprobante y la administración lo aprueba o lo rechaza. Sin facturación fiscal.</p></div>
+      <div class="dev rv"><span class="pill-s">Sin desplegar</span><h3>Certificados con QR</h3><p>Se emiten con nota de 70 o más, con un código que se valida en una página pública. El Kardex se descarga en PDF.</p></div>
+      <div class="dev rv"><span class="pill-s">Sin desplegar</span><h3>Carga desde Excel</h3><p>Una plantilla con instrucciones carga estudiantes, materias, notas e historial. Los docentes no se importan por esa vía.</p></div>
+    </div>
+    <p class="also"><b>También en esta versión:</b> lista de espera, programas y carreras, cursos presenciales, en línea o híbridos, anuncios y recordatorios por correo, paneles de atención, modo oscuro y la marca editable desde el panel.</p>
+    <div class="app-row">
+      <img src="/assets/img/academic-system/gestudent-icon-180.png" alt="Icono de la app Gestudent: un libro abierto con una estrella sobre fondo índigo" width="56" height="56" decoding="async" style="border-radius:13px">
+      <div><h3>App Gestudent para Android e iOS</h3><p>En desarrollo. Todavía no está en Google Play ni en el App Store.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="tecnologia" class="band">
+  <div class="wrap">
+    <div class="tech">
+      <div>
+        <span class="tag">Cómo está hecho</span>
+        <h2>Web, API y app nativa sobre .NET.</h2>
+        <p class="lead">El portal, la API y la app son del mismo autor, con arquitectura por capas. La versión que está en producción corre en IIS sobre Windows.</p>
+      </div>
+      <dl class="stack">
+        <div><dt>Portal</dt><dd>ASP.NET Core MVC sobre .NET 9, en capas Domain, Application, Infrastructure y Web.</dd></div>
+        <div><dt>Datos</dt><dd>Entity Framework Core 8 y SQL Server.</dd></div>
+        <div><dt>Acceso</dt><dd>ASP.NET Core Identity con cookies.</dd></div>
+        <div><dt>API móvil</dt><dd>JWT con refresh tokens rotativos: si un token se reutiliza, se cierran todas las sesiones. <em>sin desplegar</em></dd></div>
+        <div><dt>Documentos</dt><dd>QuestPDF para el Kardex en PDF y QRCoder para los certificados. <em>sin desplegar</em></dd></div>
+        <div><dt>App</dt><dd>.NET MAUI para Android e iOS, con MVVM. <em>en desarrollo</em></dd></div>
+      </dl>
+    </div>
+    <div class="stats">
+      <div class="stat rv"><b>44 entidades</b><span>y 41 servicios en la nueva versión, sin desplegar. La que está en producción tiene 16 y 22.</span></div>
+      <div class="stat rv"><b>24 endpoints</b><span>en la API móvil, repartidos en 10 controladores. Nueva versión, sin desplegar.</span></div>
+      <div class="stat rv"><b>2.095 textos</b><span>por idioma en español, inglés y francés. Nueva versión, sin desplegar.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="faq-grid">
+      <div class="faq-l">
+        <span class="tag">Preguntas</span>
+        <h2>Lo que conviene saber antes de decidir.</h2>
+        <p class="lead" style="margin-bottom:26px">Si falta la tuya, escríbeme y te contesto directo.</p>
+        <a href="https://wa.me/18492077714?text=Hola%20Starling%2C%20tengo%20una%20pregunta%20sobre%20Gestudent" rel="noopener">WhatsApp +1 849 207 7714</a><br>
+        <a href="mailto:sgermosen@outlook.com?subject=Gestudent" style="font-size:18px">sgermosen@outlook.com</a>
+      </div>
+      <div>
+        <details><summary>¿Gestudent está en producción?</summary><p>Sí. La versión de 2025, con el núcleo académico, funciona en producción con una institución real: matrícula, notas, Kardex, asistencia, horarios y reportes. La nueva versión, con aula virtual, evaluaciones y pagos, ya está programada, pero todavía no se ha desplegado, y la app sigue en desarrollo.</p></details>
+        <details><summary>¿Para qué tipo de institución sirve?</summary><p>Para instituciones pequeñas y medianas, como institutos, academias, escuelas y seminarios, que trabajan con materias con créditos y prerrequisitos, períodos con secciones y un récord académico con GPA.</p></details>
+        <details><summary>¿Los estudiantes tienen que instalar algo?</summary><p>No. El portal se usa desde el navegador. La app Gestudent para Android e iOS está en desarrollo y todavía no está en Google Play ni en el App Store.</p></details>
+        <details><summary>¿Cómo se calcula la nota?</summary><p>Con cinco componentes fijos: asistencia, práctica, examen 1, examen 2 y proyecto. El sistema calcula el total y la letra, y el docente decide cuándo se publican. Los pesos no se pueden configurar.</p></details>
+        <details><summary>¿Puede llevar la marca de mi institución?</summary><p>Sí. El portal toma el logo, los colores y el pie de página de la institución según el dominio desde el que se entra. Hoy cada institución necesita su propia instalación.</p></details>
+        <details><summary>¿En qué idiomas está?</summary><p>En español, inglés y francés, y cada usuario elige el suyo. En la versión que está en producción el inglés y el francés están incompletos; en la nueva versión los tres están completos.</p></details>
+        <details><summary>¿Puedo cargar mis datos desde Excel?</summary><p>Todavía no en producción. En la nueva versión, aún no desplegada, una plantilla con instrucciones carga estudiantes, materias, notas e historial; los docentes no se importan por esa vía.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="cta">
+      <h2>¿Tu institución todavía lleva las notas en Excel?</h2>
+      <p>Cuéntame cómo inscriben y califican hoy. Te digo qué resuelve Gestudent desde ya, qué está en desarrollo y si encaja con tu institución.</p>
+      <div class="hero-cta">
+        <a class="btn btn-w btn-lg" href="https://wa.me/18492077714?text=Hola%20Starling%2C%20me%20interesa%20Gestudent%20para%20mi%20instituci%C3%B3n" rel="noopener">Escribir por WhatsApp</a>
+        <a class="btn btn-g" href="mailto:sgermosen@outlook.com?subject=Gestudent">Escribir un correo</a>
+      </div>
+      <p class="note">Gestudent funciona en producción con una institución real (núcleo académico). El aula virtual, las evaluaciones, los pagos y la app están en desarrollo y todavía no se han desplegado.</p>
+    </div>
+  </div>
+</section>
+</main>
+
 <footer>
   <div class="foot-in">
-    <span>AcademicSystem © <span id="y"></span> · Producto de <a href="/">Starling Germosen</a></span>
-    <span><a href="/">Portafolio</a> · <a href="/products/resumibot/">ResumiBot</a> · <a href="/products/lottoking/">LottoKing</a> · <a href="/products/estimatpro/">Estimat Pro</a> · <a href="/products/torneo-predicciones/">Torneo Predicciones</a></span>
+    <span>Gestudent © <span id="y">2026</span> · Producto de <a href="/">Starling Germosen</a></span>
+    <span><a href="/">Portafolio</a> · <a href="/products/resumibot/">ResumiBot</a> · <a href="/products/lottoking/">LottoKing</a> · <a href="/products/parqueo-virtual/">Parqueo Virtual</a> · <a href="/products/estimatpro/">Estimat Pro</a> · <a href="/products/torneo-predicciones/">Copa Amistosa</a> · <a href="/products/braintrain/">BrainTrain</a> · <a href="/products/props-digitales/">Props Digitales</a> · <a href="/miapunte/">Mi Apunte</a> · <a href="/fenix/">Fénix</a></span>
   </div>
 </footer>
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.documentElement.classList.add('anim');
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } }), { threshold: .12 });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+}
+</script>
 </body>
 </html>
