@@ -67,13 +67,13 @@
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "¿Gestudent está en producción?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. La versión de 2025, con el núcleo académico, funciona en producción con una institución real: matrícula, notas, Kardex, asistencia, horarios y reportes. La nueva versión, con aula virtual, evaluaciones y pagos, ya está programada, pero todavía no se ha desplegado, y la app sigue en desarrollo." } },
+        { "@type": "Question", "name": "¿Gestudent está en producción?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. La versión de 2025, con el núcleo académico, funciona en producción con una institución real: matrícula, notas, Kardex, asistencia, horarios y reportes. El aula virtual, las evaluaciones, los pagos y la app son de la nueva versión, que todavía no está en producción." } },
         { "@type": "Question", "name": "¿Para qué tipo de institución sirve?", "acceptedAnswer": { "@type": "Answer", "text": "Para instituciones pequeñas y medianas, como institutos, academias, escuelas y seminarios, que trabajan con materias con créditos y prerrequisitos, períodos con secciones y un récord académico con GPA." } },
-        { "@type": "Question", "name": "¿Los estudiantes tienen que instalar algo?", "acceptedAnswer": { "@type": "Answer", "text": "No. El portal se usa desde el navegador. La app Gestudent para Android e iOS está en desarrollo y todavía no está en Google Play ni en el App Store." } },
+        { "@type": "Question", "name": "¿Los estudiantes tienen que instalar algo?", "acceptedAnswer": { "@type": "Answer", "text": "No. El portal se usa desde el navegador. La app Gestudent para Android e iOS no está en Google Play ni en el App Store." } },
         { "@type": "Question", "name": "¿Cómo se calcula la nota?", "acceptedAnswer": { "@type": "Answer", "text": "Con cinco componentes fijos: asistencia, práctica, examen 1, examen 2 y proyecto. El sistema calcula el total y la letra, y el docente decide cuándo se publican. Los pesos no se pueden configurar." } },
         { "@type": "Question", "name": "¿Puede llevar la marca de mi institución?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. El portal toma el logo, los colores y el pie de página de la institución según el dominio desde el que se entra. Hoy cada institución necesita su propia instalación." } },
         { "@type": "Question", "name": "¿En qué idiomas está?", "acceptedAnswer": { "@type": "Answer", "text": "En español, inglés y francés, y cada usuario elige el suyo. En la versión que está en producción el inglés y el francés están incompletos; en la nueva versión los tres están completos." } },
-        { "@type": "Question", "name": "¿Puedo cargar mis datos desde Excel?", "acceptedAnswer": { "@type": "Answer", "text": "Todavía no en producción. En la nueva versión, aún no desplegada, una plantilla con instrucciones carga estudiantes, materias, notas e historial; los docentes no se importan por esa vía." } }
+        { "@type": "Question", "name": "¿Puedo cargar mis datos desde Excel?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, en la nueva versión: una plantilla con instrucciones carga estudiantes, materias, notas e historial; los docentes no se importan por esa vía. La versión que está en producción no tiene esa carga." } }
       ]
     },
     {
@@ -210,7 +210,7 @@ figcaption{margin-top:11px;font-size:13.5px;color:var(--ink3);text-align:center}
 .card li{display:grid;grid-template-columns:18px 1fr;gap:10px;padding:9px 0;border-top:1px solid var(--line2)}
 .card li svg{width:16px;height:16px;color:var(--primary);margin-top:5px}
 
-/* nueva version: borde punteado = aun no desplegado */
+/* nueva version */
 .state{display:inline-flex;align-items:center;gap:9px;margin-top:18px;font-size:15px;font-weight:700;color:var(--primary-d);background:var(--tint);border:1px dashed var(--dash);border-radius:999px;padding:6px 15px}
 .state::before{content:"";width:9px;height:9px;border-radius:50%;border:2px solid currentColor;box-sizing:border-box;flex:none}
 .dev-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:36px}
@@ -477,20 +477,19 @@ footer{background:var(--panel);border-top:1px solid var(--line);padding:40px 0 3
   <div class="wrap">
     <span class="tag">Nueva versión</span>
     <h2>Aula virtual, evaluaciones y app.</h2>
-    <p class="state">En desarrollo · aún no desplegada</p>
-    <p class="lead">El aula virtual, las evaluaciones y los pagos ya están programados, pero todavía no funcionan en producción, y la app sigue en desarrollo. Lo que hoy usa la institución es el núcleo académico de arriba.</p>
+    <p class="lead">La nueva versión suma el aula virtual, las evaluaciones, los pagos y la app. Lo que hoy usa la institución en producción es el núcleo académico de arriba.</p>
     <div class="dev-grid">
-      <div class="dev rv"><span class="pill-s">Sin desplegar</span><h3>Aula virtual</h3><p>Módulos, lecciones y materiales por curso: archivo, enlace, video o texto. Progreso por lección y comentarios. Solo entran los inscritos.</p></div>
-      <div class="dev rv"><span class="pill-s">Sin desplegar</span><h3>Tareas y cuestionarios</h3><p>Entregas de texto o de archivo de hasta 10&nbsp;MB, con fecha límite. La opción múltiple se califica al instante y cada materia tiene su banco de preguntas.</p></div>
-      <div class="dev rv"><span class="pill-s">Sin desplegar</span><h3>Clases en vivo</h3><p>El docente programa y abre la clase con Jitsi, y el estudiante entra desde el aula. Calendario con clases, entregas y cuestionarios.</p></div>
-      <div class="dev rv"><span class="pill-s">Sin desplegar</span><h3>Pagos manuales</h3><p>Cargos, pagos y estado de cuenta. El estudiante sube su comprobante y la administración lo aprueba o lo rechaza. Sin facturación fiscal.</p></div>
-      <div class="dev rv"><span class="pill-s">Sin desplegar</span><h3>Certificados con QR</h3><p>Se emiten con nota de 70 o más, con un código que se valida en una página pública. El Kardex se descarga en PDF.</p></div>
-      <div class="dev rv"><span class="pill-s">Sin desplegar</span><h3>Carga desde Excel</h3><p>Una plantilla con instrucciones carga estudiantes, materias, notas e historial. Los docentes no se importan por esa vía.</p></div>
+      <div class="dev rv"><h3>Aula virtual</h3><p>Módulos, lecciones y materiales por curso: archivo, enlace, video o texto. Progreso por lección y comentarios. Solo entran los inscritos.</p></div>
+      <div class="dev rv"><h3>Tareas y cuestionarios</h3><p>Entregas de texto o de archivo de hasta 10&nbsp;MB, con fecha límite. La opción múltiple se califica al instante y cada materia tiene su banco de preguntas.</p></div>
+      <div class="dev rv"><h3>Clases en vivo</h3><p>El docente programa y abre la clase con Jitsi, y el estudiante entra desde el aula. Calendario con clases, entregas y cuestionarios.</p></div>
+      <div class="dev rv"><h3>Pagos manuales</h3><p>Cargos, pagos y estado de cuenta. El estudiante sube su comprobante y la administración lo aprueba o lo rechaza. Sin facturación fiscal.</p></div>
+      <div class="dev rv"><h3>Certificados con QR</h3><p>Se emiten con nota de 70 o más, con un código que se valida en una página pública. El Kardex se descarga en PDF.</p></div>
+      <div class="dev rv"><h3>Carga desde Excel</h3><p>Una plantilla con instrucciones carga estudiantes, materias, notas e historial. Los docentes no se importan por esa vía.</p></div>
     </div>
     <p class="also"><b>También en esta versión:</b> lista de espera, programas y carreras, cursos presenciales, en línea o híbridos, anuncios y recordatorios por correo, paneles de atención, modo oscuro y la marca editable desde el panel.</p>
     <div class="app-row">
       <img src="/assets/img/academic-system/gestudent-icon-180.png" alt="Icono de la app Gestudent: un libro abierto con una estrella sobre fondo índigo" width="56" height="56" decoding="async" style="border-radius:13px">
-      <div><h3>App Gestudent para Android e iOS</h3><p>En desarrollo. Todavía no está en Google Play ni en el App Store.</p></div>
+      <div><h3>App Gestudent para Android e iOS</h3><p>App nativa en .NET MAUI. No está en Google Play ni en el App Store.</p></div>
     </div>
   </div>
 </section>
@@ -507,15 +506,15 @@ footer{background:var(--panel);border-top:1px solid var(--line);padding:40px 0 3
         <div><dt>Portal</dt><dd>ASP.NET Core MVC sobre .NET 9, en capas Domain, Application, Infrastructure y Web.</dd></div>
         <div><dt>Datos</dt><dd>Entity Framework Core 8 y SQL Server.</dd></div>
         <div><dt>Acceso</dt><dd>ASP.NET Core Identity con cookies.</dd></div>
-        <div><dt>API móvil</dt><dd>JWT con refresh tokens rotativos: si un token se reutiliza, se cierran todas las sesiones. <em>sin desplegar</em></dd></div>
-        <div><dt>Documentos</dt><dd>QuestPDF para el Kardex en PDF y QRCoder para los certificados. <em>sin desplegar</em></dd></div>
-        <div><dt>App</dt><dd>.NET MAUI para Android e iOS, con MVVM. <em>en desarrollo</em></dd></div>
+        <div><dt>API móvil</dt><dd>JWT con refresh tokens rotativos: si un token se reutiliza, se cierran todas las sesiones. <em>nueva versión</em></dd></div>
+        <div><dt>Documentos</dt><dd>QuestPDF para el Kardex en PDF y QRCoder para los certificados. <em>nueva versión</em></dd></div>
+        <div><dt>App</dt><dd>.NET MAUI para Android e iOS, con MVVM. <em>nueva versión</em></dd></div>
       </dl>
     </div>
     <div class="stats">
-      <div class="stat rv"><b>44 entidades</b><span>y 41 servicios en la nueva versión, sin desplegar. La que está en producción tiene 16 y 22.</span></div>
-      <div class="stat rv"><b>24 endpoints</b><span>en la API móvil, repartidos en 10 controladores. Nueva versión, sin desplegar.</span></div>
-      <div class="stat rv"><b>2.095 textos</b><span>por idioma en español, inglés y francés. Nueva versión, sin desplegar.</span></div>
+      <div class="stat rv"><b>44 entidades</b><span>y 41 servicios en la nueva versión. La que está en producción tiene 16 y 22.</span></div>
+      <div class="stat rv"><b>24 endpoints</b><span>en la API móvil, repartidos en 10 controladores. Nueva versión.</span></div>
+      <div class="stat rv"><b>2.095 textos</b><span>por idioma en español, inglés y francés. Nueva versión.</span></div>
     </div>
   </div>
 </section>
@@ -531,13 +530,13 @@ footer{background:var(--panel);border-top:1px solid var(--line);padding:40px 0 3
         <a href="mailto:sgermosen@outlook.com?subject=Gestudent" style="font-size:18px">sgermosen@outlook.com</a>
       </div>
       <div>
-        <details><summary>¿Gestudent está en producción?</summary><p>Sí. La versión de 2025, con el núcleo académico, funciona en producción con una institución real: matrícula, notas, Kardex, asistencia, horarios y reportes. La nueva versión, con aula virtual, evaluaciones y pagos, ya está programada, pero todavía no se ha desplegado, y la app sigue en desarrollo.</p></details>
+        <details><summary>¿Gestudent está en producción?</summary><p>Sí. La versión de 2025, con el núcleo académico, funciona en producción con una institución real: matrícula, notas, Kardex, asistencia, horarios y reportes. El aula virtual, las evaluaciones, los pagos y la app son de la nueva versión, que todavía no está en producción.</p></details>
         <details><summary>¿Para qué tipo de institución sirve?</summary><p>Para instituciones pequeñas y medianas, como institutos, academias, escuelas y seminarios, que trabajan con materias con créditos y prerrequisitos, períodos con secciones y un récord académico con GPA.</p></details>
-        <details><summary>¿Los estudiantes tienen que instalar algo?</summary><p>No. El portal se usa desde el navegador. La app Gestudent para Android e iOS está en desarrollo y todavía no está en Google Play ni en el App Store.</p></details>
+        <details><summary>¿Los estudiantes tienen que instalar algo?</summary><p>No. El portal se usa desde el navegador. La app Gestudent para Android e iOS no está en Google Play ni en el App Store.</p></details>
         <details><summary>¿Cómo se calcula la nota?</summary><p>Con cinco componentes fijos: asistencia, práctica, examen 1, examen 2 y proyecto. El sistema calcula el total y la letra, y el docente decide cuándo se publican. Los pesos no se pueden configurar.</p></details>
         <details><summary>¿Puede llevar la marca de mi institución?</summary><p>Sí. El portal toma el logo, los colores y el pie de página de la institución según el dominio desde el que se entra. Hoy cada institución necesita su propia instalación.</p></details>
         <details><summary>¿En qué idiomas está?</summary><p>En español, inglés y francés, y cada usuario elige el suyo. En la versión que está en producción el inglés y el francés están incompletos; en la nueva versión los tres están completos.</p></details>
-        <details><summary>¿Puedo cargar mis datos desde Excel?</summary><p>Todavía no en producción. En la nueva versión, aún no desplegada, una plantilla con instrucciones carga estudiantes, materias, notas e historial; los docentes no se importan por esa vía.</p></details>
+        <details><summary>¿Puedo cargar mis datos desde Excel?</summary><p>Sí, en la nueva versión: una plantilla con instrucciones carga estudiantes, materias, notas e historial; los docentes no se importan por esa vía. La versión que está en producción no tiene esa carga.</p></details>
       </div>
     </div>
   </div>
@@ -547,12 +546,12 @@ footer{background:var(--panel);border-top:1px solid var(--line);padding:40px 0 3
   <div class="wrap">
     <div class="cta">
       <h2>¿Tu institución todavía lleva las notas en Excel?</h2>
-      <p>Cuéntame cómo inscriben y califican hoy. Te digo qué resuelve Gestudent desde ya, qué está en desarrollo y si encaja con tu institución.</p>
+      <p>Cuéntame cómo inscriben y califican hoy. Te digo qué resuelve Gestudent y si encaja con tu institución.</p>
       <div class="hero-cta">
         <a class="btn btn-w btn-lg" href="https://wa.me/18492077714?text=Hola%20Starling%2C%20me%20interesa%20Gestudent%20para%20mi%20instituci%C3%B3n" rel="noopener">Escribir por WhatsApp</a>
         <a class="btn btn-g" href="mailto:sgermosen@outlook.com?subject=Gestudent">Escribir un correo</a>
       </div>
-      <p class="note">Gestudent funciona en producción con una institución real (núcleo académico). El aula virtual, las evaluaciones, los pagos y la app están en desarrollo y todavía no se han desplegado.</p>
+      <p class="note">Gestudent funciona en producción con una institución real (núcleo académico). El aula virtual, las evaluaciones, los pagos y la app son de la nueva versión.</p>
     </div>
   </div>
 </section>
@@ -561,7 +560,7 @@ footer{background:var(--panel);border-top:1px solid var(--line);padding:40px 0 3
 <footer>
   <div class="foot-in">
     <span>Gestudent © <span id="y">2026</span> · Producto de <a href="/">Starling Germosen</a></span>
-    <span><a href="/">Portafolio</a> · <a href="/products/resumibot/">ResumiBot</a> · <a href="/products/lottoking/">LottoKing</a> · <a href="/products/parqueo-virtual/">Parqueo Virtual</a> · <a href="/products/estimatpro/">Estimat Pro</a> · <a href="/products/torneo-predicciones/">Copa Amistosa</a> · <a href="/products/braintrain/">BrainTrain</a> · <a href="/products/props-digitales/">Props Digitales</a> · <a href="/miapunte/">Mi Apunte</a> · <a href="/fenix/">Fénix</a></span>
+    <span><a href="/">Portafolio</a> · <a href="/products/resumibot/">ResumiBot</a> · <a href="/products/lottoking/">LottoKing</a> · <a href="/products/parqueo-virtual/">Parqueo Virtual</a> · <a href="/products/estimatpro/">Estimat Pro</a> · <a href="/products/torneo-predicciones/">Torneo Predicciones</a> · <a href="/products/braintrain/">BrainTrain</a> · <a href="/products/props-digitales/">Props Digitales</a> · <a href="/miapunte/">Mi Apunte</a> · <a href="/fenix/">Fénix</a></span>
   </div>
 </footer>
 
